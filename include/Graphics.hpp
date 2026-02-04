@@ -11,10 +11,11 @@
 #include "Color.hpp"
 #include "Logger.hpp"
 #include "Window.hpp"
-
+#include "EntryPoint.hpp"
 namespace Graphics{
     using Core::Canvas;
     using Core::Color;
     using Core::logger;
+    using Window::Handle;
 }
 Core::logger globalLogger;
