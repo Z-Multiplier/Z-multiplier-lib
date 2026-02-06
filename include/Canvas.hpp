@@ -16,6 +16,7 @@ namespace Core{
             int stride;
             vector<Color> pixels;
         public:
+            Canvas()=default;
             Canvas(int width,int height);
             int getWidth()const;
             int getHeight()const;
@@ -23,6 +24,7 @@ namespace Core{
             void setPixel(int x,int y,const Color& color);
             Color getPixel(int x,int y)const;
             ~Canvas();
+            Canvas(HDC hdc,int width,int height);
     };
 }
 #endif // CANVAS_HPP

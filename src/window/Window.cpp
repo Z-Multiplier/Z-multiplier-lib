@@ -8,6 +8,7 @@
 #include "Painter.hpp"
 #include <memory>
 #include <algorithm>
+#include <thread>
 namespace Window{
     Core::logger WindowLogger;
     HandleManager globalHandleManager;
@@ -52,7 +53,7 @@ namespace Window{
                 }
                 else{
                     pThis->thisPaint(hWnd,uMsg,wParam,lParam,thisPainter);
-                    thisPainter.present();
+                    return 0;
                 }
                 break;
             }
@@ -101,6 +102,7 @@ namespace Window{
         this->mHWnd=NULL;
         this->mParentWindow=nullptr;
         this->mID=globalHandleManager.getCnt();
+        this->thisCanvas=Core::Canvas(w,h);
     }
     Handle::Handle(int x,int y,int w,int h,int windowStyle,std::wstring title,Handle *ParentWindow){
         this->x=x;
@@ -112,6 +114,7 @@ namespace Window{
         this->mHWnd=NULL;
         this->mParentWindow=ParentWindow;
         this->mID=globalHandleManager.getCnt();
+        this->thisCanvas=Core::Canvas(w,h);
     }
     Handle::~Handle(){
         mHWndMap.erase(this->mHWnd);
@@ -227,6 +230,7 @@ namespace Window{
         }
         HDC hdc=GetDC(this->mHWnd);
         BitBlt(hdc,0,0,this->mBuffer.width,this->mBuffer.height,this->mBuffer.memHDC,0,0,SRCCOPY);
+        this->thisCanvas=Core::Canvas(this->mBuffer.memHDC,width,height);
         ReleaseDC(this->mHWnd,hdc);
     }
     void Handle::resizeBuffer(){

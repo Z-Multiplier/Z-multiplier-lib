@@ -43,8 +43,8 @@
 },
 {
   "directory": "F:/VSCodeWorkspace/slimeballGraphicLib/build/examples",
-  "command": "F:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/eg5.exe.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wextra -pedantic -o CMakeFiles\\eg5.exe.dir\\eg5_alphablend.cpp.obj -c F:\\VSCodeWorkspace\\slimeballGraphicLib\\examples\\eg5_alphablend.cpp",
-  "file": "F:/VSCodeWorkspace/slimeballGraphicLib/examples/eg5_alphablend.cpp",
-  "output": "examples/CMakeFiles/eg5.exe.dir/eg5_alphablend.cpp.obj"
+  "command": "F:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/eg8.exe.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wextra -pedantic -o CMakeFiles\\eg8.exe.dir\\eg8_flood_fill.cpp.obj -c F:\\VSCodeWorkspace\\slimeballGraphicLib\\examples\\eg8_flood_fill.cpp",
+  "file": "F:/VSCodeWorkspace/slimeballGraphicLib/examples/eg8_flood_fill.cpp",
+  "output": "examples/CMakeFiles/eg8.exe.dir/eg8_flood_fill.cpp.obj"
 }
 ]

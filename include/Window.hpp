@@ -30,6 +30,7 @@ namespace Window{
             bool isActive=true;
             Buffer mBuffer;
         public:
+            Core::Canvas thisCanvas;
             std::function<long long(HWND,UINT,WPARAM,LPARAM)> thisDestroy;
             std::function<bool(HWND,UINT,WPARAM,LPARAM)> thisOnClose;//return true to close,false to not close
             std::function<long long(HWND,UINT,WPARAM,LPARAM,Window::Painter&)> thisPaint;

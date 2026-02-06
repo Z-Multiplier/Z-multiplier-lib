@@ -5,6 +5,7 @@ long long mainWindowDrawer(HWND hWndm,UINT message,WPARAM wParam,LPARAM lParam,P
     //Again,make the compiler shut up
     painter.drawBackground(Color((unsigned char)255,0,0));//add unsigned char so the compiler knows that you wanna use the RGB init.
     //so this will draw a pure red background
+    painter.present();
     return 0;
 }//this is the window's "thisPaint" function
 int main(){

@@ -32,6 +32,13 @@ namespace Window{
             }
         }
     };
+    struct Point{
+        int x,y;
+        Point()=default;
+        Point(int x,int y):x(x),y(y){};
+        Point(const Point& other)=default;
+        bool operator==(Point& other);
+    };
     struct Painter{
         private:
             HWND thisBindHWnd;
@@ -42,6 +49,7 @@ namespace Window{
                 BUFFER
             }nowHDC;
             Handle *thisBindHandle;
+            int radius;
         public:
             Painter()=delete;
             Painter(HWND hWnd,Handle *handle):thisBindHWnd(hWnd),thisHDC(BeginPaint(hWnd,&ps)){
@@ -66,6 +74,11 @@ namespace Window{
             void updateHDC();
             void present();
             void switchHDC();
+            bool putPixel(int x,int y,const Core::Color& color);
+            bool line(Point a,Point b,const Core::Color& color);//bresenham line
+            void setSize(int target);
+            bool putUnitPixel(int x,int y,const Core::Color& color);
+            bool floodFill(Point source,const Core::Color& color);
     };
 }
 #endif//PAINTER_HPP

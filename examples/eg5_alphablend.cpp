@@ -1,11 +1,11 @@
 #include "Graphics.hpp"
 using namespace Graphics;
 long long mainWindowDrawer(HWND hWndm,UINT message,WPARAM wParam,LPARAM lParam,Painter& painter){
-    //globalLogger.formatLog(Core::logger::LOG_NOTE,"hWndm:%p,message:%u,wParam:%p,lParam:%p",hWndm,message,wParam,lParam);
+    globalLogger.formatLog(Core::logger::LOG_NOTE,"hWndm:%p,message:%u,wParam:%p,lParam:%p",hWndm,message,wParam,lParam);
     //Again,make the compiler shut up
     painter.drawBackground(Color((unsigned char)255,0,0,127));//add unsigned char so the compiler knows that you wanna use the RGB init.
-    painter.drawBackground(Color((unsigned char)0,0,255,127));
-    //so this will draw a pure red background
+    painter.drawBackground(Color((unsigned char)0,0,255,127));//So purple.
+    painter.present();
     return 0;
 }//this is the window's "thisPaint" function
 int main(){

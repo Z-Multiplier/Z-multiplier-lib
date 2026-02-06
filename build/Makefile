@@ -174,17 +174,17 @@ slimeballGraphicsLib/fast:
 .PHONY : slimeballGraphicsLib/fast
 
 #=============================================================================
-# Target rules for targets named eg5.exe
+# Target rules for targets named eg8.exe
 
 # Build rule for target.
-eg5.exe: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 eg5.exe
-.PHONY : eg5.exe
+eg8.exe: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 eg8.exe
+.PHONY : eg8.exe
 
 # fast build rule for target.
-eg5.exe/fast:
-	$(MAKE) $(MAKESILENT) -f examples\CMakeFiles\eg5.exe.dir\build.make examples/CMakeFiles/eg5.exe.dir/build
-.PHONY : eg5.exe/fast
+eg8.exe/fast:
+	$(MAKE) $(MAKESILENT) -f examples\CMakeFiles\eg8.exe.dir\build.make examples/CMakeFiles/eg8.exe.dir/build
+.PHONY : eg8.exe/fast
 
 src/core/Canvas.obj: src/core/Canvas.cpp.obj
 .PHONY : src/core/Canvas.obj
@@ -366,7 +366,7 @@ help:
 	@echo ... install/strip
 	@echo ... list_install_components
 	@echo ... rebuild_cache
-	@echo ... eg5.exe
+	@echo ... eg8.exe
 	@echo ... slimeballGraphicsLib
 	@echo ... src/core/Canvas.obj
 	@echo ... src/core/Canvas.i

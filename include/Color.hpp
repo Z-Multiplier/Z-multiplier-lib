@@ -21,6 +21,14 @@ namespace Core{
         constexpr COLORREF toCOLORREF() const noexcept{
             return RGB(r,g,b);
         }
+        static Color FromCOLORREF(COLORREF source) noexcept{
+            return Color(static_cast<unsigned char>(source&0xff),
+                         static_cast<unsigned char>((source>>8)&0xff),
+                         static_cast<unsigned char>((source>>16)&0xff));
+        }
+        bool operator==(const Color& other){
+            return this->r==other.r&&this->g==other.g&&this->b==other.b&&this->a==other.a;
+        }
     };
 }
 #endif // COLOR_HPP

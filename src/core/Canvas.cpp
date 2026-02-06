@@ -38,3 +38,15 @@ Core::Color Core::Canvas::getPixel(int x,int y)const{
     return pixels[y*width+x];
 }
 Core::Canvas::~Canvas(){}
+Core::Canvas::Canvas(HDC hdc,int width,int height){
+    this->width=width;
+    this->height=height;
+    pixels.resize(width*height);
+    for(int y=0;y<height;y++){
+        for(int x=0;x<width;x++){
+            COLORREF color=GetPixel(hdc,x,y);
+            int index=y*width+x;
+            pixels[index]=Color::FromCOLORREF(color);
+        }
+    }
+}

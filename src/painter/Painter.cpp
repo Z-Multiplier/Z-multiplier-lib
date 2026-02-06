@@ -1,7 +1,11 @@
 #include "Painter.hpp"
 #include "Logger.hpp"
+#include "Color.hpp"
 #include "Utils.hpp"
 #include <windows.h>
+#include <stack>
+#include <map>
+#include <queue>
 
 Core::logger PainterLogger;
 bool Window::Painter::alphaBlender(int x,int y,int width,int height,const Core::Color &color){
@@ -84,4 +88,128 @@ void Window::Painter::switchHDC(){
         }
     }
     this->updateHDC();
+}
+bool Window::Point::operator==(Point& other){
+    return this->x==other.x&&this->y==other.y;
+}
+bool Window::Painter::putUnitPixel(int x,int y,const Core::Color& color){
+    return this->alphaBlender(x,y,1,1,color);
+}
+bool Window::Painter::putPixel(int x,int y,const Core::Color& color){
+    return this->alphaBlender(x-this->radius,y-this->radius,1+this->radius,1+this->radius,color);
+}
+bool Window::Painter::line(Point a,Point b,const Core::Color& color){
+    if(a==b){
+        PainterLogger.traceLog(Core::logger::LOG_WARNING,"The points are the same,skip this");
+        return false;
+    }
+    int deltaX=abs(a.x-b.x);
+    int deltaY=abs(a.y-b.y);
+    int sX=(a.x<b.x)?1:-1;
+    int sY=(a.y<b.y)?1:-1;
+    int fault=((deltaX>deltaY)?deltaX:-deltaY)/2;
+    int nowX=a.x;
+    int nowY=a.y;
+    while(true){
+        if(!putPixel(nowX,nowY,color)){
+            return false;
+        }
+        if(nowX==b.x&&nowY==b.y){
+            break;
+        }
+        int doubleFault=fault*2;
+        if(doubleFault>-deltaY){
+            fault-=deltaY;
+            nowX+=sX;
+        }
+        if(doubleFault<deltaX){
+            fault+=deltaX;
+            nowY+=sY;
+        }
+    }
+    return true;
+}
+void Window::Painter::setSize(int target){
+    this->radius=target;
+}
+bool Window::Painter::floodFill(Window::Point source,const Core::Color& color){
+    int width=this->thisBindHandle->getRect().right;
+    int height=this->thisBindHandle->getRect().bottom;
+    if(width<=0||height<=0){
+        PainterLogger.traceLog(Core::logger::LOG_ERROR,"Invalid canvas size");
+        return false;
+    }
+    if(source.x<0||source.x>=width||
+        source.y<0||source.y>=height){
+        PainterLogger.traceLog(Core::logger::LOG_ERROR,"Source point out of bounds");
+        return false;
+    }
+    Core::Color srcColor=Core::Color::FromCOLORREF(GetPixel(this->thisBindHandle->getBuffer().memHDC,source.x,source.y));
+    if(srcColor==color){
+        PainterLogger.traceLog(Core::logger::LOG_INFO,"Source already has target color");
+        return true;
+    }
+    auto getIndex=[width](int x,int y)->size_t{
+        return static_cast<size_t>(y)*static_cast<size_t>(width)+static_cast<size_t>(x);
+    };
+    std::vector<bool> visited(static_cast<size_t>(width)*static_cast<size_t>(height),false);
+    std::vector<std::pair<int,int>> stack;
+    stack.push_back({source.x,source.y});
+    visited[getIndex(source.x,source.y)]=true;
+
+    while(!stack.empty()){
+        auto p=stack.back(); stack.pop_back();
+        int x=p.first;
+        int y=p.second;
+        // find left boundary of span
+        int left=x;
+        while(left>=0){
+            Core::Color c=Core::Color::FromCOLORREF(GetPixel(this->thisBindHandle->getBuffer().memHDC,left,y));
+            if(!(c==srcColor)) break;
+            left--;
+        }
+        left++;
+        // find right boundary of span
+        int right=x;
+        while(right<width){
+            Core::Color c=Core::Color::FromCOLORREF(GetPixel(this->thisBindHandle->getBuffer().memHDC,right,y));
+            if(!(c==srcColor)) break;
+            right++;
+        }
+        // fill the span [left, right)
+        for(int xi=left;xi<right;++xi){
+            if(!putUnitPixel(xi,y,color)){
+                PainterLogger.traceLog(Core::logger::LOG_ERROR,"Failed to put pixel at ("+
+                                      std::to_string(xi)+","+std::to_string(y)+")");
+                return false;
+            }
+            visited[getIndex(xi,y)]=true;
+        }
+        // check spans above and below; push runs of srcColor
+        for(int dir=-1;dir<=1;dir+=2){
+            int ny=y+dir;
+            if(ny<0||ny>=height) continue;
+            int xi=left;
+            while(xi<right){
+                // skip pixels that are not srcColor or already visited
+                bool found=false;
+                while(xi<right){
+                    Core::Color c=Core::Color::FromCOLORREF(GetPixel(this->thisBindHandle->getBuffer().memHDC,xi,ny));
+                    if((c==srcColor) && !visited[getIndex(xi,ny)]){ found=true; break; }
+                    xi++;
+                }
+                if(!found) break;
+                int runStart=xi;
+                while(xi<right){
+                    Core::Color c=Core::Color::FromCOLORREF(GetPixel(this->thisBindHandle->getBuffer().memHDC,xi,ny));
+                    if(!(c==srcColor)||visited[getIndex(xi,ny)]) break;
+                    visited[getIndex(xi,ny)]=true;
+                    xi++;
+                }
+                // push the start of the run
+                stack.push_back({runStart,ny});
+            }
+        }
+    }
+    return true;
 }

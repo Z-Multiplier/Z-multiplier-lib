@@ -54,5 +54,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/slimeballGraphicsLib.dir/DependInfo.cmake"
-  "examples/CMakeFiles/eg5.exe.dir/DependInfo.cmake"
+  "examples/CMakeFiles/eg8.exe.dir/DependInfo.cmake"
   )

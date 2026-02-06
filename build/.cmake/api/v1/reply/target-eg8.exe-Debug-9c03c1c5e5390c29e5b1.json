@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "bin/eg5.exe.exe"
+			"path" : "bin/eg8.exe.exe"
 		},
 		{
-			"path" : "bin/eg5.exe.pdb"
+			"path" : "bin/eg8.exe.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -106,7 +106,7 @@
 			"id" : "slimeballGraphicsLib::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "eg5.exe::@714eac15f71a94114fdf",
+	"id" : "eg8.exe::@714eac15f71a94114fdf",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -152,8 +152,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "eg5.exe",
-	"nameOnDisk" : "eg5.exe.exe",
+	"name" : "eg8.exe",
+	"nameOnDisk" : "eg8.exe.exe",
 	"paths" : 
 	{
 		"build" : "examples",
@@ -174,7 +174,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "examples/eg5_alphablend.cpp",
+			"path" : "examples/eg8_flood_fill.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

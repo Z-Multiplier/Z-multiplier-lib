@@ -161,42 +161,42 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-examples/CMakeFiles/eg5.exe.dir/rule:
-	cd /d F:\VSCodeWorkspace\slimeballGraphicLib\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 examples/CMakeFiles/eg5.exe.dir/rule
-.PHONY : examples/CMakeFiles/eg5.exe.dir/rule
+examples/CMakeFiles/eg8.exe.dir/rule:
+	cd /d F:\VSCodeWorkspace\slimeballGraphicLib\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 examples/CMakeFiles/eg8.exe.dir/rule
+.PHONY : examples/CMakeFiles/eg8.exe.dir/rule
 
 # Convenience name for target.
-eg5.exe: examples/CMakeFiles/eg5.exe.dir/rule
-.PHONY : eg5.exe
+eg8.exe: examples/CMakeFiles/eg8.exe.dir/rule
+.PHONY : eg8.exe
 
 # fast build rule for target.
-eg5.exe/fast:
-	cd /d F:\VSCodeWorkspace\slimeballGraphicLib\build && $(MAKE) $(MAKESILENT) -f examples\CMakeFiles\eg5.exe.dir\build.make examples/CMakeFiles/eg5.exe.dir/build
-.PHONY : eg5.exe/fast
+eg8.exe/fast:
+	cd /d F:\VSCodeWorkspace\slimeballGraphicLib\build && $(MAKE) $(MAKESILENT) -f examples\CMakeFiles\eg8.exe.dir\build.make examples/CMakeFiles/eg8.exe.dir/build
+.PHONY : eg8.exe/fast
 
-eg5_alphablend.obj: eg5_alphablend.cpp.obj
-.PHONY : eg5_alphablend.obj
+eg8_flood_fill.obj: eg8_flood_fill.cpp.obj
+.PHONY : eg8_flood_fill.obj
 
 # target to build an object file
-eg5_alphablend.cpp.obj:
-	cd /d F:\VSCodeWorkspace\slimeballGraphicLib\build && $(MAKE) $(MAKESILENT) -f examples\CMakeFiles\eg5.exe.dir\build.make examples/CMakeFiles/eg5.exe.dir/eg5_alphablend.cpp.obj
-.PHONY : eg5_alphablend.cpp.obj
+eg8_flood_fill.cpp.obj:
+	cd /d F:\VSCodeWorkspace\slimeballGraphicLib\build && $(MAKE) $(MAKESILENT) -f examples\CMakeFiles\eg8.exe.dir\build.make examples/CMakeFiles/eg8.exe.dir/eg8_flood_fill.cpp.obj
+.PHONY : eg8_flood_fill.cpp.obj
 
-eg5_alphablend.i: eg5_alphablend.cpp.i
-.PHONY : eg5_alphablend.i
+eg8_flood_fill.i: eg8_flood_fill.cpp.i
+.PHONY : eg8_flood_fill.i
 
 # target to preprocess a source file
-eg5_alphablend.cpp.i:
-	cd /d F:\VSCodeWorkspace\slimeballGraphicLib\build && $(MAKE) $(MAKESILENT) -f examples\CMakeFiles\eg5.exe.dir\build.make examples/CMakeFiles/eg5.exe.dir/eg5_alphablend.cpp.i
-.PHONY : eg5_alphablend.cpp.i
+eg8_flood_fill.cpp.i:
+	cd /d F:\VSCodeWorkspace\slimeballGraphicLib\build && $(MAKE) $(MAKESILENT) -f examples\CMakeFiles\eg8.exe.dir\build.make examples/CMakeFiles/eg8.exe.dir/eg8_flood_fill.cpp.i
+.PHONY : eg8_flood_fill.cpp.i
 
-eg5_alphablend.s: eg5_alphablend.cpp.s
-.PHONY : eg5_alphablend.s
+eg8_flood_fill.s: eg8_flood_fill.cpp.s
+.PHONY : eg8_flood_fill.s
 
 # target to generate assembly for a file
-eg5_alphablend.cpp.s:
-	cd /d F:\VSCodeWorkspace\slimeballGraphicLib\build && $(MAKE) $(MAKESILENT) -f examples\CMakeFiles\eg5.exe.dir\build.make examples/CMakeFiles/eg5.exe.dir/eg5_alphablend.cpp.s
-.PHONY : eg5_alphablend.cpp.s
+eg8_flood_fill.cpp.s:
+	cd /d F:\VSCodeWorkspace\slimeballGraphicLib\build && $(MAKE) $(MAKESILENT) -f examples\CMakeFiles\eg8.exe.dir\build.make examples/CMakeFiles/eg8.exe.dir/eg8_flood_fill.cpp.s
+.PHONY : eg8_flood_fill.cpp.s
 
 # Help Target
 help:
@@ -210,10 +210,10 @@ help:
 	@echo ... install/strip
 	@echo ... list_install_components
 	@echo ... rebuild_cache
-	@echo ... eg5.exe
-	@echo ... eg5_alphablend.obj
-	@echo ... eg5_alphablend.i
-	@echo ... eg5_alphablend.s
+	@echo ... eg8.exe
+	@echo ... eg8_flood_fill.obj
+	@echo ... eg8_flood_fill.i
+	@echo ... eg8_flood_fill.s
 .PHONY : help
 
 

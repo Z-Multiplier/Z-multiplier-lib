@@ -401,6 +401,7 @@ CMakeFiles/slimeballGraphicsLib.dir/src/painter/Painter.cpp.obj: \
  F:/msys64/ucrt64/include/c++/15.2.0/pstl/execution_defs.h \
  F:/msys64/ucrt64/include/c++/15.2.0/chrono \
  F:/VSCodeWorkspace/slimeballGraphicLib/include/Logger.hpp \
+ F:/VSCodeWorkspace/slimeballGraphicLib/include/Color.hpp \
  F:/VSCodeWorkspace/slimeballGraphicLib/include/Utils.hpp \
  F:/VSCodeWorkspace/slimeballGraphicLib/include/Window.hpp \
  F:/msys64/ucrt64/include/c++/15.2.0/functional \
@@ -415,4 +416,16 @@ CMakeFiles/slimeballGraphicsLib.dir/src/painter/Painter.cpp.obj: \
  F:/msys64/ucrt64/include/c++/15.2.0/array \
  F:/msys64/ucrt64/include/c++/15.2.0/compare \
  F:/VSCodeWorkspace/slimeballGraphicLib/include/Utils.hpp \
- F:/VSCodeWorkspace/slimeballGraphicLib/include/Painter.hpp
+ F:/VSCodeWorkspace/slimeballGraphicLib/include/Painter.hpp \
+ F:/msys64/ucrt64/include/c++/15.2.0/stack \
+ F:/msys64/ucrt64/include/c++/15.2.0/deque \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/stl_deque.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/deque.tcc \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/stl_stack.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/map \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/stl_tree.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/stl_multimap.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/queue \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/stl_heap.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/stl_queue.h
