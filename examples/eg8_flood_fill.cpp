@@ -1,6 +1,6 @@
 #include "Graphics.hpp"
 using namespace Graphics;
-long long mainWindowDrawer(HWND hWndm,UINT message,WPARAM wParam,LPARAM lParam,Painter& painter){
+long long mainWindowDrawer(HWND hWnd,UINT message,WPARAM wParam,LPARAM lParam,Painter& painter){
     painter.drawBackground(Color((unsigned char)255,255,255,255));
     painter.setSize(1);
     painter.line({50,50},{50,500},Color((unsigned char)0,0,0,255));
@@ -8,12 +8,9 @@ long long mainWindowDrawer(HWND hWndm,UINT message,WPARAM wParam,LPARAM lParam,P
     painter.line({500,50},{500,500},Color((unsigned char)0,0,0,255));
     painter.line({50,500},{500,500},Color((unsigned char)0,0,0,255));
     painter.floodFill({75,75},Color((unsigned char)0,255,0,255));
-    return 0;
-}//this is the window's "thisPaint" function
-long long mainWindowRefresher(HWND hWndm,UINT message,WPARAM wParam,LPARAM lParam,Painter& painter){
     painter.present();
     return 0;
-}//this is the refresher.You only want to refresh at some point 'cause the drawing could take a long time.
+}//this is the window's "thisPaint" function
 int main(){
     auto mainWindow=createInitWindow(0,0,800,600,0,L"Window");
     std::function<long long(HWND,UINT,WPARAM,LPARAM,Painter&)> mainWindowDrawerFunc=mainWindowDrawer;
@@ -29,9 +26,10 @@ int main(){
         if(mainWindow.second!=NULL){
             //globalLogger.traceLog(Core::logger::LOG_NOTE,"loop #");
         }//Just make the compiler shut up
-        //Sleep(16);
+        Sleep(16);
         globalHandleManager.updateAll();
         globalHandleManager.checkAndQuit();
     }
     return 0;
 }
+//although the efficiency of flood fill is acceptable now,we still won't suggest to use it to fill large areas.

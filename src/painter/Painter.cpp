@@ -135,6 +135,7 @@ void Window::Painter::setSize(int target){
 bool Window::Painter::floodFill(Window::Point source,const Core::Color& color){
     int width=this->thisBindHandle->getRect().right;
     int height=this->thisBindHandle->getRect().bottom;
+    HDC tempHDC=this->thisBindHandle->getBuffer().memHDC;
     if(width<=0||height<=0){
         PainterLogger.traceLog(Core::logger::LOG_ERROR,"Invalid canvas size");
         return false;
@@ -144,9 +145,50 @@ bool Window::Painter::floodFill(Window::Point source,const Core::Color& color){
         PainterLogger.traceLog(Core::logger::LOG_ERROR,"Source point out of bounds");
         return false;
     }
-    Core::Color srcColor=Core::Color::FromCOLORREF(GetPixel(this->thisBindHandle->getBuffer().memHDC,source.x,source.y));
+    HDC srcHDC=tempHDC?tempHDC:this->thisHDC;
+    HDC memDC=CreateCompatibleDC(srcHDC);
+    if(!memDC){
+        PainterLogger.traceLog(Core::logger::LOG_ERROR,"Failed to create memory DC for pixels");
+        return false;
+    }
+    HBITMAP hBmp = CreateCompatibleBitmap(tempHDC,width,height);
+    if(!hBmp){
+        PainterLogger.traceLog(Core::logger::LOG_ERROR,"Failed to create compatible bitmap");
+            DeleteDC(memDC);
+        return false;
+    }
+    HBITMAP hOldBmp=(HBITMAP)SelectObject(memDC,hBmp);
+    BitBlt(memDC,0,0,width,height,srcHDC,0,0,SRCCOPY);
+    BITMAPINFO bmi;
+    ZeroMemory(&bmi,sizeof(bmi));
+    bmi.bmiHeader.biSize=sizeof(BITMAPINFOHEADER);
+    bmi.bmiHeader.biWidth=width;
+    bmi.bmiHeader.biHeight=-height;
+    bmi.bmiHeader.biPlanes=1;
+    bmi.bmiHeader.biBitCount=32;
+    bmi.bmiHeader.biCompression=BI_RGB;
+    std::vector<DWORD> pixels(static_cast<size_t>(width)*static_cast<size_t>(height));
+    if(!GetDIBits(srcHDC,hBmp,0,height,pixels.data(),&bmi,DIB_RGB_COLORS)){
+        PainterLogger.traceLog(Core::logger::LOG_ERROR,"GetDIBits failed");
+        SelectObject(memDC,hOldBmp);
+        DeleteObject(hBmp);
+        DeleteDC(memDC);
+        return false;
+    }
+    auto getColorFromBuffer=[&pixels,width](int x,int y)->Core::Color{
+        DWORD px=pixels[static_cast<size_t>(y)*static_cast<size_t>(width)+static_cast<size_t>(x)];
+        unsigned char b=px&0xFF;
+        unsigned char g=(px>>8)&0xFF;
+        unsigned char r=(px>>16)&0xFF;
+        COLORREF cref=RGB(r,g,b);
+        return Core::Color::FromCOLORREF(cref);
+    };
+    Core::Color srcColor=getColorFromBuffer(source.x,source.y);
     if(srcColor==color){
         PainterLogger.traceLog(Core::logger::LOG_INFO,"Source already has target color");
+        SelectObject(memDC,hOldBmp);
+        DeleteObject(hBmp);
+        DeleteDC(memDC);
         return true;
     }
     auto getIndex=[width](int x,int y)->size_t{
@@ -162,14 +204,14 @@ bool Window::Painter::floodFill(Window::Point source,const Core::Color& color){
         int y=p.second;
         int left=x;
         while(left>=0){
-            Core::Color c=Core::Color::FromCOLORREF(GetPixel(this->thisBindHandle->getBuffer().memHDC,left,y));
+            Core::Color c=getColorFromBuffer(left,y);
             if(!(c==srcColor)) break;
             left--;
         }
         left++;
         int right=x;
         while(right<width){
-            Core::Color c=Core::Color::FromCOLORREF(GetPixel(this->thisBindHandle->getBuffer().memHDC,right,y));
+            Core::Color c=getColorFromBuffer(right,y);
             if(!(c==srcColor)) break;
             right++;
         }
@@ -177,6 +219,9 @@ bool Window::Painter::floodFill(Window::Point source,const Core::Color& color){
             if(!putUnitPixel(xi,y,color)){
                 PainterLogger.traceLog(Core::logger::LOG_ERROR,"Failed to put pixel at ("+
                                       std::to_string(xi)+","+std::to_string(y)+")");
+                SelectObject(memDC,hOldBmp);
+                DeleteObject(hBmp);
+                DeleteDC(memDC);
                 return false;
             }
             visited[getIndex(xi,y)]=true;
@@ -188,14 +233,14 @@ bool Window::Painter::floodFill(Window::Point source,const Core::Color& color){
             while(xi<right){
                 bool found=false;
                 while(xi<right){
-                    Core::Color c=Core::Color::FromCOLORREF(GetPixel(this->thisBindHandle->getBuffer().memHDC,xi,ny));
+                    Core::Color c=getColorFromBuffer(xi,ny);
                     if((c==srcColor) && !visited[getIndex(xi,ny)]){ found=true; break; }
                     xi++;
                 }
                 if(!found) break;
                 int runStart=xi;
                 while(xi<right){
-                    Core::Color c=Core::Color::FromCOLORREF(GetPixel(this->thisBindHandle->getBuffer().memHDC,xi,ny));
+                    Core::Color c=getColorFromBuffer(xi,ny);
                     if(!(c==srcColor)||visited[getIndex(xi,ny)]) break;
                     visited[getIndex(xi,ny)]=true;
                     xi++;
@@ -204,5 +249,8 @@ bool Window::Painter::floodFill(Window::Point source,const Core::Color& color){
             }
         }
     }
+    SelectObject(memDC,hOldBmp);
+    DeleteObject(hBmp);
+    DeleteDC(memDC);
     return true;
 }

@@ -58,18 +58,6 @@ namespace Window{
                 }
                 break;
             }
-            case WM_UPDATE:{
-                Window::Painter thisPainter(hWnd,pThis);
-                thisPainter.switchHDC();
-                if(!pThis->thisRefresh){
-                    WindowLogger.traceLog(Core::logger::LOG_WARNING,"The function\"thisRefresh\" is not defined yet,Skipping.");
-                }
-                else{
-                    pThis->thisRefresh(hWnd,uMsg,wParam,lParam,thisPainter);
-                    return 0;
-                }
-                break;
-            }
             case WM_CLOSE:{
                 if(!pThis->thisOnClose){
                     WindowLogger.traceLog(Core::logger::LOG_WARNING,"The function\"thisOnClose\" is not defined yet,Skipping.");
@@ -189,11 +177,6 @@ namespace Window{
         for(auto &handle:handles){
             InvalidateRect(handle->getHWnd(),NULL,TRUE);
             UpdateWindow(handle->getHWnd());
-        }
-    }
-    void HandleManager::refreshAll(WPARAM wParam,LPARAM lParam){
-        for(auto &handle:handles){
-            PostMessage(handle->getHWnd(),WM_UPDATE,wParam,lParam);
         }
     }
     bool Handle::initBuffer(){

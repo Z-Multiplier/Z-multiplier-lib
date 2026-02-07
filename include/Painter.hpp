@@ -4,7 +4,6 @@
 #include "Color.hpp"
 #include "Canvas.hpp"
 #include "Logger.hpp"
-#define WM_UPDATE WM_USER+1
 
 namespace Window{
     struct Handle;

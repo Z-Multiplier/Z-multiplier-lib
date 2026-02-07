@@ -425,4 +425,8 @@ CMakeFiles/slimeballGraphicsLib.dir/src/window/Window.cpp.obj: \
  F:/msys64/ucrt64/include/c++/15.2.0/pstl/glue_algorithm_defs.h \
  F:/msys64/ucrt64/include/c++/15.2.0/thread \
  F:/msys64/ucrt64/include/c++/15.2.0/bits/std_thread.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/this_thread_sleep.h
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/this_thread_sleep.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/future \
+ F:/msys64/ucrt64/include/c++/15.2.0/condition_variable \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/atomic_futex.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/atomic
