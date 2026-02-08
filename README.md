@@ -23,3 +23,5 @@ btw, I hide many interesting comments in the code, if you speak Chinese, you cou
 \[INFO] 可以成功填充背景，时间：26/02/05 8:25 pm
 
 \[INFO] 可以画直线，时间：26/02/06 1:00 pm
+
+\[INFO] 可以填多边形和画圆了，时间：26/02/08 5:30 pm
