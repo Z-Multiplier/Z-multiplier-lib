@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.15)
-project(slimeGraphics VERSION 1.0.0 LANGUAGES CXX)
+project(Zmultiplier VERSION 1.0.0 LANGUAGES CXX)
 
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
@@ -16,7 +16,7 @@ else()
     add_compile_options(-Wall -Wextra -pedantic)
 endif()
 
-add_library(slimeballGraphicsLib STATIC
+add_library(Zmultiplier STATIC
     src/core/Color.cpp
     src/core/Canvas.cpp
     src/window/Window.cpp
@@ -28,29 +28,29 @@ add_library(slimeballGraphicsLib STATIC
     src/assets/Font.cpp
 )
 
-target_link_libraries(slimeballGraphicsLib PRIVATE
+target_link_libraries(Zmultiplier PRIVATE
     msimg32
     gdi32
     user32
     gdiplus
 )
 
-target_include_directories(slimeballGraphicsLib PUBLIC
+target_include_directories(Zmultiplier PUBLIC
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
     $<INSTALL_INTERFACE:include>
 )
 
 if(WIN32)
-    target_compile_definitions(slimeballGraphicsLib PRIVATE NOMINMAX)
-    target_link_libraries(slimeballGraphicsLib PRIVATE gdi32 user32)
+    target_compile_definitions(Zmultiplier PRIVATE NOMINMAX)
+    target_link_libraries(Zmultiplier PRIVATE gdi32 user32)
 endif()
 
-install(TARGETS slimeballGraphicsLib
+install(TARGETS Zmultiplier
     ARCHIVE DESTINATION lib
     LIBRARY DESTINATION lib
     RUNTIME DESTINATION bin
 )
 
-install(DIRECTORY include/slime DESTINATION include)
+install(DIRECTORY include/Zmultiplier DESTINATION include)
 
 add_subdirectory(examples)

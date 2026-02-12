@@ -161,17 +161,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named slimeballGraphicsLib
+# Target rules for targets named Zmultiplier
 
 # Build rule for target.
-slimeballGraphicsLib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 slimeballGraphicsLib
-.PHONY : slimeballGraphicsLib
+Zmultiplier: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Zmultiplier
+.PHONY : Zmultiplier
 
 # fast build rule for target.
-slimeballGraphicsLib/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\slimeballGraphicsLib.dir\build.make CMakeFiles/slimeballGraphicsLib.dir/build
-.PHONY : slimeballGraphicsLib/fast
+Zmultiplier/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Zmultiplier.dir\build.make CMakeFiles/Zmultiplier.dir/build
+.PHONY : Zmultiplier/fast
 
 #=============================================================================
 # Target rules for targets named bee.exe
@@ -191,7 +191,7 @@ src/assets/Font.obj: src/assets/Font.cpp.obj
 
 # target to build an object file
 src/assets/Font.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\slimeballGraphicsLib.dir\build.make CMakeFiles/slimeballGraphicsLib.dir/src/assets/Font.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Zmultiplier.dir\build.make CMakeFiles/Zmultiplier.dir/src/assets/Font.cpp.obj
 .PHONY : src/assets/Font.cpp.obj
 
 src/assets/Font.i: src/assets/Font.cpp.i
@@ -199,7 +199,7 @@ src/assets/Font.i: src/assets/Font.cpp.i
 
 # target to preprocess a source file
 src/assets/Font.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\slimeballGraphicsLib.dir\build.make CMakeFiles/slimeballGraphicsLib.dir/src/assets/Font.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Zmultiplier.dir\build.make CMakeFiles/Zmultiplier.dir/src/assets/Font.cpp.i
 .PHONY : src/assets/Font.cpp.i
 
 src/assets/Font.s: src/assets/Font.cpp.s
@@ -207,7 +207,7 @@ src/assets/Font.s: src/assets/Font.cpp.s
 
 # target to generate assembly for a file
 src/assets/Font.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\slimeballGraphicsLib.dir\build.make CMakeFiles/slimeballGraphicsLib.dir/src/assets/Font.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Zmultiplier.dir\build.make CMakeFiles/Zmultiplier.dir/src/assets/Font.cpp.s
 .PHONY : src/assets/Font.cpp.s
 
 src/assets/Image.obj: src/assets/Image.cpp.obj
@@ -215,7 +215,7 @@ src/assets/Image.obj: src/assets/Image.cpp.obj
 
 # target to build an object file
 src/assets/Image.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\slimeballGraphicsLib.dir\build.make CMakeFiles/slimeballGraphicsLib.dir/src/assets/Image.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Zmultiplier.dir\build.make CMakeFiles/Zmultiplier.dir/src/assets/Image.cpp.obj
 .PHONY : src/assets/Image.cpp.obj
 
 src/assets/Image.i: src/assets/Image.cpp.i
@@ -223,7 +223,7 @@ src/assets/Image.i: src/assets/Image.cpp.i
 
 # target to preprocess a source file
 src/assets/Image.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\slimeballGraphicsLib.dir\build.make CMakeFiles/slimeballGraphicsLib.dir/src/assets/Image.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Zmultiplier.dir\build.make CMakeFiles/Zmultiplier.dir/src/assets/Image.cpp.i
 .PHONY : src/assets/Image.cpp.i
 
 src/assets/Image.s: src/assets/Image.cpp.s
@@ -231,7 +231,7 @@ src/assets/Image.s: src/assets/Image.cpp.s
 
 # target to generate assembly for a file
 src/assets/Image.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\slimeballGraphicsLib.dir\build.make CMakeFiles/slimeballGraphicsLib.dir/src/assets/Image.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Zmultiplier.dir\build.make CMakeFiles/Zmultiplier.dir/src/assets/Image.cpp.s
 .PHONY : src/assets/Image.cpp.s
 
 src/core/Canvas.obj: src/core/Canvas.cpp.obj
@@ -239,7 +239,7 @@ src/core/Canvas.obj: src/core/Canvas.cpp.obj
 
 # target to build an object file
 src/core/Canvas.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\slimeballGraphicsLib.dir\build.make CMakeFiles/slimeballGraphicsLib.dir/src/core/Canvas.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Zmultiplier.dir\build.make CMakeFiles/Zmultiplier.dir/src/core/Canvas.cpp.obj
 .PHONY : src/core/Canvas.cpp.obj
 
 src/core/Canvas.i: src/core/Canvas.cpp.i
@@ -247,7 +247,7 @@ src/core/Canvas.i: src/core/Canvas.cpp.i
 
 # target to preprocess a source file
 src/core/Canvas.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\slimeballGraphicsLib.dir\build.make CMakeFiles/slimeballGraphicsLib.dir/src/core/Canvas.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Zmultiplier.dir\build.make CMakeFiles/Zmultiplier.dir/src/core/Canvas.cpp.i
 .PHONY : src/core/Canvas.cpp.i
 
 src/core/Canvas.s: src/core/Canvas.cpp.s
@@ -255,7 +255,7 @@ src/core/Canvas.s: src/core/Canvas.cpp.s
 
 # target to generate assembly for a file
 src/core/Canvas.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\slimeballGraphicsLib.dir\build.make CMakeFiles/slimeballGraphicsLib.dir/src/core/Canvas.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Zmultiplier.dir\build.make CMakeFiles/Zmultiplier.dir/src/core/Canvas.cpp.s
 .PHONY : src/core/Canvas.cpp.s
 
 src/core/Color.obj: src/core/Color.cpp.obj
@@ -263,7 +263,7 @@ src/core/Color.obj: src/core/Color.cpp.obj
 
 # target to build an object file
 src/core/Color.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\slimeballGraphicsLib.dir\build.make CMakeFiles/slimeballGraphicsLib.dir/src/core/Color.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Zmultiplier.dir\build.make CMakeFiles/Zmultiplier.dir/src/core/Color.cpp.obj
 .PHONY : src/core/Color.cpp.obj
 
 src/core/Color.i: src/core/Color.cpp.i
@@ -271,7 +271,7 @@ src/core/Color.i: src/core/Color.cpp.i
 
 # target to preprocess a source file
 src/core/Color.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\slimeballGraphicsLib.dir\build.make CMakeFiles/slimeballGraphicsLib.dir/src/core/Color.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Zmultiplier.dir\build.make CMakeFiles/Zmultiplier.dir/src/core/Color.cpp.i
 .PHONY : src/core/Color.cpp.i
 
 src/core/Color.s: src/core/Color.cpp.s
@@ -279,7 +279,7 @@ src/core/Color.s: src/core/Color.cpp.s
 
 # target to generate assembly for a file
 src/core/Color.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\slimeballGraphicsLib.dir\build.make CMakeFiles/slimeballGraphicsLib.dir/src/core/Color.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Zmultiplier.dir\build.make CMakeFiles/Zmultiplier.dir/src/core/Color.cpp.s
 .PHONY : src/core/Color.cpp.s
 
 src/core/EntryPoint.obj: src/core/EntryPoint.cpp.obj
@@ -287,7 +287,7 @@ src/core/EntryPoint.obj: src/core/EntryPoint.cpp.obj
 
 # target to build an object file
 src/core/EntryPoint.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\slimeballGraphicsLib.dir\build.make CMakeFiles/slimeballGraphicsLib.dir/src/core/EntryPoint.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Zmultiplier.dir\build.make CMakeFiles/Zmultiplier.dir/src/core/EntryPoint.cpp.obj
 .PHONY : src/core/EntryPoint.cpp.obj
 
 src/core/EntryPoint.i: src/core/EntryPoint.cpp.i
@@ -295,7 +295,7 @@ src/core/EntryPoint.i: src/core/EntryPoint.cpp.i
 
 # target to preprocess a source file
 src/core/EntryPoint.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\slimeballGraphicsLib.dir\build.make CMakeFiles/slimeballGraphicsLib.dir/src/core/EntryPoint.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Zmultiplier.dir\build.make CMakeFiles/Zmultiplier.dir/src/core/EntryPoint.cpp.i
 .PHONY : src/core/EntryPoint.cpp.i
 
 src/core/EntryPoint.s: src/core/EntryPoint.cpp.s
@@ -303,7 +303,7 @@ src/core/EntryPoint.s: src/core/EntryPoint.cpp.s
 
 # target to generate assembly for a file
 src/core/EntryPoint.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\slimeballGraphicsLib.dir\build.make CMakeFiles/slimeballGraphicsLib.dir/src/core/EntryPoint.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Zmultiplier.dir\build.make CMakeFiles/Zmultiplier.dir/src/core/EntryPoint.cpp.s
 .PHONY : src/core/EntryPoint.cpp.s
 
 src/core/Logger.obj: src/core/Logger.cpp.obj
@@ -311,7 +311,7 @@ src/core/Logger.obj: src/core/Logger.cpp.obj
 
 # target to build an object file
 src/core/Logger.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\slimeballGraphicsLib.dir\build.make CMakeFiles/slimeballGraphicsLib.dir/src/core/Logger.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Zmultiplier.dir\build.make CMakeFiles/Zmultiplier.dir/src/core/Logger.cpp.obj
 .PHONY : src/core/Logger.cpp.obj
 
 src/core/Logger.i: src/core/Logger.cpp.i
@@ -319,7 +319,7 @@ src/core/Logger.i: src/core/Logger.cpp.i
 
 # target to preprocess a source file
 src/core/Logger.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\slimeballGraphicsLib.dir\build.make CMakeFiles/slimeballGraphicsLib.dir/src/core/Logger.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Zmultiplier.dir\build.make CMakeFiles/Zmultiplier.dir/src/core/Logger.cpp.i
 .PHONY : src/core/Logger.cpp.i
 
 src/core/Logger.s: src/core/Logger.cpp.s
@@ -327,7 +327,7 @@ src/core/Logger.s: src/core/Logger.cpp.s
 
 # target to generate assembly for a file
 src/core/Logger.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\slimeballGraphicsLib.dir\build.make CMakeFiles/slimeballGraphicsLib.dir/src/core/Logger.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Zmultiplier.dir\build.make CMakeFiles/Zmultiplier.dir/src/core/Logger.cpp.s
 .PHONY : src/core/Logger.cpp.s
 
 src/painter/Painter.obj: src/painter/Painter.cpp.obj
@@ -335,7 +335,7 @@ src/painter/Painter.obj: src/painter/Painter.cpp.obj
 
 # target to build an object file
 src/painter/Painter.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\slimeballGraphicsLib.dir\build.make CMakeFiles/slimeballGraphicsLib.dir/src/painter/Painter.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Zmultiplier.dir\build.make CMakeFiles/Zmultiplier.dir/src/painter/Painter.cpp.obj
 .PHONY : src/painter/Painter.cpp.obj
 
 src/painter/Painter.i: src/painter/Painter.cpp.i
@@ -343,7 +343,7 @@ src/painter/Painter.i: src/painter/Painter.cpp.i
 
 # target to preprocess a source file
 src/painter/Painter.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\slimeballGraphicsLib.dir\build.make CMakeFiles/slimeballGraphicsLib.dir/src/painter/Painter.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Zmultiplier.dir\build.make CMakeFiles/Zmultiplier.dir/src/painter/Painter.cpp.i
 .PHONY : src/painter/Painter.cpp.i
 
 src/painter/Painter.s: src/painter/Painter.cpp.s
@@ -351,7 +351,7 @@ src/painter/Painter.s: src/painter/Painter.cpp.s
 
 # target to generate assembly for a file
 src/painter/Painter.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\slimeballGraphicsLib.dir\build.make CMakeFiles/slimeballGraphicsLib.dir/src/painter/Painter.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Zmultiplier.dir\build.make CMakeFiles/Zmultiplier.dir/src/painter/Painter.cpp.s
 .PHONY : src/painter/Painter.cpp.s
 
 src/utils/Utils.obj: src/utils/Utils.cpp.obj
@@ -359,7 +359,7 @@ src/utils/Utils.obj: src/utils/Utils.cpp.obj
 
 # target to build an object file
 src/utils/Utils.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\slimeballGraphicsLib.dir\build.make CMakeFiles/slimeballGraphicsLib.dir/src/utils/Utils.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Zmultiplier.dir\build.make CMakeFiles/Zmultiplier.dir/src/utils/Utils.cpp.obj
 .PHONY : src/utils/Utils.cpp.obj
 
 src/utils/Utils.i: src/utils/Utils.cpp.i
@@ -367,7 +367,7 @@ src/utils/Utils.i: src/utils/Utils.cpp.i
 
 # target to preprocess a source file
 src/utils/Utils.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\slimeballGraphicsLib.dir\build.make CMakeFiles/slimeballGraphicsLib.dir/src/utils/Utils.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Zmultiplier.dir\build.make CMakeFiles/Zmultiplier.dir/src/utils/Utils.cpp.i
 .PHONY : src/utils/Utils.cpp.i
 
 src/utils/Utils.s: src/utils/Utils.cpp.s
@@ -375,7 +375,7 @@ src/utils/Utils.s: src/utils/Utils.cpp.s
 
 # target to generate assembly for a file
 src/utils/Utils.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\slimeballGraphicsLib.dir\build.make CMakeFiles/slimeballGraphicsLib.dir/src/utils/Utils.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Zmultiplier.dir\build.make CMakeFiles/Zmultiplier.dir/src/utils/Utils.cpp.s
 .PHONY : src/utils/Utils.cpp.s
 
 src/window/Window.obj: src/window/Window.cpp.obj
@@ -383,7 +383,7 @@ src/window/Window.obj: src/window/Window.cpp.obj
 
 # target to build an object file
 src/window/Window.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\slimeballGraphicsLib.dir\build.make CMakeFiles/slimeballGraphicsLib.dir/src/window/Window.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Zmultiplier.dir\build.make CMakeFiles/Zmultiplier.dir/src/window/Window.cpp.obj
 .PHONY : src/window/Window.cpp.obj
 
 src/window/Window.i: src/window/Window.cpp.i
@@ -391,7 +391,7 @@ src/window/Window.i: src/window/Window.cpp.i
 
 # target to preprocess a source file
 src/window/Window.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\slimeballGraphicsLib.dir\build.make CMakeFiles/slimeballGraphicsLib.dir/src/window/Window.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Zmultiplier.dir\build.make CMakeFiles/Zmultiplier.dir/src/window/Window.cpp.i
 .PHONY : src/window/Window.cpp.i
 
 src/window/Window.s: src/window/Window.cpp.s
@@ -399,7 +399,7 @@ src/window/Window.s: src/window/Window.cpp.s
 
 # target to generate assembly for a file
 src/window/Window.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\slimeballGraphicsLib.dir\build.make CMakeFiles/slimeballGraphicsLib.dir/src/window/Window.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Zmultiplier.dir\build.make CMakeFiles/Zmultiplier.dir/src/window/Window.cpp.s
 .PHONY : src/window/Window.cpp.s
 
 # Help Target
@@ -414,8 +414,8 @@ help:
 	@echo ... install/strip
 	@echo ... list_install_components
 	@echo ... rebuild_cache
+	@echo ... Zmultiplier
 	@echo ... bee.exe
-	@echo ... slimeballGraphicsLib
 	@echo ... src/assets/Font.obj
 	@echo ... src/assets/Font.i
 	@echo ... src/assets/Font.s

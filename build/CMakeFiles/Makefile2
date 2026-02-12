@@ -62,12 +62,12 @@ CMAKE_BINARY_DIR = F:\VSCodeWorkspace\slimeballGraphicLib\build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/slimeballGraphicsLib.dir/all
+all: CMakeFiles/Zmultiplier.dir/all
 all: examples/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/slimeballGraphicsLib.dir/codegen
+codegen: CMakeFiles/Zmultiplier.dir/codegen
 codegen: examples/codegen
 .PHONY : codegen
 
@@ -76,7 +76,7 @@ preinstall: examples/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/slimeballGraphicsLib.dir/clean
+clean: CMakeFiles/Zmultiplier.dir/clean
 clean: examples/clean
 .PHONY : clean
 
@@ -100,50 +100,50 @@ examples/clean: examples/CMakeFiles/bee.exe.dir/clean
 .PHONY : examples/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/slimeballGraphicsLib.dir
+# Target rules for target CMakeFiles/Zmultiplier.dir
 
 # All Build rule for target.
-CMakeFiles/slimeballGraphicsLib.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\slimeballGraphicsLib.dir\build.make CMakeFiles/slimeballGraphicsLib.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\slimeballGraphicsLib.dir\build.make CMakeFiles/slimeballGraphicsLib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=F:\VSCodeWorkspace\slimeballGraphicLib\build\CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12 "Built target slimeballGraphicsLib"
-.PHONY : CMakeFiles/slimeballGraphicsLib.dir/all
+CMakeFiles/Zmultiplier.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Zmultiplier.dir\build.make CMakeFiles/Zmultiplier.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Zmultiplier.dir\build.make CMakeFiles/Zmultiplier.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=F:\VSCodeWorkspace\slimeballGraphicLib\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target Zmultiplier"
+.PHONY : CMakeFiles/Zmultiplier.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/slimeballGraphicsLib.dir/rule: cmake_check_build_system
+CMakeFiles/Zmultiplier.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start F:\VSCodeWorkspace\slimeballGraphicLib\build\CMakeFiles 10
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/slimeballGraphicsLib.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Zmultiplier.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start F:\VSCodeWorkspace\slimeballGraphicLib\build\CMakeFiles 0
-.PHONY : CMakeFiles/slimeballGraphicsLib.dir/rule
+.PHONY : CMakeFiles/Zmultiplier.dir/rule
 
 # Convenience name for target.
-slimeballGraphicsLib: CMakeFiles/slimeballGraphicsLib.dir/rule
-.PHONY : slimeballGraphicsLib
+Zmultiplier: CMakeFiles/Zmultiplier.dir/rule
+.PHONY : Zmultiplier
 
 # codegen rule for target.
-CMakeFiles/slimeballGraphicsLib.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\slimeballGraphicsLib.dir\build.make CMakeFiles/slimeballGraphicsLib.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=F:\VSCodeWorkspace\slimeballGraphicLib\build\CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12 "Finished codegen for target slimeballGraphicsLib"
-.PHONY : CMakeFiles/slimeballGraphicsLib.dir/codegen
+CMakeFiles/Zmultiplier.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Zmultiplier.dir\build.make CMakeFiles/Zmultiplier.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=F:\VSCodeWorkspace\slimeballGraphicLib\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Finished codegen for target Zmultiplier"
+.PHONY : CMakeFiles/Zmultiplier.dir/codegen
 
 # clean rule for target.
-CMakeFiles/slimeballGraphicsLib.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\slimeballGraphicsLib.dir\build.make CMakeFiles/slimeballGraphicsLib.dir/clean
-.PHONY : CMakeFiles/slimeballGraphicsLib.dir/clean
+CMakeFiles/Zmultiplier.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Zmultiplier.dir\build.make CMakeFiles/Zmultiplier.dir/clean
+.PHONY : CMakeFiles/Zmultiplier.dir/clean
 
 #=============================================================================
 # Target rules for target examples/CMakeFiles/bee.exe.dir
 
 # All Build rule for target.
-examples/CMakeFiles/bee.exe.dir/all: CMakeFiles/slimeballGraphicsLib.dir/all
+examples/CMakeFiles/bee.exe.dir/all:
 	$(MAKE) $(MAKESILENT) -f examples\CMakeFiles\bee.exe.dir\build.make examples/CMakeFiles/bee.exe.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples\CMakeFiles\bee.exe.dir\build.make examples/CMakeFiles/bee.exe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=F:\VSCodeWorkspace\slimeballGraphicLib\build\CMakeFiles --progress-num=1,2 "Built target bee.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=F:\VSCodeWorkspace\slimeballGraphicLib\build\CMakeFiles --progress-num=11,12 "Built target bee.exe"
 .PHONY : examples/CMakeFiles/bee.exe.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/bee.exe.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start F:\VSCodeWorkspace\slimeballGraphicLib\build\CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start F:\VSCodeWorkspace\slimeballGraphicLib\build\CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 examples/CMakeFiles/bee.exe.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start F:\VSCodeWorkspace\slimeballGraphicLib\build\CMakeFiles 0
 .PHONY : examples/CMakeFiles/bee.exe.dir/rule
@@ -155,7 +155,7 @@ bee.exe: examples/CMakeFiles/bee.exe.dir/rule
 # codegen rule for target.
 examples/CMakeFiles/bee.exe.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f examples\CMakeFiles\bee.exe.dir\build.make examples/CMakeFiles/bee.exe.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=F:\VSCodeWorkspace\slimeballGraphicLib\build\CMakeFiles --progress-num=1,2 "Finished codegen for target bee.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=F:\VSCodeWorkspace\slimeballGraphicLib\build\CMakeFiles --progress-num=11,12 "Finished codegen for target bee.exe"
 .PHONY : examples/CMakeFiles/bee.exe.dir/codegen
 
 # clean rule for target.

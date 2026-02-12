@@ -1,1 +1,1 @@
- ../lib/libslimeballGraphicsLib.a -lmsimg32 -lgdi32 -luser32 -lgdiplus -lgdi32 -luser32 -lgdiplus -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+ -lslimeballGraphicsLib -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

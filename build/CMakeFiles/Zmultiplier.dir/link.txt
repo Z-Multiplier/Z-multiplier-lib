@@ -1,0 +1,2 @@
+F:\msys64\ucrt64\bin\ar.exe qc lib\libZmultiplier.a CMakeFiles/Zmultiplier.dir/src/core/Color.cpp.obj CMakeFiles/Zmultiplier.dir/src/core/Canvas.cpp.obj CMakeFiles/Zmultiplier.dir/src/window/Window.cpp.obj CMakeFiles/Zmultiplier.dir/src/core/Logger.cpp.obj CMakeFiles/Zmultiplier.dir/src/utils/Utils.cpp.obj CMakeFiles/Zmultiplier.dir/src/painter/Painter.cpp.obj CMakeFiles/Zmultiplier.dir/src/core/EntryPoint.cpp.obj CMakeFiles/Zmultiplier.dir/src/assets/Image.cpp.obj CMakeFiles/Zmultiplier.dir/src/assets/Font.cpp.obj
+F:\msys64\ucrt64\bin\ranlib.exe lib\libZmultiplier.a

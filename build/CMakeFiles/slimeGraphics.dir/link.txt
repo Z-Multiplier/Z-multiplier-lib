@@ -1,2 +1,0 @@
-F:\msys64\ucrt64\bin\ar.exe qc lib\libslimeGraphics.a CMakeFiles/slimeGraphics.dir/src/core/Color.cpp.obj CMakeFiles/slimeGraphics.dir/src/core/Canvas.cpp.obj CMakeFiles/slimeGraphics.dir/src/window/Window.cpp.obj CMakeFiles/slimeGraphics.dir/src/core/Logger.cpp.obj CMakeFiles/slimeGraphics.dir/src/utils/Utils.cpp.obj CMakeFiles/slimeGraphics.dir/src/painter/Painter.cpp.obj CMakeFiles/slimeGraphics.dir/src/core/EntryPoint.cpp.obj
-F:\msys64\ucrt64\bin\ranlib.exe lib\libslimeGraphics.a
