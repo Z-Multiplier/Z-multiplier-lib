@@ -56,10 +56,10 @@ RM = F:\Cmake\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = F:\VSCodeWorkspace\slimeballGraphicLib
+CMAKE_SOURCE_DIR = F:\VSCodeWorkspace\Z-MultiplierLib
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = F:\VSCodeWorkspace\slimeballGraphicLib\build
+CMAKE_BINARY_DIR = F:\VSCodeWorkspace\Z-MultiplierLib\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -131,14 +131,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /d F:\VSCodeWorkspace\slimeballGraphicLib\build && $(CMAKE_COMMAND) -E cmake_progress_start F:\VSCodeWorkspace\slimeballGraphicLib\build\CMakeFiles F:\VSCodeWorkspace\slimeballGraphicLib\build\examples\\CMakeFiles\progress.marks
-	cd /d F:\VSCodeWorkspace\slimeballGraphicLib\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 examples/all
-	$(CMAKE_COMMAND) -E cmake_progress_start F:\VSCodeWorkspace\slimeballGraphicLib\build\CMakeFiles 0
+	cd /d F:\VSCodeWorkspace\Z-MultiplierLib\build && $(CMAKE_COMMAND) -E cmake_progress_start F:\VSCodeWorkspace\Z-MultiplierLib\build\CMakeFiles F:\VSCodeWorkspace\Z-MultiplierLib\build\examples\\CMakeFiles\progress.marks
+	cd /d F:\VSCodeWorkspace\Z-MultiplierLib\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 examples/all
+	$(CMAKE_COMMAND) -E cmake_progress_start F:\VSCodeWorkspace\Z-MultiplierLib\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d F:\VSCodeWorkspace\slimeballGraphicLib\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 examples/clean
+	cd /d F:\VSCodeWorkspace\Z-MultiplierLib\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 examples/clean
 .PHONY : clean
 
 # The main clean target
@@ -147,56 +147,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d F:\VSCodeWorkspace\slimeballGraphicLib\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 examples/preinstall
+	cd /d F:\VSCodeWorkspace\Z-MultiplierLib\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 examples/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d F:\VSCodeWorkspace\slimeballGraphicLib\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 examples/preinstall
+	cd /d F:\VSCodeWorkspace\Z-MultiplierLib\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 examples/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d F:\VSCodeWorkspace\slimeballGraphicLib\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d F:\VSCodeWorkspace\Z-MultiplierLib\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-examples/CMakeFiles/new_year.exe.dir/rule:
-	cd /d F:\VSCodeWorkspace\slimeballGraphicLib\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 examples/CMakeFiles/new_year.exe.dir/rule
-.PHONY : examples/CMakeFiles/new_year.exe.dir/rule
+examples/CMakeFiles/test.exe.dir/rule:
+	cd /d F:\VSCodeWorkspace\Z-MultiplierLib\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 examples/CMakeFiles/test.exe.dir/rule
+.PHONY : examples/CMakeFiles/test.exe.dir/rule
 
 # Convenience name for target.
-new_year.exe: examples/CMakeFiles/new_year.exe.dir/rule
-.PHONY : new_year.exe
+test.exe: examples/CMakeFiles/test.exe.dir/rule
+.PHONY : test.exe
 
 # fast build rule for target.
-new_year.exe/fast:
-	cd /d F:\VSCodeWorkspace\slimeballGraphicLib\build && $(MAKE) $(MAKESILENT) -f examples\CMakeFiles\new_year.exe.dir\build.make examples/CMakeFiles/new_year.exe.dir/build
-.PHONY : new_year.exe/fast
+test.exe/fast:
+	cd /d F:\VSCodeWorkspace\Z-MultiplierLib\build && $(MAKE) $(MAKESILENT) -f examples\CMakeFiles\test.exe.dir\build.make examples/CMakeFiles/test.exe.dir/build
+.PHONY : test.exe/fast
 
-new_year.obj: new_year.cpp.obj
-.PHONY : new_year.obj
+test.obj: test.cpp.obj
+.PHONY : test.obj
 
 # target to build an object file
-new_year.cpp.obj:
-	cd /d F:\VSCodeWorkspace\slimeballGraphicLib\build && $(MAKE) $(MAKESILENT) -f examples\CMakeFiles\new_year.exe.dir\build.make examples/CMakeFiles/new_year.exe.dir/new_year.cpp.obj
-.PHONY : new_year.cpp.obj
+test.cpp.obj:
+	cd /d F:\VSCodeWorkspace\Z-MultiplierLib\build && $(MAKE) $(MAKESILENT) -f examples\CMakeFiles\test.exe.dir\build.make examples/CMakeFiles/test.exe.dir/test.cpp.obj
+.PHONY : test.cpp.obj
 
-new_year.i: new_year.cpp.i
-.PHONY : new_year.i
+test.i: test.cpp.i
+.PHONY : test.i
 
 # target to preprocess a source file
-new_year.cpp.i:
-	cd /d F:\VSCodeWorkspace\slimeballGraphicLib\build && $(MAKE) $(MAKESILENT) -f examples\CMakeFiles\new_year.exe.dir\build.make examples/CMakeFiles/new_year.exe.dir/new_year.cpp.i
-.PHONY : new_year.cpp.i
+test.cpp.i:
+	cd /d F:\VSCodeWorkspace\Z-MultiplierLib\build && $(MAKE) $(MAKESILENT) -f examples\CMakeFiles\test.exe.dir\build.make examples/CMakeFiles/test.exe.dir/test.cpp.i
+.PHONY : test.cpp.i
 
-new_year.s: new_year.cpp.s
-.PHONY : new_year.s
+test.s: test.cpp.s
+.PHONY : test.s
 
 # target to generate assembly for a file
-new_year.cpp.s:
-	cd /d F:\VSCodeWorkspace\slimeballGraphicLib\build && $(MAKE) $(MAKESILENT) -f examples\CMakeFiles\new_year.exe.dir\build.make examples/CMakeFiles/new_year.exe.dir/new_year.cpp.s
-.PHONY : new_year.cpp.s
+test.cpp.s:
+	cd /d F:\VSCodeWorkspace\Z-MultiplierLib\build && $(MAKE) $(MAKESILENT) -f examples\CMakeFiles\test.exe.dir\build.make examples/CMakeFiles/test.exe.dir/test.cpp.s
+.PHONY : test.cpp.s
 
 # Help Target
 help:
@@ -210,10 +210,10 @@ help:
 	@echo ... install/strip
 	@echo ... list_install_components
 	@echo ... rebuild_cache
-	@echo ... new_year.exe
-	@echo ... new_year.obj
-	@echo ... new_year.i
-	@echo ... new_year.s
+	@echo ... test.exe
+	@echo ... test.obj
+	@echo ... test.i
+	@echo ... test.s
 .PHONY : help
 
 
@@ -225,6 +225,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d F:\VSCodeWorkspace\slimeballGraphicLib\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d F:\VSCodeWorkspace\Z-MultiplierLib\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

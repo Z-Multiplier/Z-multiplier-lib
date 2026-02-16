@@ -17,7 +17,7 @@
 Core::logger PainterLogger;
 bool Window::Painter::alphaBlender(int x,int y,int width,int height,const Core::Color &color){
     if(x<0||y<0||width<0||height<0){
-        PainterLogger.traceLog(Core::logger::LOG_WARNING,"Invalid rectangle,This will do literally nothing");
+        PainterLogger.formatLog(Core::logger::LOG_WARNING,"Invalid rectangle,This will do literally nothing:x=%d,y=%d,w=%d,h=%d",x,y,width,height);
         return true;
     }
     if(color.a==0)return true;
@@ -104,6 +104,23 @@ bool Window::Painter::line(Point a,Point b,const Core::Color& color){
     if(a==b){
         PainterLogger.traceLog(Core::logger::LOG_WARNING,"The points are the same,skip this");
         return false;
+    }
+    int x1=a.x,x2=b.x,y1=a.y,y2=b.y;
+    if(x1==x2){
+        int yStart=std::min(y1,y2);
+        int yEnd=std::max(y1,y2);
+        for(int y=yStart;y<=yEnd;++y) {
+            if(!putPixel(x1,y,color)) return false;
+        }
+        return true;
+    }
+    if(y1==y2){
+        int xStart=std::min(x1,x2);
+        int xEnd=std::max(x1,x2);
+        for(int x=xStart;x<=xEnd;++x){
+            if(!putPixel(x,y1,color)) return false;
+        }
+        return true;
     }
     int deltaX=abs(a.x-b.x);
     int deltaY=abs(a.y-b.y);
@@ -464,5 +481,41 @@ bool Window::Painter::putText(char locateMode,const Point& locator,const Assets:
     SetBkMode(this->thisHDC,TRANSPARENT);
     Point locate=calculateDrawPosition(locateMode,locator,size.cx,size.cy);
     TextOutW(this->thisHDC,locate.x,locate.y,text.c_str(),text.length());
+    return true;
+}
+Window::Point calcBezierPoint(double t,const vector<Window::Point>& vec){
+    std::vector<Window::Point> temp=vec;
+    int n=temp.size();
+    for (int r=1;r<n;++r){
+        for (int i=0;i<n-r;++i){
+            temp[i].x=(1-t)*temp[i].x+t*temp[i+1].x;
+            temp[i].y=(1-t)*temp[i].y+t*temp[i+1].y;
+        }
+    }
+    return temp[0];
+}
+bool Window::Painter::bezierCurve(const vector<Point>& points,int accuracy,const Core::Color& color){
+    if(points.size()<=2){
+        PainterLogger.traceLog(Core::logger::LOG_WARNING,"expected more than 3 points,actually <=2,use line() instead");
+        return false;
+    }
+    double step=1.0/accuracy;
+    vector<Point> vec;
+    double t=0.0;
+    Point start=points.at(0);
+    Point end=points.at(points.size()-1);
+    vec.push_back(start);
+    for(int i=1;i<accuracy;i++)
+    {
+        t+=step;
+        vec.push_back(calcBezierPoint(t,points));
+    }
+    vec.push_back(end);
+    for(unsigned int i=0;i<vec.size()-1;i++){
+        bool result=line(vec[i],vec[i+1],color);
+        if(!result){
+            return false;
+        }
+    }
     return true;
 }

@@ -1,6 +1,6 @@
 CMakeFiles/Zmultiplier.dir/src/core/Canvas.cpp.obj: \
- F:\VSCodeWorkspace\slimeballGraphicLib\src\core\Canvas.cpp \
- F:/VSCodeWorkspace/slimeballGraphicLib/include/Canvas.hpp \
+ F:\VSCodeWorkspace\Z-MultiplierLib\src\core\Canvas.cpp \
+ F:/VSCodeWorkspace/Z-MultiplierLib/include/Canvas.hpp \
  F:/msys64/ucrt64/include/c++/15.2.0/vector \
  F:/msys64/ucrt64/include/c++/15.2.0/bits/requires_hosted.h \
  F:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -61,7 +61,7 @@ CMakeFiles/Zmultiplier.dir/src/core/Canvas.cpp.obj: \
  F:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator.h \
  F:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator_args.h \
  F:/msys64/ucrt64/include/c++/15.2.0/tuple \
- F:/VSCodeWorkspace/slimeballGraphicLib/include/Color.hpp \
+ F:/VSCodeWorkspace/Z-MultiplierLib/include/Color.hpp \
  F:/msys64/ucrt64/include/windows.h F:/msys64/ucrt64/include/sdkddkver.h \
  F:/msys64/ucrt64/include/excpt.h \
  F:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdarg.h \
@@ -298,7 +298,7 @@ CMakeFiles/Zmultiplier.dir/src/core/Canvas.cpp.obj: \
  F:/msys64/ucrt64/include/sec_api/stralign_s.h \
  F:/msys64/ucrt64/include/winsvc.h F:/msys64/ucrt64/include/mcx.h \
  F:/msys64/ucrt64/include/imm.h \
- F:/VSCodeWorkspace/slimeballGraphicLib/include/Logger.hpp \
+ F:/VSCodeWorkspace/Z-MultiplierLib/include/Logger.hpp \
  F:/msys64/ucrt64/include/c++/15.2.0/iostream \
  F:/msys64/ucrt64/include/c++/15.2.0/ostream \
  F:/msys64/ucrt64/include/c++/15.2.0/bits/ostream.h \
@@ -399,8 +399,8 @@ CMakeFiles/Zmultiplier.dir/src/core/Canvas.cpp.obj: \
  F:/msys64/ucrt64/include/c++/15.2.0/pstl/glue_memory_defs.h \
  F:/msys64/ucrt64/include/c++/15.2.0/pstl/execution_defs.h \
  F:/msys64/ucrt64/include/c++/15.2.0/chrono \
- F:/VSCodeWorkspace/slimeballGraphicLib/include/Color.hpp \
- F:/VSCodeWorkspace/slimeballGraphicLib/include/Logger.hpp \
+ F:/VSCodeWorkspace/Z-MultiplierLib/include/Color.hpp \
+ F:/VSCodeWorkspace/Z-MultiplierLib/include/Logger.hpp \
  F:/msys64/ucrt64/include/c++/15.2.0/algorithm \
  F:/msys64/ucrt64/include/c++/15.2.0/bits/stl_algo.h \
  F:/msys64/ucrt64/include/c++/15.2.0/bits/algorithmfwd.h \

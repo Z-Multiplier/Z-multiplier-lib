@@ -8,15 +8,15 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "F:/VSCodeWorkspace/slimeballGraphicLib/src/assets/Font.cpp" "CMakeFiles/Zmultiplier.dir/src/assets/Font.cpp.obj" "gcc" "CMakeFiles/Zmultiplier.dir/src/assets/Font.cpp.obj.d"
-  "F:/VSCodeWorkspace/slimeballGraphicLib/src/assets/Image.cpp" "CMakeFiles/Zmultiplier.dir/src/assets/Image.cpp.obj" "gcc" "CMakeFiles/Zmultiplier.dir/src/assets/Image.cpp.obj.d"
-  "F:/VSCodeWorkspace/slimeballGraphicLib/src/core/Canvas.cpp" "CMakeFiles/Zmultiplier.dir/src/core/Canvas.cpp.obj" "gcc" "CMakeFiles/Zmultiplier.dir/src/core/Canvas.cpp.obj.d"
-  "F:/VSCodeWorkspace/slimeballGraphicLib/src/core/Color.cpp" "CMakeFiles/Zmultiplier.dir/src/core/Color.cpp.obj" "gcc" "CMakeFiles/Zmultiplier.dir/src/core/Color.cpp.obj.d"
-  "F:/VSCodeWorkspace/slimeballGraphicLib/src/core/EntryPoint.cpp" "CMakeFiles/Zmultiplier.dir/src/core/EntryPoint.cpp.obj" "gcc" "CMakeFiles/Zmultiplier.dir/src/core/EntryPoint.cpp.obj.d"
-  "F:/VSCodeWorkspace/slimeballGraphicLib/src/core/Logger.cpp" "CMakeFiles/Zmultiplier.dir/src/core/Logger.cpp.obj" "gcc" "CMakeFiles/Zmultiplier.dir/src/core/Logger.cpp.obj.d"
-  "F:/VSCodeWorkspace/slimeballGraphicLib/src/painter/Painter.cpp" "CMakeFiles/Zmultiplier.dir/src/painter/Painter.cpp.obj" "gcc" "CMakeFiles/Zmultiplier.dir/src/painter/Painter.cpp.obj.d"
-  "F:/VSCodeWorkspace/slimeballGraphicLib/src/utils/Utils.cpp" "CMakeFiles/Zmultiplier.dir/src/utils/Utils.cpp.obj" "gcc" "CMakeFiles/Zmultiplier.dir/src/utils/Utils.cpp.obj.d"
-  "F:/VSCodeWorkspace/slimeballGraphicLib/src/window/Window.cpp" "CMakeFiles/Zmultiplier.dir/src/window/Window.cpp.obj" "gcc" "CMakeFiles/Zmultiplier.dir/src/window/Window.cpp.obj.d"
+  "F:/VSCodeWorkspace/Z-MultiplierLib/src/assets/Font.cpp" "CMakeFiles/Zmultiplier.dir/src/assets/Font.cpp.obj" "gcc" "CMakeFiles/Zmultiplier.dir/src/assets/Font.cpp.obj.d"
+  "F:/VSCodeWorkspace/Z-MultiplierLib/src/assets/Image.cpp" "CMakeFiles/Zmultiplier.dir/src/assets/Image.cpp.obj" "gcc" "CMakeFiles/Zmultiplier.dir/src/assets/Image.cpp.obj.d"
+  "F:/VSCodeWorkspace/Z-MultiplierLib/src/core/Canvas.cpp" "CMakeFiles/Zmultiplier.dir/src/core/Canvas.cpp.obj" "gcc" "CMakeFiles/Zmultiplier.dir/src/core/Canvas.cpp.obj.d"
+  "F:/VSCodeWorkspace/Z-MultiplierLib/src/core/Color.cpp" "CMakeFiles/Zmultiplier.dir/src/core/Color.cpp.obj" "gcc" "CMakeFiles/Zmultiplier.dir/src/core/Color.cpp.obj.d"
+  "F:/VSCodeWorkspace/Z-MultiplierLib/src/core/EntryPoint.cpp" "CMakeFiles/Zmultiplier.dir/src/core/EntryPoint.cpp.obj" "gcc" "CMakeFiles/Zmultiplier.dir/src/core/EntryPoint.cpp.obj.d"
+  "F:/VSCodeWorkspace/Z-MultiplierLib/src/core/Logger.cpp" "CMakeFiles/Zmultiplier.dir/src/core/Logger.cpp.obj" "gcc" "CMakeFiles/Zmultiplier.dir/src/core/Logger.cpp.obj.d"
+  "F:/VSCodeWorkspace/Z-MultiplierLib/src/painter/Painter.cpp" "CMakeFiles/Zmultiplier.dir/src/painter/Painter.cpp.obj" "gcc" "CMakeFiles/Zmultiplier.dir/src/painter/Painter.cpp.obj.d"
+  "F:/VSCodeWorkspace/Z-MultiplierLib/src/utils/Utils.cpp" "CMakeFiles/Zmultiplier.dir/src/utils/Utils.cpp.obj" "gcc" "CMakeFiles/Zmultiplier.dir/src/utils/Utils.cpp.obj.d"
+  "F:/VSCodeWorkspace/Z-MultiplierLib/src/window/Window.cpp" "CMakeFiles/Zmultiplier.dir/src/window/Window.cpp.obj" "gcc" "CMakeFiles/Zmultiplier.dir/src/window/Window.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

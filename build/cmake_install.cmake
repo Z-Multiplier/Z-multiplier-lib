@@ -1,4 +1,4 @@
-# Install script for directory: F:/VSCodeWorkspace/slimeballGraphicLib
+# Install script for directory: F:/VSCodeWorkspace/Z-MultiplierLib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,22 +38,22 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "F:/VSCodeWorkspace/slimeballGraphicLib/build/lib/libZmultiplier.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "F:/VSCodeWorkspace/Z-MultiplierLib/build/lib/libZmultiplier.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "F:/VSCodeWorkspace/slimeballGraphicLib/include/Zmultiplier")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "F:/VSCodeWorkspace/Z-MultiplierLib/include/Zmultiplier")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("F:/VSCodeWorkspace/slimeballGraphicLib/build/examples/cmake_install.cmake")
+  include("F:/VSCodeWorkspace/Z-MultiplierLib/build/examples/cmake_install.cmake")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "F:/VSCodeWorkspace/slimeballGraphicLib/build/install_local_manifest.txt"
+  file(WRITE "F:/VSCodeWorkspace/Z-MultiplierLib/build/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -69,6 +69,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "F:/VSCodeWorkspace/slimeballGraphicLib/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "F:/VSCodeWorkspace/Z-MultiplierLib/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

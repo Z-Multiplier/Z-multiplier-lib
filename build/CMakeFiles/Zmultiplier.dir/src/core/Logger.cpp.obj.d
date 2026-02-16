@@ -1,6 +1,6 @@
 CMakeFiles/Zmultiplier.dir/src/core/Logger.cpp.obj: \
- F:\VSCodeWorkspace\slimeballGraphicLib\src\core\Logger.cpp \
- F:/VSCodeWorkspace/slimeballGraphicLib/include/Logger.hpp \
+ F:\VSCodeWorkspace\Z-MultiplierLib\src\core\Logger.cpp \
+ F:/VSCodeWorkspace/Z-MultiplierLib/include/Logger.hpp \
  F:/msys64/ucrt64/include/c++/15.2.0/iostream \
  F:/msys64/ucrt64/include/c++/15.2.0/bits/requires_hosted.h \
  F:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \

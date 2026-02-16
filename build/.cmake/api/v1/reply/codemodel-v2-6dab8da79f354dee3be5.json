@@ -61,15 +61,15 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Zmultiplier::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Zmultiplier-Debug-7a64e3db68ba9bc7f8bc.json",
+					"jsonFile" : "target-Zmultiplier-Debug-a7613476a9d12bb662ac.json",
 					"name" : "Zmultiplier",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
-					"id" : "new_year.exe::@714eac15f71a94114fdf",
-					"jsonFile" : "target-new_year.exe-Debug-6a2b72ee650d99552be7.json",
-					"name" : "new_year.exe",
+					"id" : "test.exe::@714eac15f71a94114fdf",
+					"jsonFile" : "target-test.exe-Debug-ef0ca843ac747cd53d66.json",
+					"name" : "test.exe",
 					"projectIndex" : 0
 				}
 			]
@@ -78,8 +78,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "F:/VSCodeWorkspace/slimeballGraphicLib/build",
-		"source" : "F:/VSCodeWorkspace/slimeballGraphicLib"
+		"build" : "F:/VSCodeWorkspace/Z-MultiplierLib/build",
+		"source" : "F:/VSCodeWorkspace/Z-MultiplierLib"
 	},
 	"version" : 
 	{

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "F:/VSCodeWorkspace/slimeballGraphicLib/examples/test.cpp" "examples/CMakeFiles/test.exe.dir/test.cpp.obj" "gcc" "examples/CMakeFiles/test.exe.dir/test.cpp.obj.d"
+  "F:/VSCodeWorkspace/Z-MultiplierLib/examples/test.cpp" "examples/CMakeFiles/test.exe.dir/test.cpp.obj" "gcc" "examples/CMakeFiles/test.exe.dir/test.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

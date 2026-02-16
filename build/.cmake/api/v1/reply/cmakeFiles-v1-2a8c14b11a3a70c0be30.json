@@ -148,8 +148,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "F:/VSCodeWorkspace/slimeballGraphicLib/build",
-		"source" : "F:/VSCodeWorkspace/slimeballGraphicLib"
+		"build" : "F:/VSCodeWorkspace/Z-MultiplierLib/build",
+		"source" : "F:/VSCodeWorkspace/Z-MultiplierLib"
 	},
 	"version" : 
 	{

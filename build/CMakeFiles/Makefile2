@@ -53,10 +53,10 @@ RM = F:\Cmake\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = F:\VSCodeWorkspace\slimeballGraphicLib
+CMAKE_SOURCE_DIR = F:\VSCodeWorkspace\Z-MultiplierLib
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = F:\VSCodeWorkspace\slimeballGraphicLib\build
+CMAKE_BINARY_DIR = F:\VSCodeWorkspace\Z-MultiplierLib\build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -84,11 +84,11 @@ clean: examples/clean
 # Directory level rules for directory examples
 
 # Recursive "all" directory target.
-examples/all: examples/CMakeFiles/new_year.exe.dir/all
+examples/all: examples/CMakeFiles/test.exe.dir/all
 .PHONY : examples/all
 
 # Recursive "codegen" directory target.
-examples/codegen: examples/CMakeFiles/new_year.exe.dir/codegen
+examples/codegen: examples/CMakeFiles/test.exe.dir/codegen
 .PHONY : examples/codegen
 
 # Recursive "preinstall" directory target.
@@ -96,7 +96,7 @@ examples/preinstall:
 .PHONY : examples/preinstall
 
 # Recursive "clean" directory target.
-examples/clean: examples/CMakeFiles/new_year.exe.dir/clean
+examples/clean: examples/CMakeFiles/test.exe.dir/clean
 .PHONY : examples/clean
 
 #=============================================================================
@@ -106,14 +106,14 @@ examples/clean: examples/CMakeFiles/new_year.exe.dir/clean
 CMakeFiles/Zmultiplier.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Zmultiplier.dir\build.make CMakeFiles/Zmultiplier.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Zmultiplier.dir\build.make CMakeFiles/Zmultiplier.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=F:\VSCodeWorkspace\slimeballGraphicLib\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target Zmultiplier"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=F:\VSCodeWorkspace\Z-MultiplierLib\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target Zmultiplier"
 .PHONY : CMakeFiles/Zmultiplier.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Zmultiplier.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start F:\VSCodeWorkspace\slimeballGraphicLib\build\CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start F:\VSCodeWorkspace\Z-MultiplierLib\build\CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Zmultiplier.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start F:\VSCodeWorkspace\slimeballGraphicLib\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start F:\VSCodeWorkspace\Z-MultiplierLib\build\CMakeFiles 0
 .PHONY : CMakeFiles/Zmultiplier.dir/rule
 
 # Convenience name for target.
@@ -123,7 +123,7 @@ Zmultiplier: CMakeFiles/Zmultiplier.dir/rule
 # codegen rule for target.
 CMakeFiles/Zmultiplier.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Zmultiplier.dir\build.make CMakeFiles/Zmultiplier.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=F:\VSCodeWorkspace\slimeballGraphicLib\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Finished codegen for target Zmultiplier"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=F:\VSCodeWorkspace\Z-MultiplierLib\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Finished codegen for target Zmultiplier"
 .PHONY : CMakeFiles/Zmultiplier.dir/codegen
 
 # clean rule for target.
@@ -132,36 +132,36 @@ CMakeFiles/Zmultiplier.dir/clean:
 .PHONY : CMakeFiles/Zmultiplier.dir/clean
 
 #=============================================================================
-# Target rules for target examples/CMakeFiles/new_year.exe.dir
+# Target rules for target examples/CMakeFiles/test.exe.dir
 
 # All Build rule for target.
-examples/CMakeFiles/new_year.exe.dir/all: CMakeFiles/Zmultiplier.dir/all
-	$(MAKE) $(MAKESILENT) -f examples\CMakeFiles\new_year.exe.dir\build.make examples/CMakeFiles/new_year.exe.dir/depend
-	$(MAKE) $(MAKESILENT) -f examples\CMakeFiles\new_year.exe.dir\build.make examples/CMakeFiles/new_year.exe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=F:\VSCodeWorkspace\slimeballGraphicLib\build\CMakeFiles --progress-num=11,12 "Built target new_year.exe"
-.PHONY : examples/CMakeFiles/new_year.exe.dir/all
+examples/CMakeFiles/test.exe.dir/all: CMakeFiles/Zmultiplier.dir/all
+	$(MAKE) $(MAKESILENT) -f examples\CMakeFiles\test.exe.dir\build.make examples/CMakeFiles/test.exe.dir/depend
+	$(MAKE) $(MAKESILENT) -f examples\CMakeFiles\test.exe.dir\build.make examples/CMakeFiles/test.exe.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=F:\VSCodeWorkspace\Z-MultiplierLib\build\CMakeFiles --progress-num=11,12 "Built target test.exe"
+.PHONY : examples/CMakeFiles/test.exe.dir/all
 
 # Build rule for subdir invocation for target.
-examples/CMakeFiles/new_year.exe.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start F:\VSCodeWorkspace\slimeballGraphicLib\build\CMakeFiles 12
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 examples/CMakeFiles/new_year.exe.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start F:\VSCodeWorkspace\slimeballGraphicLib\build\CMakeFiles 0
-.PHONY : examples/CMakeFiles/new_year.exe.dir/rule
+examples/CMakeFiles/test.exe.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start F:\VSCodeWorkspace\Z-MultiplierLib\build\CMakeFiles 12
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 examples/CMakeFiles/test.exe.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start F:\VSCodeWorkspace\Z-MultiplierLib\build\CMakeFiles 0
+.PHONY : examples/CMakeFiles/test.exe.dir/rule
 
 # Convenience name for target.
-new_year.exe: examples/CMakeFiles/new_year.exe.dir/rule
-.PHONY : new_year.exe
+test.exe: examples/CMakeFiles/test.exe.dir/rule
+.PHONY : test.exe
 
 # codegen rule for target.
-examples/CMakeFiles/new_year.exe.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f examples\CMakeFiles\new_year.exe.dir\build.make examples/CMakeFiles/new_year.exe.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=F:\VSCodeWorkspace\slimeballGraphicLib\build\CMakeFiles --progress-num=11,12 "Finished codegen for target new_year.exe"
-.PHONY : examples/CMakeFiles/new_year.exe.dir/codegen
+examples/CMakeFiles/test.exe.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f examples\CMakeFiles\test.exe.dir\build.make examples/CMakeFiles/test.exe.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=F:\VSCodeWorkspace\Z-MultiplierLib\build\CMakeFiles --progress-num=11,12 "Finished codegen for target test.exe"
+.PHONY : examples/CMakeFiles/test.exe.dir/codegen
 
 # clean rule for target.
-examples/CMakeFiles/new_year.exe.dir/clean:
-	$(MAKE) $(MAKESILENT) -f examples\CMakeFiles\new_year.exe.dir\build.make examples/CMakeFiles/new_year.exe.dir/clean
-.PHONY : examples/CMakeFiles/new_year.exe.dir/clean
+examples/CMakeFiles/test.exe.dir/clean:
+	$(MAKE) $(MAKESILENT) -f examples\CMakeFiles\test.exe.dir\build.make examples/CMakeFiles/test.exe.dir/clean
+.PHONY : examples/CMakeFiles/test.exe.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

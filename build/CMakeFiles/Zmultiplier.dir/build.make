@@ -52,10 +52,10 @@ RM = F:\Cmake\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = F:\VSCodeWorkspace\slimeballGraphicLib
+CMAKE_SOURCE_DIR = F:\VSCodeWorkspace\Z-MultiplierLib
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = F:\VSCodeWorkspace\slimeballGraphicLib\build
+CMAKE_BINARY_DIR = F:\VSCodeWorkspace\Z-MultiplierLib\build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Zmultiplier.dir/depend.make
@@ -73,138 +73,138 @@ CMakeFiles/Zmultiplier.dir/codegen:
 
 CMakeFiles/Zmultiplier.dir/src/core/Color.cpp.obj: CMakeFiles/Zmultiplier.dir/flags.make
 CMakeFiles/Zmultiplier.dir/src/core/Color.cpp.obj: CMakeFiles/Zmultiplier.dir/includes_CXX.rsp
-CMakeFiles/Zmultiplier.dir/src/core/Color.cpp.obj: F:/VSCodeWorkspace/slimeballGraphicLib/src/core/Color.cpp
+CMakeFiles/Zmultiplier.dir/src/core/Color.cpp.obj: F:/VSCodeWorkspace/Z-MultiplierLib/src/core/Color.cpp
 CMakeFiles/Zmultiplier.dir/src/core/Color.cpp.obj: CMakeFiles/Zmultiplier.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\VSCodeWorkspace\slimeballGraphicLib\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Zmultiplier.dir/src/core/Color.cpp.obj"
-	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Zmultiplier.dir/src/core/Color.cpp.obj -MF CMakeFiles\Zmultiplier.dir\src\core\Color.cpp.obj.d -o CMakeFiles\Zmultiplier.dir\src\core\Color.cpp.obj -c F:\VSCodeWorkspace\slimeballGraphicLib\src\core\Color.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\VSCodeWorkspace\Z-MultiplierLib\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Zmultiplier.dir/src/core/Color.cpp.obj"
+	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Zmultiplier.dir/src/core/Color.cpp.obj -MF CMakeFiles\Zmultiplier.dir\src\core\Color.cpp.obj.d -o CMakeFiles\Zmultiplier.dir\src\core\Color.cpp.obj -c F:\VSCodeWorkspace\Z-MultiplierLib\src\core\Color.cpp
 
 CMakeFiles/Zmultiplier.dir/src/core/Color.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Zmultiplier.dir/src/core/Color.cpp.i"
-	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\VSCodeWorkspace\slimeballGraphicLib\src\core\Color.cpp > CMakeFiles\Zmultiplier.dir\src\core\Color.cpp.i
+	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\VSCodeWorkspace\Z-MultiplierLib\src\core\Color.cpp > CMakeFiles\Zmultiplier.dir\src\core\Color.cpp.i
 
 CMakeFiles/Zmultiplier.dir/src/core/Color.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Zmultiplier.dir/src/core/Color.cpp.s"
-	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\VSCodeWorkspace\slimeballGraphicLib\src\core\Color.cpp -o CMakeFiles\Zmultiplier.dir\src\core\Color.cpp.s
+	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\VSCodeWorkspace\Z-MultiplierLib\src\core\Color.cpp -o CMakeFiles\Zmultiplier.dir\src\core\Color.cpp.s
 
 CMakeFiles/Zmultiplier.dir/src/core/Canvas.cpp.obj: CMakeFiles/Zmultiplier.dir/flags.make
 CMakeFiles/Zmultiplier.dir/src/core/Canvas.cpp.obj: CMakeFiles/Zmultiplier.dir/includes_CXX.rsp
-CMakeFiles/Zmultiplier.dir/src/core/Canvas.cpp.obj: F:/VSCodeWorkspace/slimeballGraphicLib/src/core/Canvas.cpp
+CMakeFiles/Zmultiplier.dir/src/core/Canvas.cpp.obj: F:/VSCodeWorkspace/Z-MultiplierLib/src/core/Canvas.cpp
 CMakeFiles/Zmultiplier.dir/src/core/Canvas.cpp.obj: CMakeFiles/Zmultiplier.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\VSCodeWorkspace\slimeballGraphicLib\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Zmultiplier.dir/src/core/Canvas.cpp.obj"
-	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Zmultiplier.dir/src/core/Canvas.cpp.obj -MF CMakeFiles\Zmultiplier.dir\src\core\Canvas.cpp.obj.d -o CMakeFiles\Zmultiplier.dir\src\core\Canvas.cpp.obj -c F:\VSCodeWorkspace\slimeballGraphicLib\src\core\Canvas.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\VSCodeWorkspace\Z-MultiplierLib\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Zmultiplier.dir/src/core/Canvas.cpp.obj"
+	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Zmultiplier.dir/src/core/Canvas.cpp.obj -MF CMakeFiles\Zmultiplier.dir\src\core\Canvas.cpp.obj.d -o CMakeFiles\Zmultiplier.dir\src\core\Canvas.cpp.obj -c F:\VSCodeWorkspace\Z-MultiplierLib\src\core\Canvas.cpp
 
 CMakeFiles/Zmultiplier.dir/src/core/Canvas.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Zmultiplier.dir/src/core/Canvas.cpp.i"
-	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\VSCodeWorkspace\slimeballGraphicLib\src\core\Canvas.cpp > CMakeFiles\Zmultiplier.dir\src\core\Canvas.cpp.i
+	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\VSCodeWorkspace\Z-MultiplierLib\src\core\Canvas.cpp > CMakeFiles\Zmultiplier.dir\src\core\Canvas.cpp.i
 
 CMakeFiles/Zmultiplier.dir/src/core/Canvas.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Zmultiplier.dir/src/core/Canvas.cpp.s"
-	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\VSCodeWorkspace\slimeballGraphicLib\src\core\Canvas.cpp -o CMakeFiles\Zmultiplier.dir\src\core\Canvas.cpp.s
+	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\VSCodeWorkspace\Z-MultiplierLib\src\core\Canvas.cpp -o CMakeFiles\Zmultiplier.dir\src\core\Canvas.cpp.s
 
 CMakeFiles/Zmultiplier.dir/src/window/Window.cpp.obj: CMakeFiles/Zmultiplier.dir/flags.make
 CMakeFiles/Zmultiplier.dir/src/window/Window.cpp.obj: CMakeFiles/Zmultiplier.dir/includes_CXX.rsp
-CMakeFiles/Zmultiplier.dir/src/window/Window.cpp.obj: F:/VSCodeWorkspace/slimeballGraphicLib/src/window/Window.cpp
+CMakeFiles/Zmultiplier.dir/src/window/Window.cpp.obj: F:/VSCodeWorkspace/Z-MultiplierLib/src/window/Window.cpp
 CMakeFiles/Zmultiplier.dir/src/window/Window.cpp.obj: CMakeFiles/Zmultiplier.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\VSCodeWorkspace\slimeballGraphicLib\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Zmultiplier.dir/src/window/Window.cpp.obj"
-	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Zmultiplier.dir/src/window/Window.cpp.obj -MF CMakeFiles\Zmultiplier.dir\src\window\Window.cpp.obj.d -o CMakeFiles\Zmultiplier.dir\src\window\Window.cpp.obj -c F:\VSCodeWorkspace\slimeballGraphicLib\src\window\Window.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\VSCodeWorkspace\Z-MultiplierLib\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Zmultiplier.dir/src/window/Window.cpp.obj"
+	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Zmultiplier.dir/src/window/Window.cpp.obj -MF CMakeFiles\Zmultiplier.dir\src\window\Window.cpp.obj.d -o CMakeFiles\Zmultiplier.dir\src\window\Window.cpp.obj -c F:\VSCodeWorkspace\Z-MultiplierLib\src\window\Window.cpp
 
 CMakeFiles/Zmultiplier.dir/src/window/Window.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Zmultiplier.dir/src/window/Window.cpp.i"
-	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\VSCodeWorkspace\slimeballGraphicLib\src\window\Window.cpp > CMakeFiles\Zmultiplier.dir\src\window\Window.cpp.i
+	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\VSCodeWorkspace\Z-MultiplierLib\src\window\Window.cpp > CMakeFiles\Zmultiplier.dir\src\window\Window.cpp.i
 
 CMakeFiles/Zmultiplier.dir/src/window/Window.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Zmultiplier.dir/src/window/Window.cpp.s"
-	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\VSCodeWorkspace\slimeballGraphicLib\src\window\Window.cpp -o CMakeFiles\Zmultiplier.dir\src\window\Window.cpp.s
+	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\VSCodeWorkspace\Z-MultiplierLib\src\window\Window.cpp -o CMakeFiles\Zmultiplier.dir\src\window\Window.cpp.s
 
 CMakeFiles/Zmultiplier.dir/src/core/Logger.cpp.obj: CMakeFiles/Zmultiplier.dir/flags.make
 CMakeFiles/Zmultiplier.dir/src/core/Logger.cpp.obj: CMakeFiles/Zmultiplier.dir/includes_CXX.rsp
-CMakeFiles/Zmultiplier.dir/src/core/Logger.cpp.obj: F:/VSCodeWorkspace/slimeballGraphicLib/src/core/Logger.cpp
+CMakeFiles/Zmultiplier.dir/src/core/Logger.cpp.obj: F:/VSCodeWorkspace/Z-MultiplierLib/src/core/Logger.cpp
 CMakeFiles/Zmultiplier.dir/src/core/Logger.cpp.obj: CMakeFiles/Zmultiplier.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\VSCodeWorkspace\slimeballGraphicLib\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Zmultiplier.dir/src/core/Logger.cpp.obj"
-	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Zmultiplier.dir/src/core/Logger.cpp.obj -MF CMakeFiles\Zmultiplier.dir\src\core\Logger.cpp.obj.d -o CMakeFiles\Zmultiplier.dir\src\core\Logger.cpp.obj -c F:\VSCodeWorkspace\slimeballGraphicLib\src\core\Logger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\VSCodeWorkspace\Z-MultiplierLib\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Zmultiplier.dir/src/core/Logger.cpp.obj"
+	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Zmultiplier.dir/src/core/Logger.cpp.obj -MF CMakeFiles\Zmultiplier.dir\src\core\Logger.cpp.obj.d -o CMakeFiles\Zmultiplier.dir\src\core\Logger.cpp.obj -c F:\VSCodeWorkspace\Z-MultiplierLib\src\core\Logger.cpp
 
 CMakeFiles/Zmultiplier.dir/src/core/Logger.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Zmultiplier.dir/src/core/Logger.cpp.i"
-	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\VSCodeWorkspace\slimeballGraphicLib\src\core\Logger.cpp > CMakeFiles\Zmultiplier.dir\src\core\Logger.cpp.i
+	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\VSCodeWorkspace\Z-MultiplierLib\src\core\Logger.cpp > CMakeFiles\Zmultiplier.dir\src\core\Logger.cpp.i
 
 CMakeFiles/Zmultiplier.dir/src/core/Logger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Zmultiplier.dir/src/core/Logger.cpp.s"
-	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\VSCodeWorkspace\slimeballGraphicLib\src\core\Logger.cpp -o CMakeFiles\Zmultiplier.dir\src\core\Logger.cpp.s
+	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\VSCodeWorkspace\Z-MultiplierLib\src\core\Logger.cpp -o CMakeFiles\Zmultiplier.dir\src\core\Logger.cpp.s
 
 CMakeFiles/Zmultiplier.dir/src/utils/Utils.cpp.obj: CMakeFiles/Zmultiplier.dir/flags.make
 CMakeFiles/Zmultiplier.dir/src/utils/Utils.cpp.obj: CMakeFiles/Zmultiplier.dir/includes_CXX.rsp
-CMakeFiles/Zmultiplier.dir/src/utils/Utils.cpp.obj: F:/VSCodeWorkspace/slimeballGraphicLib/src/utils/Utils.cpp
+CMakeFiles/Zmultiplier.dir/src/utils/Utils.cpp.obj: F:/VSCodeWorkspace/Z-MultiplierLib/src/utils/Utils.cpp
 CMakeFiles/Zmultiplier.dir/src/utils/Utils.cpp.obj: CMakeFiles/Zmultiplier.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\VSCodeWorkspace\slimeballGraphicLib\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Zmultiplier.dir/src/utils/Utils.cpp.obj"
-	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Zmultiplier.dir/src/utils/Utils.cpp.obj -MF CMakeFiles\Zmultiplier.dir\src\utils\Utils.cpp.obj.d -o CMakeFiles\Zmultiplier.dir\src\utils\Utils.cpp.obj -c F:\VSCodeWorkspace\slimeballGraphicLib\src\utils\Utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\VSCodeWorkspace\Z-MultiplierLib\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Zmultiplier.dir/src/utils/Utils.cpp.obj"
+	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Zmultiplier.dir/src/utils/Utils.cpp.obj -MF CMakeFiles\Zmultiplier.dir\src\utils\Utils.cpp.obj.d -o CMakeFiles\Zmultiplier.dir\src\utils\Utils.cpp.obj -c F:\VSCodeWorkspace\Z-MultiplierLib\src\utils\Utils.cpp
 
 CMakeFiles/Zmultiplier.dir/src/utils/Utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Zmultiplier.dir/src/utils/Utils.cpp.i"
-	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\VSCodeWorkspace\slimeballGraphicLib\src\utils\Utils.cpp > CMakeFiles\Zmultiplier.dir\src\utils\Utils.cpp.i
+	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\VSCodeWorkspace\Z-MultiplierLib\src\utils\Utils.cpp > CMakeFiles\Zmultiplier.dir\src\utils\Utils.cpp.i
 
 CMakeFiles/Zmultiplier.dir/src/utils/Utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Zmultiplier.dir/src/utils/Utils.cpp.s"
-	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\VSCodeWorkspace\slimeballGraphicLib\src\utils\Utils.cpp -o CMakeFiles\Zmultiplier.dir\src\utils\Utils.cpp.s
+	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\VSCodeWorkspace\Z-MultiplierLib\src\utils\Utils.cpp -o CMakeFiles\Zmultiplier.dir\src\utils\Utils.cpp.s
 
 CMakeFiles/Zmultiplier.dir/src/painter/Painter.cpp.obj: CMakeFiles/Zmultiplier.dir/flags.make
 CMakeFiles/Zmultiplier.dir/src/painter/Painter.cpp.obj: CMakeFiles/Zmultiplier.dir/includes_CXX.rsp
-CMakeFiles/Zmultiplier.dir/src/painter/Painter.cpp.obj: F:/VSCodeWorkspace/slimeballGraphicLib/src/painter/Painter.cpp
+CMakeFiles/Zmultiplier.dir/src/painter/Painter.cpp.obj: F:/VSCodeWorkspace/Z-MultiplierLib/src/painter/Painter.cpp
 CMakeFiles/Zmultiplier.dir/src/painter/Painter.cpp.obj: CMakeFiles/Zmultiplier.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\VSCodeWorkspace\slimeballGraphicLib\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Zmultiplier.dir/src/painter/Painter.cpp.obj"
-	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Zmultiplier.dir/src/painter/Painter.cpp.obj -MF CMakeFiles\Zmultiplier.dir\src\painter\Painter.cpp.obj.d -o CMakeFiles\Zmultiplier.dir\src\painter\Painter.cpp.obj -c F:\VSCodeWorkspace\slimeballGraphicLib\src\painter\Painter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\VSCodeWorkspace\Z-MultiplierLib\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Zmultiplier.dir/src/painter/Painter.cpp.obj"
+	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Zmultiplier.dir/src/painter/Painter.cpp.obj -MF CMakeFiles\Zmultiplier.dir\src\painter\Painter.cpp.obj.d -o CMakeFiles\Zmultiplier.dir\src\painter\Painter.cpp.obj -c F:\VSCodeWorkspace\Z-MultiplierLib\src\painter\Painter.cpp
 
 CMakeFiles/Zmultiplier.dir/src/painter/Painter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Zmultiplier.dir/src/painter/Painter.cpp.i"
-	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\VSCodeWorkspace\slimeballGraphicLib\src\painter\Painter.cpp > CMakeFiles\Zmultiplier.dir\src\painter\Painter.cpp.i
+	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\VSCodeWorkspace\Z-MultiplierLib\src\painter\Painter.cpp > CMakeFiles\Zmultiplier.dir\src\painter\Painter.cpp.i
 
 CMakeFiles/Zmultiplier.dir/src/painter/Painter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Zmultiplier.dir/src/painter/Painter.cpp.s"
-	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\VSCodeWorkspace\slimeballGraphicLib\src\painter\Painter.cpp -o CMakeFiles\Zmultiplier.dir\src\painter\Painter.cpp.s
+	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\VSCodeWorkspace\Z-MultiplierLib\src\painter\Painter.cpp -o CMakeFiles\Zmultiplier.dir\src\painter\Painter.cpp.s
 
 CMakeFiles/Zmultiplier.dir/src/core/EntryPoint.cpp.obj: CMakeFiles/Zmultiplier.dir/flags.make
 CMakeFiles/Zmultiplier.dir/src/core/EntryPoint.cpp.obj: CMakeFiles/Zmultiplier.dir/includes_CXX.rsp
-CMakeFiles/Zmultiplier.dir/src/core/EntryPoint.cpp.obj: F:/VSCodeWorkspace/slimeballGraphicLib/src/core/EntryPoint.cpp
+CMakeFiles/Zmultiplier.dir/src/core/EntryPoint.cpp.obj: F:/VSCodeWorkspace/Z-MultiplierLib/src/core/EntryPoint.cpp
 CMakeFiles/Zmultiplier.dir/src/core/EntryPoint.cpp.obj: CMakeFiles/Zmultiplier.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\VSCodeWorkspace\slimeballGraphicLib\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Zmultiplier.dir/src/core/EntryPoint.cpp.obj"
-	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Zmultiplier.dir/src/core/EntryPoint.cpp.obj -MF CMakeFiles\Zmultiplier.dir\src\core\EntryPoint.cpp.obj.d -o CMakeFiles\Zmultiplier.dir\src\core\EntryPoint.cpp.obj -c F:\VSCodeWorkspace\slimeballGraphicLib\src\core\EntryPoint.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\VSCodeWorkspace\Z-MultiplierLib\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Zmultiplier.dir/src/core/EntryPoint.cpp.obj"
+	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Zmultiplier.dir/src/core/EntryPoint.cpp.obj -MF CMakeFiles\Zmultiplier.dir\src\core\EntryPoint.cpp.obj.d -o CMakeFiles\Zmultiplier.dir\src\core\EntryPoint.cpp.obj -c F:\VSCodeWorkspace\Z-MultiplierLib\src\core\EntryPoint.cpp
 
 CMakeFiles/Zmultiplier.dir/src/core/EntryPoint.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Zmultiplier.dir/src/core/EntryPoint.cpp.i"
-	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\VSCodeWorkspace\slimeballGraphicLib\src\core\EntryPoint.cpp > CMakeFiles\Zmultiplier.dir\src\core\EntryPoint.cpp.i
+	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\VSCodeWorkspace\Z-MultiplierLib\src\core\EntryPoint.cpp > CMakeFiles\Zmultiplier.dir\src\core\EntryPoint.cpp.i
 
 CMakeFiles/Zmultiplier.dir/src/core/EntryPoint.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Zmultiplier.dir/src/core/EntryPoint.cpp.s"
-	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\VSCodeWorkspace\slimeballGraphicLib\src\core\EntryPoint.cpp -o CMakeFiles\Zmultiplier.dir\src\core\EntryPoint.cpp.s
+	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\VSCodeWorkspace\Z-MultiplierLib\src\core\EntryPoint.cpp -o CMakeFiles\Zmultiplier.dir\src\core\EntryPoint.cpp.s
 
 CMakeFiles/Zmultiplier.dir/src/assets/Image.cpp.obj: CMakeFiles/Zmultiplier.dir/flags.make
 CMakeFiles/Zmultiplier.dir/src/assets/Image.cpp.obj: CMakeFiles/Zmultiplier.dir/includes_CXX.rsp
-CMakeFiles/Zmultiplier.dir/src/assets/Image.cpp.obj: F:/VSCodeWorkspace/slimeballGraphicLib/src/assets/Image.cpp
+CMakeFiles/Zmultiplier.dir/src/assets/Image.cpp.obj: F:/VSCodeWorkspace/Z-MultiplierLib/src/assets/Image.cpp
 CMakeFiles/Zmultiplier.dir/src/assets/Image.cpp.obj: CMakeFiles/Zmultiplier.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\VSCodeWorkspace\slimeballGraphicLib\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Zmultiplier.dir/src/assets/Image.cpp.obj"
-	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Zmultiplier.dir/src/assets/Image.cpp.obj -MF CMakeFiles\Zmultiplier.dir\src\assets\Image.cpp.obj.d -o CMakeFiles\Zmultiplier.dir\src\assets\Image.cpp.obj -c F:\VSCodeWorkspace\slimeballGraphicLib\src\assets\Image.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\VSCodeWorkspace\Z-MultiplierLib\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Zmultiplier.dir/src/assets/Image.cpp.obj"
+	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Zmultiplier.dir/src/assets/Image.cpp.obj -MF CMakeFiles\Zmultiplier.dir\src\assets\Image.cpp.obj.d -o CMakeFiles\Zmultiplier.dir\src\assets\Image.cpp.obj -c F:\VSCodeWorkspace\Z-MultiplierLib\src\assets\Image.cpp
 
 CMakeFiles/Zmultiplier.dir/src/assets/Image.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Zmultiplier.dir/src/assets/Image.cpp.i"
-	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\VSCodeWorkspace\slimeballGraphicLib\src\assets\Image.cpp > CMakeFiles\Zmultiplier.dir\src\assets\Image.cpp.i
+	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\VSCodeWorkspace\Z-MultiplierLib\src\assets\Image.cpp > CMakeFiles\Zmultiplier.dir\src\assets\Image.cpp.i
 
 CMakeFiles/Zmultiplier.dir/src/assets/Image.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Zmultiplier.dir/src/assets/Image.cpp.s"
-	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\VSCodeWorkspace\slimeballGraphicLib\src\assets\Image.cpp -o CMakeFiles\Zmultiplier.dir\src\assets\Image.cpp.s
+	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\VSCodeWorkspace\Z-MultiplierLib\src\assets\Image.cpp -o CMakeFiles\Zmultiplier.dir\src\assets\Image.cpp.s
 
 CMakeFiles/Zmultiplier.dir/src/assets/Font.cpp.obj: CMakeFiles/Zmultiplier.dir/flags.make
 CMakeFiles/Zmultiplier.dir/src/assets/Font.cpp.obj: CMakeFiles/Zmultiplier.dir/includes_CXX.rsp
-CMakeFiles/Zmultiplier.dir/src/assets/Font.cpp.obj: F:/VSCodeWorkspace/slimeballGraphicLib/src/assets/Font.cpp
+CMakeFiles/Zmultiplier.dir/src/assets/Font.cpp.obj: F:/VSCodeWorkspace/Z-MultiplierLib/src/assets/Font.cpp
 CMakeFiles/Zmultiplier.dir/src/assets/Font.cpp.obj: CMakeFiles/Zmultiplier.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\VSCodeWorkspace\slimeballGraphicLib\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Zmultiplier.dir/src/assets/Font.cpp.obj"
-	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Zmultiplier.dir/src/assets/Font.cpp.obj -MF CMakeFiles\Zmultiplier.dir\src\assets\Font.cpp.obj.d -o CMakeFiles\Zmultiplier.dir\src\assets\Font.cpp.obj -c F:\VSCodeWorkspace\slimeballGraphicLib\src\assets\Font.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\VSCodeWorkspace\Z-MultiplierLib\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Zmultiplier.dir/src/assets/Font.cpp.obj"
+	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Zmultiplier.dir/src/assets/Font.cpp.obj -MF CMakeFiles\Zmultiplier.dir\src\assets\Font.cpp.obj.d -o CMakeFiles\Zmultiplier.dir\src\assets\Font.cpp.obj -c F:\VSCodeWorkspace\Z-MultiplierLib\src\assets\Font.cpp
 
 CMakeFiles/Zmultiplier.dir/src/assets/Font.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Zmultiplier.dir/src/assets/Font.cpp.i"
-	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\VSCodeWorkspace\slimeballGraphicLib\src\assets\Font.cpp > CMakeFiles\Zmultiplier.dir\src\assets\Font.cpp.i
+	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\VSCodeWorkspace\Z-MultiplierLib\src\assets\Font.cpp > CMakeFiles\Zmultiplier.dir\src\assets\Font.cpp.i
 
 CMakeFiles/Zmultiplier.dir/src/assets/Font.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Zmultiplier.dir/src/assets/Font.cpp.s"
-	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\VSCodeWorkspace\slimeballGraphicLib\src\assets\Font.cpp -o CMakeFiles\Zmultiplier.dir\src\assets\Font.cpp.s
+	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\VSCodeWorkspace\Z-MultiplierLib\src\assets\Font.cpp -o CMakeFiles\Zmultiplier.dir\src\assets\Font.cpp.s
 
 # Object files for target Zmultiplier
 Zmultiplier_OBJECTS = \
@@ -232,7 +232,7 @@ lib/libZmultiplier.a: CMakeFiles/Zmultiplier.dir/src/assets/Image.cpp.obj
 lib/libZmultiplier.a: CMakeFiles/Zmultiplier.dir/src/assets/Font.cpp.obj
 lib/libZmultiplier.a: CMakeFiles/Zmultiplier.dir/build.make
 lib/libZmultiplier.a: CMakeFiles/Zmultiplier.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=F:\VSCodeWorkspace\slimeballGraphicLib\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX static library lib\libZmultiplier.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=F:\VSCodeWorkspace\Z-MultiplierLib\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX static library lib\libZmultiplier.a"
 	$(CMAKE_COMMAND) -P CMakeFiles\Zmultiplier.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Zmultiplier.dir\link.txt --verbose=$(VERBOSE)
 
@@ -245,6 +245,6 @@ CMakeFiles/Zmultiplier.dir/clean:
 .PHONY : CMakeFiles/Zmultiplier.dir/clean
 
 CMakeFiles/Zmultiplier.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" F:\VSCodeWorkspace\slimeballGraphicLib F:\VSCodeWorkspace\slimeballGraphicLib F:\VSCodeWorkspace\slimeballGraphicLib\build F:\VSCodeWorkspace\slimeballGraphicLib\build F:\VSCodeWorkspace\slimeballGraphicLib\build\CMakeFiles\Zmultiplier.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" F:\VSCodeWorkspace\Z-MultiplierLib F:\VSCodeWorkspace\Z-MultiplierLib F:\VSCodeWorkspace\Z-MultiplierLib\build F:\VSCodeWorkspace\Z-MultiplierLib\build F:\VSCodeWorkspace\Z-MultiplierLib\build\CMakeFiles\Zmultiplier.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/Zmultiplier.dir/depend
 

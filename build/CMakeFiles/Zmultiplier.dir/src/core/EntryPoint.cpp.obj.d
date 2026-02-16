@@ -1,6 +1,6 @@
 CMakeFiles/Zmultiplier.dir/src/core/EntryPoint.cpp.obj: \
- F:\VSCodeWorkspace\slimeballGraphicLib\src\core\EntryPoint.cpp \
- F:/VSCodeWorkspace/slimeballGraphicLib/include/EntryPoint.hpp \
+ F:\VSCodeWorkspace\Z-MultiplierLib\src\core\EntryPoint.cpp \
+ F:/VSCodeWorkspace/Z-MultiplierLib/include/EntryPoint.hpp \
  F:/msys64/ucrt64/include/windows.h F:/msys64/ucrt64/include/_mingw.h \
  F:/msys64/ucrt64/include/_mingw_mac.h \
  F:/msys64/ucrt64/include/_mingw_secapi.h \

@@ -56,10 +56,10 @@ RM = F:\Cmake\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = F:\VSCodeWorkspace\slimeballGraphicLib
+CMAKE_SOURCE_DIR = F:\VSCodeWorkspace\Z-MultiplierLib
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = F:\VSCodeWorkspace\slimeballGraphicLib\build
+CMAKE_BINARY_DIR = F:\VSCodeWorkspace\Z-MultiplierLib\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -131,9 +131,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start F:\VSCodeWorkspace\slimeballGraphicLib\build\CMakeFiles F:\VSCodeWorkspace\slimeballGraphicLib\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start F:\VSCodeWorkspace\Z-MultiplierLib\build\CMakeFiles F:\VSCodeWorkspace\Z-MultiplierLib\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start F:\VSCodeWorkspace\slimeballGraphicLib\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start F:\VSCodeWorkspace\Z-MultiplierLib\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -174,17 +174,17 @@ Zmultiplier/fast:
 .PHONY : Zmultiplier/fast
 
 #=============================================================================
-# Target rules for targets named new_year.exe
+# Target rules for targets named test.exe
 
 # Build rule for target.
-new_year.exe: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 new_year.exe
-.PHONY : new_year.exe
+test.exe: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test.exe
+.PHONY : test.exe
 
 # fast build rule for target.
-new_year.exe/fast:
-	$(MAKE) $(MAKESILENT) -f examples\CMakeFiles\new_year.exe.dir\build.make examples/CMakeFiles/new_year.exe.dir/build
-.PHONY : new_year.exe/fast
+test.exe/fast:
+	$(MAKE) $(MAKESILENT) -f examples\CMakeFiles\test.exe.dir\build.make examples/CMakeFiles/test.exe.dir/build
+.PHONY : test.exe/fast
 
 src/assets/Font.obj: src/assets/Font.cpp.obj
 .PHONY : src/assets/Font.obj
@@ -415,7 +415,7 @@ help:
 	@echo ... list_install_components
 	@echo ... rebuild_cache
 	@echo ... Zmultiplier
-	@echo ... new_year.exe
+	@echo ... test.exe
 	@echo ... src/assets/Font.obj
 	@echo ... src/assets/Font.i
 	@echo ... src/assets/Font.s

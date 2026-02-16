@@ -1,8 +1,8 @@
 {
 	"InstallScripts" : 
 	[
-		"F:/VSCodeWorkspace/slimeballGraphicLib/build/cmake_install.cmake",
-		"F:/VSCodeWorkspace/slimeballGraphicLib/build/examples/cmake_install.cmake"
+		"F:/VSCodeWorkspace/Z-MultiplierLib/build/cmake_install.cmake",
+		"F:/VSCodeWorkspace/Z-MultiplierLib/build/examples/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "f:/VSCodeWorkspace/slimeballGraphicLib/build"
+			"value" : "f:/VSCodeWorkspace/Z-MultiplierLib/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -455,7 +455,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "F:/VSCodeWorkspace/slimeballGraphicLib/build/CMakeFiles/pkgRedirects"
+			"value" : "F:/VSCodeWorkspace/Z-MultiplierLib/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -527,7 +527,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "F:/VSCodeWorkspace/slimeballGraphicLib"
+			"value" : "F:/VSCodeWorkspace/Z-MultiplierLib"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1247,7 +1247,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "F:/VSCodeWorkspace/slimeballGraphicLib/build"
+			"value" : "F:/VSCodeWorkspace/Z-MultiplierLib/build"
 		},
 		{
 			"name" : "Zmultiplier_IS_TOP_LEVEL",
@@ -1271,7 +1271,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "F:/VSCodeWorkspace/slimeballGraphicLib"
+			"value" : "F:/VSCodeWorkspace/Z-MultiplierLib"
 		}
 	],
 	"kind" : "cache",

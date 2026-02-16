@@ -32,11 +32,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "F:/Cmake/share/cmake-4.1/Modules/Platform/Windows-windres.cmake"
   "F:/Cmake/share/cmake-4.1/Modules/Platform/Windows.cmake"
   "F:/Cmake/share/cmake-4.1/Modules/Platform/WindowsPaths.cmake"
-  "F:/VSCodeWorkspace/slimeballGraphicLib/CMakeLists.txt"
+  "F:/VSCodeWorkspace/Z-MultiplierLib/CMakeLists.txt"
   "CMakeFiles/4.1.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.1.1/CMakeRCCompiler.cmake"
   "CMakeFiles/4.1.1/CMakeSystem.cmake"
-  "F:/VSCodeWorkspace/slimeballGraphicLib/examples/CMakeLists.txt"
+  "F:/VSCodeWorkspace/Z-MultiplierLib/examples/CMakeLists.txt"
   )
 
 # The corresponding makefile is:
@@ -54,5 +54,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Zmultiplier.dir/DependInfo.cmake"
-  "examples/CMakeFiles/new_year.exe.dir/DependInfo.cmake"
+  "examples/CMakeFiles/test.exe.dir/DependInfo.cmake"
   )

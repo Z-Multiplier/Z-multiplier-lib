@@ -1,6 +1,6 @@
 CMakeFiles/Zmultiplier.dir/src/assets/Font.cpp.obj: \
- F:\VSCodeWorkspace\slimeballGraphicLib\src\assets\Font.cpp \
- F:/VSCodeWorkspace/slimeballGraphicLib/include/Font.hpp \
+ F:\VSCodeWorkspace\Z-MultiplierLib\src\assets\Font.cpp \
+ F:/VSCodeWorkspace/Z-MultiplierLib/include/Font.hpp \
  F:/msys64/ucrt64/include/windows.h F:/msys64/ucrt64/include/_mingw.h \
  F:/msys64/ucrt64/include/_mingw_mac.h \
  F:/msys64/ucrt64/include/_mingw_secapi.h \

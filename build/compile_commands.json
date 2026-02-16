@@ -1,62 +1,62 @@
 [
 {
-  "directory": "F:/VSCodeWorkspace/slimeballGraphicLib/build",
-  "command": "F:\\msys64\\ucrt64\\bin\\g++.exe -DNOMINMAX @CMakeFiles/Zmultiplier.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wextra -pedantic -o CMakeFiles\\Zmultiplier.dir\\src\\core\\Color.cpp.obj -c F:\\VSCodeWorkspace\\slimeballGraphicLib\\src\\core\\Color.cpp",
-  "file": "F:/VSCodeWorkspace/slimeballGraphicLib/src/core/Color.cpp",
+  "directory": "F:/VSCodeWorkspace/Z-MultiplierLib/build",
+  "command": "F:\\msys64\\ucrt64\\bin\\g++.exe -DNOMINMAX @CMakeFiles/Zmultiplier.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wextra -pedantic -o CMakeFiles\\Zmultiplier.dir\\src\\core\\Color.cpp.obj -c F:\\VSCodeWorkspace\\Z-MultiplierLib\\src\\core\\Color.cpp",
+  "file": "F:/VSCodeWorkspace/Z-MultiplierLib/src/core/Color.cpp",
   "output": "CMakeFiles/Zmultiplier.dir/src/core/Color.cpp.obj"
 },
 {
-  "directory": "F:/VSCodeWorkspace/slimeballGraphicLib/build",
-  "command": "F:\\msys64\\ucrt64\\bin\\g++.exe -DNOMINMAX @CMakeFiles/Zmultiplier.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wextra -pedantic -o CMakeFiles\\Zmultiplier.dir\\src\\core\\Canvas.cpp.obj -c F:\\VSCodeWorkspace\\slimeballGraphicLib\\src\\core\\Canvas.cpp",
-  "file": "F:/VSCodeWorkspace/slimeballGraphicLib/src/core/Canvas.cpp",
+  "directory": "F:/VSCodeWorkspace/Z-MultiplierLib/build",
+  "command": "F:\\msys64\\ucrt64\\bin\\g++.exe -DNOMINMAX @CMakeFiles/Zmultiplier.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wextra -pedantic -o CMakeFiles\\Zmultiplier.dir\\src\\core\\Canvas.cpp.obj -c F:\\VSCodeWorkspace\\Z-MultiplierLib\\src\\core\\Canvas.cpp",
+  "file": "F:/VSCodeWorkspace/Z-MultiplierLib/src/core/Canvas.cpp",
   "output": "CMakeFiles/Zmultiplier.dir/src/core/Canvas.cpp.obj"
 },
 {
-  "directory": "F:/VSCodeWorkspace/slimeballGraphicLib/build",
-  "command": "F:\\msys64\\ucrt64\\bin\\g++.exe -DNOMINMAX @CMakeFiles/Zmultiplier.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wextra -pedantic -o CMakeFiles\\Zmultiplier.dir\\src\\window\\Window.cpp.obj -c F:\\VSCodeWorkspace\\slimeballGraphicLib\\src\\window\\Window.cpp",
-  "file": "F:/VSCodeWorkspace/slimeballGraphicLib/src/window/Window.cpp",
+  "directory": "F:/VSCodeWorkspace/Z-MultiplierLib/build",
+  "command": "F:\\msys64\\ucrt64\\bin\\g++.exe -DNOMINMAX @CMakeFiles/Zmultiplier.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wextra -pedantic -o CMakeFiles\\Zmultiplier.dir\\src\\window\\Window.cpp.obj -c F:\\VSCodeWorkspace\\Z-MultiplierLib\\src\\window\\Window.cpp",
+  "file": "F:/VSCodeWorkspace/Z-MultiplierLib/src/window/Window.cpp",
   "output": "CMakeFiles/Zmultiplier.dir/src/window/Window.cpp.obj"
 },
 {
-  "directory": "F:/VSCodeWorkspace/slimeballGraphicLib/build",
-  "command": "F:\\msys64\\ucrt64\\bin\\g++.exe -DNOMINMAX @CMakeFiles/Zmultiplier.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wextra -pedantic -o CMakeFiles\\Zmultiplier.dir\\src\\core\\Logger.cpp.obj -c F:\\VSCodeWorkspace\\slimeballGraphicLib\\src\\core\\Logger.cpp",
-  "file": "F:/VSCodeWorkspace/slimeballGraphicLib/src/core/Logger.cpp",
+  "directory": "F:/VSCodeWorkspace/Z-MultiplierLib/build",
+  "command": "F:\\msys64\\ucrt64\\bin\\g++.exe -DNOMINMAX @CMakeFiles/Zmultiplier.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wextra -pedantic -o CMakeFiles\\Zmultiplier.dir\\src\\core\\Logger.cpp.obj -c F:\\VSCodeWorkspace\\Z-MultiplierLib\\src\\core\\Logger.cpp",
+  "file": "F:/VSCodeWorkspace/Z-MultiplierLib/src/core/Logger.cpp",
   "output": "CMakeFiles/Zmultiplier.dir/src/core/Logger.cpp.obj"
 },
 {
-  "directory": "F:/VSCodeWorkspace/slimeballGraphicLib/build",
-  "command": "F:\\msys64\\ucrt64\\bin\\g++.exe -DNOMINMAX @CMakeFiles/Zmultiplier.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wextra -pedantic -o CMakeFiles\\Zmultiplier.dir\\src\\utils\\Utils.cpp.obj -c F:\\VSCodeWorkspace\\slimeballGraphicLib\\src\\utils\\Utils.cpp",
-  "file": "F:/VSCodeWorkspace/slimeballGraphicLib/src/utils/Utils.cpp",
+  "directory": "F:/VSCodeWorkspace/Z-MultiplierLib/build",
+  "command": "F:\\msys64\\ucrt64\\bin\\g++.exe -DNOMINMAX @CMakeFiles/Zmultiplier.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wextra -pedantic -o CMakeFiles\\Zmultiplier.dir\\src\\utils\\Utils.cpp.obj -c F:\\VSCodeWorkspace\\Z-MultiplierLib\\src\\utils\\Utils.cpp",
+  "file": "F:/VSCodeWorkspace/Z-MultiplierLib/src/utils/Utils.cpp",
   "output": "CMakeFiles/Zmultiplier.dir/src/utils/Utils.cpp.obj"
 },
 {
-  "directory": "F:/VSCodeWorkspace/slimeballGraphicLib/build",
-  "command": "F:\\msys64\\ucrt64\\bin\\g++.exe -DNOMINMAX @CMakeFiles/Zmultiplier.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wextra -pedantic -o CMakeFiles\\Zmultiplier.dir\\src\\painter\\Painter.cpp.obj -c F:\\VSCodeWorkspace\\slimeballGraphicLib\\src\\painter\\Painter.cpp",
-  "file": "F:/VSCodeWorkspace/slimeballGraphicLib/src/painter/Painter.cpp",
+  "directory": "F:/VSCodeWorkspace/Z-MultiplierLib/build",
+  "command": "F:\\msys64\\ucrt64\\bin\\g++.exe -DNOMINMAX @CMakeFiles/Zmultiplier.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wextra -pedantic -o CMakeFiles\\Zmultiplier.dir\\src\\painter\\Painter.cpp.obj -c F:\\VSCodeWorkspace\\Z-MultiplierLib\\src\\painter\\Painter.cpp",
+  "file": "F:/VSCodeWorkspace/Z-MultiplierLib/src/painter/Painter.cpp",
   "output": "CMakeFiles/Zmultiplier.dir/src/painter/Painter.cpp.obj"
 },
 {
-  "directory": "F:/VSCodeWorkspace/slimeballGraphicLib/build",
-  "command": "F:\\msys64\\ucrt64\\bin\\g++.exe -DNOMINMAX @CMakeFiles/Zmultiplier.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wextra -pedantic -o CMakeFiles\\Zmultiplier.dir\\src\\core\\EntryPoint.cpp.obj -c F:\\VSCodeWorkspace\\slimeballGraphicLib\\src\\core\\EntryPoint.cpp",
-  "file": "F:/VSCodeWorkspace/slimeballGraphicLib/src/core/EntryPoint.cpp",
+  "directory": "F:/VSCodeWorkspace/Z-MultiplierLib/build",
+  "command": "F:\\msys64\\ucrt64\\bin\\g++.exe -DNOMINMAX @CMakeFiles/Zmultiplier.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wextra -pedantic -o CMakeFiles\\Zmultiplier.dir\\src\\core\\EntryPoint.cpp.obj -c F:\\VSCodeWorkspace\\Z-MultiplierLib\\src\\core\\EntryPoint.cpp",
+  "file": "F:/VSCodeWorkspace/Z-MultiplierLib/src/core/EntryPoint.cpp",
   "output": "CMakeFiles/Zmultiplier.dir/src/core/EntryPoint.cpp.obj"
 },
 {
-  "directory": "F:/VSCodeWorkspace/slimeballGraphicLib/build",
-  "command": "F:\\msys64\\ucrt64\\bin\\g++.exe -DNOMINMAX @CMakeFiles/Zmultiplier.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wextra -pedantic -o CMakeFiles\\Zmultiplier.dir\\src\\assets\\Image.cpp.obj -c F:\\VSCodeWorkspace\\slimeballGraphicLib\\src\\assets\\Image.cpp",
-  "file": "F:/VSCodeWorkspace/slimeballGraphicLib/src/assets/Image.cpp",
+  "directory": "F:/VSCodeWorkspace/Z-MultiplierLib/build",
+  "command": "F:\\msys64\\ucrt64\\bin\\g++.exe -DNOMINMAX @CMakeFiles/Zmultiplier.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wextra -pedantic -o CMakeFiles\\Zmultiplier.dir\\src\\assets\\Image.cpp.obj -c F:\\VSCodeWorkspace\\Z-MultiplierLib\\src\\assets\\Image.cpp",
+  "file": "F:/VSCodeWorkspace/Z-MultiplierLib/src/assets/Image.cpp",
   "output": "CMakeFiles/Zmultiplier.dir/src/assets/Image.cpp.obj"
 },
 {
-  "directory": "F:/VSCodeWorkspace/slimeballGraphicLib/build",
-  "command": "F:\\msys64\\ucrt64\\bin\\g++.exe -DNOMINMAX @CMakeFiles/Zmultiplier.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wextra -pedantic -o CMakeFiles\\Zmultiplier.dir\\src\\assets\\Font.cpp.obj -c F:\\VSCodeWorkspace\\slimeballGraphicLib\\src\\assets\\Font.cpp",
-  "file": "F:/VSCodeWorkspace/slimeballGraphicLib/src/assets/Font.cpp",
+  "directory": "F:/VSCodeWorkspace/Z-MultiplierLib/build",
+  "command": "F:\\msys64\\ucrt64\\bin\\g++.exe -DNOMINMAX @CMakeFiles/Zmultiplier.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wextra -pedantic -o CMakeFiles\\Zmultiplier.dir\\src\\assets\\Font.cpp.obj -c F:\\VSCodeWorkspace\\Z-MultiplierLib\\src\\assets\\Font.cpp",
+  "file": "F:/VSCodeWorkspace/Z-MultiplierLib/src/assets/Font.cpp",
   "output": "CMakeFiles/Zmultiplier.dir/src/assets/Font.cpp.obj"
 },
 {
-  "directory": "F:/VSCodeWorkspace/slimeballGraphicLib/build/examples",
-  "command": "F:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/new_year.exe.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wextra -pedantic -o CMakeFiles\\new_year.exe.dir\\new_year.cpp.obj -c F:\\VSCodeWorkspace\\slimeballGraphicLib\\examples\\new_year.cpp",
-  "file": "F:/VSCodeWorkspace/slimeballGraphicLib/examples/new_year.cpp",
-  "output": "examples/CMakeFiles/new_year.exe.dir/new_year.cpp.obj"
+  "directory": "F:/VSCodeWorkspace/Z-MultiplierLib/build/examples",
+  "command": "F:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/test.exe.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wextra -pedantic -o CMakeFiles\\test.exe.dir\\test.cpp.obj -c F:\\VSCodeWorkspace\\Z-MultiplierLib\\examples\\test.cpp",
+  "file": "F:/VSCodeWorkspace/Z-MultiplierLib/examples/test.cpp",
+  "output": "examples/CMakeFiles/test.exe.dir/test.cpp.obj"
 }
 ]

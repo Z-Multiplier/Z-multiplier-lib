@@ -1,7 +1,7 @@
 CMakeFiles/Zmultiplier.dir/src/utils/Utils.cpp.obj: \
- F:\VSCodeWorkspace\slimeballGraphicLib\src\utils\Utils.cpp \
- F:/VSCodeWorkspace/slimeballGraphicLib/include/Utils.hpp \
- F:/VSCodeWorkspace/slimeballGraphicLib/include/Window.hpp \
+ F:\VSCodeWorkspace\Z-MultiplierLib\src\utils\Utils.cpp \
+ F:/VSCodeWorkspace/Z-MultiplierLib/include/Utils.hpp \
+ F:/VSCodeWorkspace/Z-MultiplierLib/include/Window.hpp \
  F:/msys64/ucrt64/include/windows.h F:/msys64/ucrt64/include/_mingw.h \
  F:/msys64/ucrt64/include/_mingw_mac.h \
  F:/msys64/ucrt64/include/_mingw_secapi.h \
@@ -373,9 +373,9 @@ CMakeFiles/Zmultiplier.dir/src/utils/Utils.cpp.obj: \
  F:/msys64/ucrt64/include/c++/15.2.0/backward/auto_ptr.h \
  F:/msys64/ucrt64/include/c++/15.2.0/pstl/glue_memory_defs.h \
  F:/msys64/ucrt64/include/c++/15.2.0/pstl/execution_defs.h \
- F:/VSCodeWorkspace/slimeballGraphicLib/include/Canvas.hpp \
- F:/VSCodeWorkspace/slimeballGraphicLib/include/Color.hpp \
- F:/VSCodeWorkspace/slimeballGraphicLib/include/Logger.hpp \
+ F:/VSCodeWorkspace/Z-MultiplierLib/include/Canvas.hpp \
+ F:/VSCodeWorkspace/Z-MultiplierLib/include/Color.hpp \
+ F:/VSCodeWorkspace/Z-MultiplierLib/include/Logger.hpp \
  F:/msys64/ucrt64/include/c++/15.2.0/iostream \
  F:/msys64/ucrt64/include/c++/15.2.0/ostream \
  F:/msys64/ucrt64/include/c++/15.2.0/bits/ostream.h \
@@ -412,9 +412,9 @@ CMakeFiles/Zmultiplier.dir/src/utils/Utils.cpp.obj: \
  F:/msys64/ucrt64/include/c++/15.2.0/bits/std_mutex.h \
  F:/msys64/ucrt64/include/c++/15.2.0/bits/unique_lock.h \
  F:/msys64/ucrt64/include/c++/15.2.0/chrono \
- F:/VSCodeWorkspace/slimeballGraphicLib/include/Utils.hpp \
- F:/VSCodeWorkspace/slimeballGraphicLib/include/Painter.hpp \
- F:/VSCodeWorkspace/slimeballGraphicLib/include/Image.hpp \
+ F:/VSCodeWorkspace/Z-MultiplierLib/include/Utils.hpp \
+ F:/VSCodeWorkspace/Z-MultiplierLib/include/Painter.hpp \
+ F:/VSCodeWorkspace/Z-MultiplierLib/include/Image.hpp \
  F:/msys64/ucrt64/include/gdiplus.h \
  F:/msys64/ucrt64/include/gdiplus/gdiplus.h \
  F:/msys64/ucrt64/include/c++/15.2.0/math.h \
@@ -459,4 +459,4 @@ CMakeFiles/Zmultiplier.dir/src/utils/Utils.cpp.obj: \
  F:/msys64/ucrt64/include/gdiplus/gdiplusgraphics.h \
  F:/msys64/ucrt64/include/gdiplus/gdipluslinecaps.h \
  F:/msys64/ucrt64/include/gdiplus/gdiplusimpl.h \
- F:/VSCodeWorkspace/slimeballGraphicLib/include/Font.hpp
+ F:/VSCodeWorkspace/Z-MultiplierLib/include/Font.hpp

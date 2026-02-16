@@ -1,7 +1,7 @@
 examples/CMakeFiles/test.exe.dir/test.cpp.obj: \
- F:\VSCodeWorkspace\slimeballGraphicLib\examples\test.cpp \
- F:/VSCodeWorkspace/slimeballGraphicLib/include/Graphics.hpp \
- F:/VSCodeWorkspace/slimeballGraphicLib/include/Canvas.hpp \
+ F:\VSCodeWorkspace\Z-MultiplierLib\examples\test.cpp \
+ F:/VSCodeWorkspace/Z-MultiplierLib/include/Graphics.hpp \
+ F:/VSCodeWorkspace/Z-MultiplierLib/include/Canvas.hpp \
  F:/msys64/ucrt64/include/c++/15.2.0/vector \
  F:/msys64/ucrt64/include/c++/15.2.0/bits/requires_hosted.h \
  F:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -62,7 +62,7 @@ examples/CMakeFiles/test.exe.dir/test.cpp.obj: \
  F:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator.h \
  F:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator_args.h \
  F:/msys64/ucrt64/include/c++/15.2.0/tuple \
- F:/VSCodeWorkspace/slimeballGraphicLib/include/Color.hpp \
+ F:/VSCodeWorkspace/Z-MultiplierLib/include/Color.hpp \
  F:/msys64/ucrt64/include/windows.h F:/msys64/ucrt64/include/sdkddkver.h \
  F:/msys64/ucrt64/include/excpt.h \
  F:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdarg.h \
@@ -299,7 +299,7 @@ examples/CMakeFiles/test.exe.dir/test.cpp.obj: \
  F:/msys64/ucrt64/include/sec_api/stralign_s.h \
  F:/msys64/ucrt64/include/winsvc.h F:/msys64/ucrt64/include/mcx.h \
  F:/msys64/ucrt64/include/imm.h \
- F:/VSCodeWorkspace/slimeballGraphicLib/include/Logger.hpp \
+ F:/VSCodeWorkspace/Z-MultiplierLib/include/Logger.hpp \
  F:/msys64/ucrt64/include/c++/15.2.0/iostream \
  F:/msys64/ucrt64/include/c++/15.2.0/ostream \
  F:/msys64/ucrt64/include/c++/15.2.0/bits/ostream.h \
@@ -400,7 +400,7 @@ examples/CMakeFiles/test.exe.dir/test.cpp.obj: \
  F:/msys64/ucrt64/include/c++/15.2.0/pstl/glue_memory_defs.h \
  F:/msys64/ucrt64/include/c++/15.2.0/pstl/execution_defs.h \
  F:/msys64/ucrt64/include/c++/15.2.0/chrono \
- F:/VSCodeWorkspace/slimeballGraphicLib/include/Window.hpp \
+ F:/VSCodeWorkspace/Z-MultiplierLib/include/Window.hpp \
  F:/msys64/ucrt64/include/c++/15.2.0/functional \
  F:/msys64/ucrt64/include/c++/15.2.0/bits/std_function.h \
  F:/msys64/ucrt64/include/c++/15.2.0/unordered_map \
@@ -412,9 +412,9 @@ examples/CMakeFiles/test.exe.dir/test.cpp.obj: \
  F:/msys64/ucrt64/include/c++/15.2.0/bits/erase_if.h \
  F:/msys64/ucrt64/include/c++/15.2.0/array \
  F:/msys64/ucrt64/include/c++/15.2.0/compare \
- F:/VSCodeWorkspace/slimeballGraphicLib/include/Utils.hpp \
- F:/VSCodeWorkspace/slimeballGraphicLib/include/Painter.hpp \
- F:/VSCodeWorkspace/slimeballGraphicLib/include/Image.hpp \
+ F:/VSCodeWorkspace/Z-MultiplierLib/include/Utils.hpp \
+ F:/VSCodeWorkspace/Z-MultiplierLib/include/Painter.hpp \
+ F:/VSCodeWorkspace/Z-MultiplierLib/include/Image.hpp \
  F:/msys64/ucrt64/include/gdiplus.h \
  F:/msys64/ucrt64/include/gdiplus/gdiplus.h \
  F:/msys64/ucrt64/include/c++/15.2.0/math.h \
@@ -459,5 +459,5 @@ examples/CMakeFiles/test.exe.dir/test.cpp.obj: \
  F:/msys64/ucrt64/include/gdiplus/gdiplusgraphics.h \
  F:/msys64/ucrt64/include/gdiplus/gdipluslinecaps.h \
  F:/msys64/ucrt64/include/gdiplus/gdiplusimpl.h \
- F:/VSCodeWorkspace/slimeballGraphicLib/include/Font.hpp \
- F:/VSCodeWorkspace/slimeballGraphicLib/include/EntryPoint.hpp
+ F:/VSCodeWorkspace/Z-MultiplierLib/include/Font.hpp \
+ F:/VSCodeWorkspace/Z-MultiplierLib/include/EntryPoint.hpp

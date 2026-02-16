@@ -1,6 +1,6 @@
 CMakeFiles/Zmultiplier.dir/src/core/Color.cpp.obj: \
- F:\VSCodeWorkspace\slimeballGraphicLib\src\core\Color.cpp \
- F:/VSCodeWorkspace/slimeballGraphicLib/include/Color.hpp \
+ F:\VSCodeWorkspace\Z-MultiplierLib\src\core\Color.cpp \
+ F:/VSCodeWorkspace/Z-MultiplierLib/include/Color.hpp \
  F:/msys64/ucrt64/include/windows.h F:/msys64/ucrt64/include/_mingw.h \
  F:/msys64/ucrt64/include/_mingw_mac.h \
  F:/msys64/ucrt64/include/_mingw_secapi.h \

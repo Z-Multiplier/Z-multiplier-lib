@@ -106,6 +106,7 @@ namespace Window{
             bool solidCircle(const Point& origin,int radius,const Core::Color& color);
             bool putImage(char locateMode,const Point& locator,const Assets::Image& src,unsigned char alpha);
             bool putText(char locateMode,const Point& locator,const Assets::Font& font,const std::wstring& text,const Core::Color& color);
+            bool bezierCurve(const vector<Point>& points,int accuracy,const Core::Color& color);
     };
 }
 #endif//PAINTER_HPP
