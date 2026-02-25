@@ -84,11 +84,11 @@ clean: examples/clean
 # Directory level rules for directory examples
 
 # Recursive "all" directory target.
-examples/all: examples/CMakeFiles/test.exe.dir/all
+examples/all: examples/CMakeFiles/test2.exe.dir/all
 .PHONY : examples/all
 
 # Recursive "codegen" directory target.
-examples/codegen: examples/CMakeFiles/test.exe.dir/codegen
+examples/codegen: examples/CMakeFiles/test2.exe.dir/codegen
 .PHONY : examples/codegen
 
 # Recursive "preinstall" directory target.
@@ -96,7 +96,7 @@ examples/preinstall:
 .PHONY : examples/preinstall
 
 # Recursive "clean" directory target.
-examples/clean: examples/CMakeFiles/test.exe.dir/clean
+examples/clean: examples/CMakeFiles/test2.exe.dir/clean
 .PHONY : examples/clean
 
 #=============================================================================
@@ -106,12 +106,12 @@ examples/clean: examples/CMakeFiles/test.exe.dir/clean
 CMakeFiles/ZmultiplierLib.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZmultiplierLib.dir\build.make CMakeFiles/ZmultiplierLib.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZmultiplierLib.dir\build.make CMakeFiles/ZmultiplierLib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=F:\VSCodeWorkspace\Z-MultiplierLib\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target ZmultiplierLib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=F:\VSCodeWorkspace\Z-MultiplierLib\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Built target ZmultiplierLib"
 .PHONY : CMakeFiles/ZmultiplierLib.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ZmultiplierLib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start F:\VSCodeWorkspace\Z-MultiplierLib\build\CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start F:\VSCodeWorkspace\Z-MultiplierLib\build\CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/ZmultiplierLib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start F:\VSCodeWorkspace\Z-MultiplierLib\build\CMakeFiles 0
 .PHONY : CMakeFiles/ZmultiplierLib.dir/rule
@@ -123,7 +123,7 @@ ZmultiplierLib: CMakeFiles/ZmultiplierLib.dir/rule
 # codegen rule for target.
 CMakeFiles/ZmultiplierLib.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZmultiplierLib.dir\build.make CMakeFiles/ZmultiplierLib.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=F:\VSCodeWorkspace\Z-MultiplierLib\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Finished codegen for target ZmultiplierLib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=F:\VSCodeWorkspace\Z-MultiplierLib\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Finished codegen for target ZmultiplierLib"
 .PHONY : CMakeFiles/ZmultiplierLib.dir/codegen
 
 # clean rule for target.
@@ -132,36 +132,36 @@ CMakeFiles/ZmultiplierLib.dir/clean:
 .PHONY : CMakeFiles/ZmultiplierLib.dir/clean
 
 #=============================================================================
-# Target rules for target examples/CMakeFiles/test.exe.dir
+# Target rules for target examples/CMakeFiles/test2.exe.dir
 
 # All Build rule for target.
-examples/CMakeFiles/test.exe.dir/all: CMakeFiles/ZmultiplierLib.dir/all
-	$(MAKE) $(MAKESILENT) -f examples\CMakeFiles\test.exe.dir\build.make examples/CMakeFiles/test.exe.dir/depend
-	$(MAKE) $(MAKESILENT) -f examples\CMakeFiles\test.exe.dir\build.make examples/CMakeFiles/test.exe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=F:\VSCodeWorkspace\Z-MultiplierLib\build\CMakeFiles --progress-num=12,13 "Built target test.exe"
-.PHONY : examples/CMakeFiles/test.exe.dir/all
+examples/CMakeFiles/test2.exe.dir/all: CMakeFiles/ZmultiplierLib.dir/all
+	$(MAKE) $(MAKESILENT) -f examples\CMakeFiles\test2.exe.dir\build.make examples/CMakeFiles/test2.exe.dir/depend
+	$(MAKE) $(MAKESILENT) -f examples\CMakeFiles\test2.exe.dir\build.make examples/CMakeFiles/test2.exe.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=F:\VSCodeWorkspace\Z-MultiplierLib\build\CMakeFiles --progress-num=14,15 "Built target test2.exe"
+.PHONY : examples/CMakeFiles/test2.exe.dir/all
 
 # Build rule for subdir invocation for target.
-examples/CMakeFiles/test.exe.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start F:\VSCodeWorkspace\Z-MultiplierLib\build\CMakeFiles 13
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 examples/CMakeFiles/test.exe.dir/all
+examples/CMakeFiles/test2.exe.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start F:\VSCodeWorkspace\Z-MultiplierLib\build\CMakeFiles 15
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 examples/CMakeFiles/test2.exe.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start F:\VSCodeWorkspace\Z-MultiplierLib\build\CMakeFiles 0
-.PHONY : examples/CMakeFiles/test.exe.dir/rule
+.PHONY : examples/CMakeFiles/test2.exe.dir/rule
 
 # Convenience name for target.
-test.exe: examples/CMakeFiles/test.exe.dir/rule
-.PHONY : test.exe
+test2.exe: examples/CMakeFiles/test2.exe.dir/rule
+.PHONY : test2.exe
 
 # codegen rule for target.
-examples/CMakeFiles/test.exe.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f examples\CMakeFiles\test.exe.dir\build.make examples/CMakeFiles/test.exe.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=F:\VSCodeWorkspace\Z-MultiplierLib\build\CMakeFiles --progress-num=12,13 "Finished codegen for target test.exe"
-.PHONY : examples/CMakeFiles/test.exe.dir/codegen
+examples/CMakeFiles/test2.exe.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f examples\CMakeFiles\test2.exe.dir\build.make examples/CMakeFiles/test2.exe.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=F:\VSCodeWorkspace\Z-MultiplierLib\build\CMakeFiles --progress-num=14,15 "Finished codegen for target test2.exe"
+.PHONY : examples/CMakeFiles/test2.exe.dir/codegen
 
 # clean rule for target.
-examples/CMakeFiles/test.exe.dir/clean:
-	$(MAKE) $(MAKESILENT) -f examples\CMakeFiles\test.exe.dir\build.make examples/CMakeFiles/test.exe.dir/clean
-.PHONY : examples/CMakeFiles/test.exe.dir/clean
+examples/CMakeFiles/test2.exe.dir/clean:
+	$(MAKE) $(MAKESILENT) -f examples\CMakeFiles\test2.exe.dir\build.make examples/CMakeFiles/test2.exe.dir/clean
+.PHONY : examples/CMakeFiles/test2.exe.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

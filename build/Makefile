@@ -174,17 +174,17 @@ ZmultiplierLib/fast:
 .PHONY : ZmultiplierLib/fast
 
 #=============================================================================
-# Target rules for targets named test.exe
+# Target rules for targets named test2.exe
 
 # Build rule for target.
-test.exe: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test.exe
-.PHONY : test.exe
+test2.exe: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test2.exe
+.PHONY : test2.exe
 
 # fast build rule for target.
-test.exe/fast:
-	$(MAKE) $(MAKESILENT) -f examples\CMakeFiles\test.exe.dir\build.make examples/CMakeFiles/test.exe.dir/build
-.PHONY : test.exe/fast
+test2.exe/fast:
+	$(MAKE) $(MAKESILENT) -f examples\CMakeFiles\test2.exe.dir\build.make examples/CMakeFiles/test2.exe.dir/build
+.PHONY : test2.exe/fast
 
 src/assets/Font.obj: src/assets/Font.cpp.obj
 .PHONY : src/assets/Font.obj
@@ -354,6 +354,54 @@ src/core/Logger.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZmultiplierLib.dir\build.make CMakeFiles/ZmultiplierLib.dir/src/core/Logger.cpp.s
 .PHONY : src/core/Logger.cpp.s
 
+src/game/DefaultAIBehavior.obj: src/game/DefaultAIBehavior.cpp.obj
+.PHONY : src/game/DefaultAIBehavior.obj
+
+# target to build an object file
+src/game/DefaultAIBehavior.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZmultiplierLib.dir\build.make CMakeFiles/ZmultiplierLib.dir/src/game/DefaultAIBehavior.cpp.obj
+.PHONY : src/game/DefaultAIBehavior.cpp.obj
+
+src/game/DefaultAIBehavior.i: src/game/DefaultAIBehavior.cpp.i
+.PHONY : src/game/DefaultAIBehavior.i
+
+# target to preprocess a source file
+src/game/DefaultAIBehavior.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZmultiplierLib.dir\build.make CMakeFiles/ZmultiplierLib.dir/src/game/DefaultAIBehavior.cpp.i
+.PHONY : src/game/DefaultAIBehavior.cpp.i
+
+src/game/DefaultAIBehavior.s: src/game/DefaultAIBehavior.cpp.s
+.PHONY : src/game/DefaultAIBehavior.s
+
+# target to generate assembly for a file
+src/game/DefaultAIBehavior.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZmultiplierLib.dir\build.make CMakeFiles/ZmultiplierLib.dir/src/game/DefaultAIBehavior.cpp.s
+.PHONY : src/game/DefaultAIBehavior.cpp.s
+
+src/game/GameObject.obj: src/game/GameObject.cpp.obj
+.PHONY : src/game/GameObject.obj
+
+# target to build an object file
+src/game/GameObject.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZmultiplierLib.dir\build.make CMakeFiles/ZmultiplierLib.dir/src/game/GameObject.cpp.obj
+.PHONY : src/game/GameObject.cpp.obj
+
+src/game/GameObject.i: src/game/GameObject.cpp.i
+.PHONY : src/game/GameObject.i
+
+# target to preprocess a source file
+src/game/GameObject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZmultiplierLib.dir\build.make CMakeFiles/ZmultiplierLib.dir/src/game/GameObject.cpp.i
+.PHONY : src/game/GameObject.cpp.i
+
+src/game/GameObject.s: src/game/GameObject.cpp.s
+.PHONY : src/game/GameObject.s
+
+# target to generate assembly for a file
+src/game/GameObject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZmultiplierLib.dir\build.make CMakeFiles/ZmultiplierLib.dir/src/game/GameObject.cpp.s
+.PHONY : src/game/GameObject.cpp.s
+
 src/painter/Painter.obj: src/painter/Painter.cpp.obj
 .PHONY : src/painter/Painter.obj
 
@@ -439,7 +487,7 @@ help:
 	@echo ... list_install_components
 	@echo ... rebuild_cache
 	@echo ... ZmultiplierLib
-	@echo ... test.exe
+	@echo ... test2.exe
 	@echo ... src/assets/Font.obj
 	@echo ... src/assets/Font.i
 	@echo ... src/assets/Font.s
@@ -461,6 +509,12 @@ help:
 	@echo ... src/core/Logger.obj
 	@echo ... src/core/Logger.i
 	@echo ... src/core/Logger.s
+	@echo ... src/game/DefaultAIBehavior.obj
+	@echo ... src/game/DefaultAIBehavior.i
+	@echo ... src/game/DefaultAIBehavior.s
+	@echo ... src/game/GameObject.obj
+	@echo ... src/game/GameObject.i
+	@echo ... src/game/GameObject.s
 	@echo ... src/painter/Painter.obj
 	@echo ... src/painter/Painter.i
 	@echo ... src/painter/Painter.s

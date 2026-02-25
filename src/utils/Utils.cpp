@@ -10,4 +10,12 @@ namespace Utils{
         WNDCLASSEX wc={};
         return GetClassInfoEx(NULL,CLASSNAME,&wc);
     }
+    int Random::range(int min,int max){
+        std::uniform_int_distribution<int> r(min,max);
+        return r(gen);
+    }
+    float Random::real(int min,int max){
+        std::uniform_real_distribution<float> r(min,max);
+        return r(gen);
+    }
 }

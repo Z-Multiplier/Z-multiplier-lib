@@ -17,8 +17,7 @@
 Core::logger PainterLogger;
 bool Window::Painter::alphaBlender(int x,int y,int width,int height,const Core::Color &color){
     if(x<0||y<0||width<0||height<0){
-        PainterLogger.formatLog(Core::logger::LOG_WARNING,"Invalid rectangle,This will do literally nothing:x=%d,y=%d,w=%d,h=%d",x,y,width,height);
-        return true;
+        PainterLogger.formatLog(Core::logger::LOG_WARNING,"Invalid rectangle,This may not do what you expected:x=%d,y=%d,w=%d,h=%d",x,y,width,height);
     }
     if(color.a==0)return true;
     if(color.a==255){

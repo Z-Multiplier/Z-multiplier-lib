@@ -2,8 +2,8 @@
 ------------------
 #### **Still under development**
 
-本图形库是基于GDI和GDI+的**CPU 2D**的，**Windows平台**图形库，可以自主实现3D
-This library is a **CPU-based 2D graphics library** for **Windows**, built on GDI and GDI+,allows you to implement 3D rendering manually.
+本图形库是基于GDI和GDI+的**CPU 2D**的，**Windows平台**~~图形~~游戏库，可以自主实现3D
+This library is a **CPU-based 2D ~~graphics~~ game library** for **Windows**, built on GDI and GDI+,allows you to implement 3D rendering manually.
 
 #### 主要特点：
 

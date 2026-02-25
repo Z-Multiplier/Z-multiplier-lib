@@ -18,6 +18,8 @@ int shootCooldown=120;//射击冷却
 int nowexp=19;//现有经验值（19是我debug用的）
 bool canChooseSkill=false;//废弃变量
 int level=0;//等级
+int reactDuration=0;//应激时长
+float totalRage=0.0f;//总仇恨
 float difficulty=0.0f;//别问，问就是隔一天写忘了自己定义了什么了
 //罗马数字转换（支持 1~5）
 std::wstring toRoman(int num){
@@ -69,18 +71,29 @@ struct Skill{
     int maxLevel;
     std::wstring description;
     Assets::Image icon;
+    float difficultyInfluence;
     Skill(const Skill&)=delete;
     Skill& operator=(const Skill&)=delete;
     Skill(Skill&&) noexcept=default;
     Skill& operator=(Skill&&) noexcept=default;
-    Skill(std::wstring n,std::wstring d,int ml,std::wstring path):name(n),maxLevel(ml),description(d),icon(path){}
+    Skill(std::wstring n,std::wstring d,int ml,std::wstring path,float di):name(n),maxLevel(ml),description(d),icon(path),difficultyInfluence(di){}
 };//技能
 vector<Skill> makeSkillPool(){
     vector<Skill> v;
-    v.emplace_back(L"攻速突破",L"无视上限，提升 1 frame攻速",5,L"./atkspd.bmp");
-    v.emplace_back(L"加固护甲",L"提升 5 最大生命值",3,L"./hpup.bmp");
-    v.emplace_back(L"推进引擎",L"提升 ~1 移动速度",4,L"./speed.bmp");
-    v.emplace_back(L"增援",L"召唤 1 架僚机",2,L"./extraplane.bmp");
+    v.emplace_back(L"攻速突破",L"无视上限，提升 1/2/3/4/5 frame攻速",5,L"./atkspd.bmp",0.1);
+    v.emplace_back(L"加固护甲",L"提升 5/10/15 最大生命值",3,L"./hpup.bmp",0.1);
+    v.emplace_back(L"推进引擎",L"提升 ~1/2/3/4 移动速度",4,L"./speed.bmp",0.1);
+    v.emplace_back(L"增援",L"召唤 1/2/3/4/5 架僚机， V级时可以右键长按召回僚机",5,L"./extraplane.bmp",0.2);
+    v.emplace_back(L"多重射击",L"每级向两侧分别增加 1/2 枚子弹",2,L"./multishot.bmp",0.2);
+    v.emplace_back(L"美食家",L"允许你吃掉敌机，回复 1/2/3/4/5 点生命值",5,L"./eater.bmp",0.1);
+    v.emplace_back(L"应急能源",L"一次性，濒死时复活并带有 1 点生命值",1,L"./rebirth.bmp",0.1);
+    v.emplace_back(L"学习",L"受伤时概率获得 1/2/3 经验",3,L"./learn.bmp",0.1);
+    v.emplace_back(L"多向炮台",L"长按左键，向 4/8个基本方向射出子弹",2,L"./eightshoot.bmp",0.2);
+    v.emplace_back(L"隧穿",L"失去右键移动能力，但改为 向鼠标方向瞬移 60/120 px",2,L"./tp.bmp",0.2);
+    v.emplace_back(L"应激",L"受伤后提升 ~2/4 移动速度，持续 60 frame",2,L"./react.bmp",0.1);
+    v.emplace_back(L"拾荒",L"捡起经验球时回复 1/1/2 生命值",3,L"./recycle.bmp",0.1);
+    v.emplace_back(L"闪电链",L"子弹命中后链接 1/2/3 个敌人，每击中一个敌人，衰减 30%",3,L"./electricchain.bmp",0.3);
+    v.emplace_back(L"沉重核心",L"降低 ~3 移动速度",1,L"./heavycore.bmp",-0.3);
     return v;
 }
 vector<Skill> skillPool=makeSkillPool();
@@ -125,7 +138,7 @@ long long mainWindowPaint(HWND hWnd,UINT uMsg,WPARAM wParam,LPARAM lParam,Painte
     auto __now_time=std::chrono::steady_clock::now();
     double elapsed=std::chrono::duration<double>(__now_time-__start_time).count();//用于计算难度
     //update difficulty D
-    double D=0.1+0.001*elapsed+0.2*level;//计算公式
+    double D=0.1+0.001*elapsed+0.2*level+totalRage;//计算公式
     //别问公式哪来的，问就是试出来的
     currentDifficulty=D;
     if(shootCooldown>0){
@@ -203,7 +216,14 @@ long long mainWindowPaint(HWND hWnd,UINT uMsg,WPARAM wParam,LPARAM lParam,Painte
         //根据难度增加速度
         double baseSpeed=3.0;//基准速度
         double moveSpeed=baseSpeed*(1.0+0.5*D);//矫正速度
-        if(distance<190){
+        if(distance<20&&learnedSkills[L"美食家"]!=0){
+            if(rand()%30<learnedSkills[L"美食家"]){
+                playerHP+=learnedSkills[L"美食家"];
+                enemies.erase(enemies.begin()+idx);
+                idx--;
+            }
+        }
+        else if(distance<190){
             nenemy.x-=(int)(moveSpeed*cos(nenemy.facing));
             nenemy.y-=(int)(moveSpeed*sin(nenemy.facing));
         }//离得远就飞过来
@@ -240,7 +260,7 @@ long long mainWindowPaint(HWND hWnd,UINT uMsg,WPARAM wParam,LPARAM lParam,Painte
         }
     }//简单的碰撞检测防止敌机重叠
 
-{//我也不知道为什么我当时要套一层花括号
+    {//我也不知道为什么我当时要套一层花括号
         //算了
         static Assets::Image enemyCollisionTexture;
         enemyCollisionTexture=Assets::Image(L"./enemy.bmp");
@@ -258,6 +278,23 @@ long long mainWindowPaint(HWND hWnd,UINT uMsg,WPARAM wParam,LPARAM lParam,Painte
                     bullets.erase(bullets.begin()+bi);
                     e.HP-=5;
                     e.HP-=level;
+                    if(learnedSkills[L"闪电链"]>0&&!enemies.empty()){
+                        float decay=0.7f;
+                        float extraDecay=1.0f;
+                        enemy *chainedEnemy=&enemies[rand()%enemies.size()];
+                        chainedEnemy->HP-=(5+level)*decay;
+                        painter.line(Point(e.x+rand()%20,e.y+rand()%20),Point(chainedEnemy->x+rand()%20,chainedEnemy->y+rand()%20),Color((unsigned char)0,255,255,255));
+                        int extraChain=learnedSkills[L"闪电链"]-1;
+                        while(extraChain-->0){
+                            decay*=0.7f;
+                            enemy *chainedExtraEnemy=&enemies[rand()%enemies.size()];
+                            if(chainedExtraEnemy==chainedEnemy)extraDecay=0.1f;
+                            chainedExtraEnemy->HP-=(5+level)*decay*extraDecay;
+                            extraDecay=1.0f;
+                            painter.line(Point(chainedEnemy->x+rand()%20,chainedEnemy->y+rand()%20),Point(chainedExtraEnemy->x+rand()%20,chainedExtraEnemy->y+rand()%20),Color((unsigned char)0,255,255,255));
+                            chainedEnemy=chainedExtraEnemy;
+                        }
+                    }
                     if(e.HP<=0){
                         EXPorb newExpOrb={e.x,e.y,rand()%4+3};
                         exporbs.push_back(newExpOrb);
@@ -273,7 +310,7 @@ long long mainWindowPaint(HWND hWnd,UINT uMsg,WPARAM wParam,LPARAM lParam,Painte
         }//遍历子弹和敌人，处理子弹与敌人的碰撞
     }
 
-{//同上
+    {//同上
         int pw=(int)(img.getWidth()/2);
         int ph=(int)(img.getHeight()/2);
         int ebw=(int)(enemyBulletTexture.getWidth()/2);
@@ -285,12 +322,18 @@ long long mainWindowPaint(HWND hWnd,UINT uMsg,WPARAM wParam,LPARAM lParam,Painte
                 enemybullets.erase(enemybullets.begin()+ei);
                 ei--;
                 playerHP-=4;
+                if(rand()%20<learnedSkills[L"学习"]){
+                    nowexp+=learnedSkills[L"学习"];
+                }
+                if(learnedSkills[L"应激"]){
+                    reactDuration=60;
+                }
                 painter.drawBackground(Color((unsigned char)255,0,0,127));
             }
         }//也是子弹与飞机，只不过取not
     }
 
-{
+    {
         int pr=(int)(img.getWidth()/2);
         for(int i=0;i<exporbs.size();i++){
             auto &ex=exporbs[i];//经验球
@@ -303,6 +346,12 @@ long long mainWindowPaint(HWND hWnd,UINT uMsg,WPARAM wParam,LPARAM lParam,Painte
                 GameLogger.formatLog(Core::logger::LOG_INFO,"Picked up exp: %d",ex.exp);//日志
                 exporbs.erase(exporbs.begin()+i);
                 i--;
+                if(learnedSkills[L"拾荒"]){
+                    playerHP+=1;
+                    if(learnedSkills[L"拾荒"]>=3){
+                        playerHP+=1;
+                    }
+                }
                 while(nowexp>20){
                     nowexp-=20;
                     level++;//升级部分
@@ -368,6 +417,13 @@ long long mainWindowPaint(HWND hWnd,UINT uMsg,WPARAM wParam,LPARAM lParam,Painte
             wchar_t lvbuf[64];
             swprintf(lvbuf,64,L"%ls/%ls",romanCur.c_str(),romanMax.c_str());
             painter.putText(LOCATEMODE_CENTER,Point(sx,sy+105),romanFont,lvbuf,Color((unsigned char)255,255,0,255));
+            wchar_t dibuf[64];
+            float diff=sk.difficultyInfluence;
+            swprintf(dibuf,64,L"仇恨影响：%.1f",diff);
+            if(diff>0.0f)
+                painter.putText(LOCATEMODE_CENTER,Point(sx,sy+125),romanFont,dibuf,Color((unsigned char)255,0,0,255));
+            else
+                painter.putText(LOCATEMODE_CENTER,Point(sx,sy+125),romanFont,dibuf,Color((unsigned char)0,255,0,255));
         }
         //不继续渲染后续游戏内容，暂停主窗口
         return 0;
@@ -388,12 +444,19 @@ long long mainWindowPaint(HWND hWnd,UINT uMsg,WPARAM wParam,LPARAM lParam,Painte
     if(nowSpeed>0)
     nowSpeed-=rand()%10==0?1:0;
     if(playerHP<=0){
-        painter.drawBackground(Color((unsigned char)127,127,127,127));
-        Assets::Font font(L"Arial",100,40,FONTWEIGHT_BLACK,false,false,false);
-        font.loadFont();
-        painter.putText(LOCATEMODE_CENTER,Point(350,200),font,L"You died!",Color((unsigned char)255,255,255,255));
-        painter.putText(LOCATEMODE_CENTER,Point(350,400),font,L"Quitting...",Color((unsigned char)255,255,255,255));
-        waitingForQuit=true;
+        if(learnedSkills[L"应急能源"]!=0){
+            learnedSkills[L"应急能源"]--;
+            playerHP=1;
+            painter.drawBackground(Color((unsigned char)255,255,0,127));
+        }
+        else{
+            painter.drawBackground(Color((unsigned char)127,127,127,127));
+            Assets::Font font(L"Arial",100,40,FONTWEIGHT_BLACK,false,false,false);
+            font.loadFont();
+            painter.putText(LOCATEMODE_CENTER,Point(350,200),font,L"You died!",Color((unsigned char)255,255,255,255));
+            painter.putText(LOCATEMODE_CENTER,Point(350,400),font,L"Quitting...",Color((unsigned char)255,255,255,255));
+            waitingForQuit=true;
+        }
     }//死亡部分
     //处理僚机
     static Assets::Image wingmanTexture;
@@ -505,7 +568,30 @@ long long mainWindowMouseMove(HWND hWnd,UINT uMsg,WPARAM wParam,LPARAM lParam,in
     mY=y;
     return 0;
 }
-
+long long mainWindowLHeld(HWND hWnd,UINT uMsg,WPARAM wParam,LPARAM lParam,int x,int y,unsigned long long time){
+    if(learnedSkills[L"多向炮台"]){
+        bullets.push_back(bullet(pX,pY,0));
+        bullets.push_back(bullet(pX,pY,acos(-1.0)/2));
+        bullets.push_back(bullet(pX,pY,acos(-1.0)));
+        bullets.push_back(bullet(pX,pY,3*acos(-1.0)/2));
+        if(learnedSkills[L"多向炮台"]>=2){
+            bullets.push_back(bullet(pX,pY,acos(-1.0)/4));
+            bullets.push_back(bullet(pX,pY,3*acos(-1.0)/4));
+            bullets.push_back(bullet(pX,pY,5*acos(-1.0)/4));
+            bullets.push_back(bullet(pX,pY,7*acos(-1.0)/4));
+        }
+    }
+    return 0;
+}
+long long mainWindowRHeld(HWND hWnd,UINT uMsg,WPARAM wParam,LPARAM lParam,int x,int y,unsigned long long time){
+    if(learnedSkills[L"增援"]>=5){
+        for(auto& wingman:wingmans){
+            wingman.x=pX+rand()%50;
+            wingman.y=pY+rand()%50;
+        }
+    }
+    return 0;
+}
 long long mainWindowLClick(HWND hWnd,UINT uMsg,WPARAM wParam,LPARAM lParam,int x,int y){
     //如果正在选择技能，优先处理技能选择点击
     if(selectingSkill&&skillChoices.size()>0){
@@ -529,6 +615,7 @@ long long mainWindowLClick(HWND hWnd,UINT uMsg,WPARAM wParam,LPARAM lParam,int x
                 skillChoices.clear();
                 playerHP=20+5*learnedSkills[L"加固护甲"];
                 updateWingmans();  //根据新的增援等级调整僚机数量
+                totalRage+=skillPool[idx].difficultyInfluence;
                 return 0;
             }
         }
@@ -538,13 +625,23 @@ long long mainWindowLClick(HWND hWnd,UINT uMsg,WPARAM wParam,LPARAM lParam,int x
     if(shootCooldown) return 0;//还在冷却就退出
     bullet newBullet(pX,pY,arc);
     bullets.push_back(newBullet);//create new bullet
+    int multishot=learnedSkills[L"多重射击"];
+    for(int i=1;i<=multishot;i++){
+        bullets.push_back(bullet(pX,pY,arc+i*(acos(-1.0)/12)));
+        bullets.push_back(bullet(pX,pY,arc-i*(acos(-1.0)/12)));
+    }
     //发射子弹
     shootCooldown=std::max(50-(5*level),10)-learnedSkills[L"攻速突破"];
     return 0;
 }
 
 long long mainWindowRClick(HWND hWnd,UINT uMsg,WPARAM wParam,LPARAM lParam,int x,int y){
-    nowSpeed=7+learnedSkills[L"推进引擎"];//移动初速度
+    if(learnedSkills[L"隧穿"]){
+        pX+=learnedSkills[L"隧穿"]*60*cos(arc);
+        pY+=learnedSkills[L"隧穿"]*60*sin(arc);
+        return 0;
+    }
+    nowSpeed=7+learnedSkills[L"推进引擎"]+static_cast<bool>(reactDuration)*2*learnedSkills[L"应激"]-learnedSkills[L"沉重核心"]*3;//移动初速度
     return 0;
 }
 
@@ -558,6 +655,8 @@ int main(){
     mainWindow.first->thisPaint=mainWindowPaint;
     mainWindow.first->thisMouseMove=mainWindowMouseMove;
     mainWindow.first->thisInstantRightClick=mainWindowRClick;
+    mainWindow.first->thisLeftHeld=mainWindowLHeld;
+    mainWindow.first->thisRightHeld=mainWindowRHeld;
     mainWindow.first->thisInstantLeftClick=mainWindowLClick;//inject the functions into the windows
     //注入窗口回调
     MSG msg={};

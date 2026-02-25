@@ -27,6 +27,8 @@ add_library(ZmultiplierLib STATIC
     src/assets/Image.cpp
     src/assets/Font.cpp
     src/assets/Transformation.cpp
+    src/game/DefaultAIBehavior.cpp
+    src/game/GameObject.cpp
 )
 
 target_link_libraries(ZmultiplierLib PRIVATE

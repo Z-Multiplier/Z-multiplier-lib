@@ -221,6 +221,36 @@ CMakeFiles/ZmultiplierLib.dir/src/assets/Transformation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ZmultiplierLib.dir/src/assets/Transformation.cpp.s"
 	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\VSCodeWorkspace\Z-MultiplierLib\src\assets\Transformation.cpp -o CMakeFiles\ZmultiplierLib.dir\src\assets\Transformation.cpp.s
 
+CMakeFiles/ZmultiplierLib.dir/src/game/DefaultAIBehavior.cpp.obj: CMakeFiles/ZmultiplierLib.dir/flags.make
+CMakeFiles/ZmultiplierLib.dir/src/game/DefaultAIBehavior.cpp.obj: CMakeFiles/ZmultiplierLib.dir/includes_CXX.rsp
+CMakeFiles/ZmultiplierLib.dir/src/game/DefaultAIBehavior.cpp.obj: F:/VSCodeWorkspace/Z-MultiplierLib/src/game/DefaultAIBehavior.cpp
+CMakeFiles/ZmultiplierLib.dir/src/game/DefaultAIBehavior.cpp.obj: CMakeFiles/ZmultiplierLib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\VSCodeWorkspace\Z-MultiplierLib\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/ZmultiplierLib.dir/src/game/DefaultAIBehavior.cpp.obj"
+	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ZmultiplierLib.dir/src/game/DefaultAIBehavior.cpp.obj -MF CMakeFiles\ZmultiplierLib.dir\src\game\DefaultAIBehavior.cpp.obj.d -o CMakeFiles\ZmultiplierLib.dir\src\game\DefaultAIBehavior.cpp.obj -c F:\VSCodeWorkspace\Z-MultiplierLib\src\game\DefaultAIBehavior.cpp
+
+CMakeFiles/ZmultiplierLib.dir/src/game/DefaultAIBehavior.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ZmultiplierLib.dir/src/game/DefaultAIBehavior.cpp.i"
+	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\VSCodeWorkspace\Z-MultiplierLib\src\game\DefaultAIBehavior.cpp > CMakeFiles\ZmultiplierLib.dir\src\game\DefaultAIBehavior.cpp.i
+
+CMakeFiles/ZmultiplierLib.dir/src/game/DefaultAIBehavior.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ZmultiplierLib.dir/src/game/DefaultAIBehavior.cpp.s"
+	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\VSCodeWorkspace\Z-MultiplierLib\src\game\DefaultAIBehavior.cpp -o CMakeFiles\ZmultiplierLib.dir\src\game\DefaultAIBehavior.cpp.s
+
+CMakeFiles/ZmultiplierLib.dir/src/game/GameObject.cpp.obj: CMakeFiles/ZmultiplierLib.dir/flags.make
+CMakeFiles/ZmultiplierLib.dir/src/game/GameObject.cpp.obj: CMakeFiles/ZmultiplierLib.dir/includes_CXX.rsp
+CMakeFiles/ZmultiplierLib.dir/src/game/GameObject.cpp.obj: F:/VSCodeWorkspace/Z-MultiplierLib/src/game/GameObject.cpp
+CMakeFiles/ZmultiplierLib.dir/src/game/GameObject.cpp.obj: CMakeFiles/ZmultiplierLib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\VSCodeWorkspace\Z-MultiplierLib\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/ZmultiplierLib.dir/src/game/GameObject.cpp.obj"
+	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ZmultiplierLib.dir/src/game/GameObject.cpp.obj -MF CMakeFiles\ZmultiplierLib.dir\src\game\GameObject.cpp.obj.d -o CMakeFiles\ZmultiplierLib.dir\src\game\GameObject.cpp.obj -c F:\VSCodeWorkspace\Z-MultiplierLib\src\game\GameObject.cpp
+
+CMakeFiles/ZmultiplierLib.dir/src/game/GameObject.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ZmultiplierLib.dir/src/game/GameObject.cpp.i"
+	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\VSCodeWorkspace\Z-MultiplierLib\src\game\GameObject.cpp > CMakeFiles\ZmultiplierLib.dir\src\game\GameObject.cpp.i
+
+CMakeFiles/ZmultiplierLib.dir/src/game/GameObject.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ZmultiplierLib.dir/src/game/GameObject.cpp.s"
+	F:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\VSCodeWorkspace\Z-MultiplierLib\src\game\GameObject.cpp -o CMakeFiles\ZmultiplierLib.dir\src\game\GameObject.cpp.s
+
 # Object files for target ZmultiplierLib
 ZmultiplierLib_OBJECTS = \
 "CMakeFiles/ZmultiplierLib.dir/src/core/Color.cpp.obj" \
@@ -232,7 +262,9 @@ ZmultiplierLib_OBJECTS = \
 "CMakeFiles/ZmultiplierLib.dir/src/core/EntryPoint.cpp.obj" \
 "CMakeFiles/ZmultiplierLib.dir/src/assets/Image.cpp.obj" \
 "CMakeFiles/ZmultiplierLib.dir/src/assets/Font.cpp.obj" \
-"CMakeFiles/ZmultiplierLib.dir/src/assets/Transformation.cpp.obj"
+"CMakeFiles/ZmultiplierLib.dir/src/assets/Transformation.cpp.obj" \
+"CMakeFiles/ZmultiplierLib.dir/src/game/DefaultAIBehavior.cpp.obj" \
+"CMakeFiles/ZmultiplierLib.dir/src/game/GameObject.cpp.obj"
 
 # External object files for target ZmultiplierLib
 ZmultiplierLib_EXTERNAL_OBJECTS =
@@ -247,9 +279,11 @@ lib/libZmultiplierLib.a: CMakeFiles/ZmultiplierLib.dir/src/core/EntryPoint.cpp.o
 lib/libZmultiplierLib.a: CMakeFiles/ZmultiplierLib.dir/src/assets/Image.cpp.obj
 lib/libZmultiplierLib.a: CMakeFiles/ZmultiplierLib.dir/src/assets/Font.cpp.obj
 lib/libZmultiplierLib.a: CMakeFiles/ZmultiplierLib.dir/src/assets/Transformation.cpp.obj
+lib/libZmultiplierLib.a: CMakeFiles/ZmultiplierLib.dir/src/game/DefaultAIBehavior.cpp.obj
+lib/libZmultiplierLib.a: CMakeFiles/ZmultiplierLib.dir/src/game/GameObject.cpp.obj
 lib/libZmultiplierLib.a: CMakeFiles/ZmultiplierLib.dir/build.make
 lib/libZmultiplierLib.a: CMakeFiles/ZmultiplierLib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=F:\VSCodeWorkspace\Z-MultiplierLib\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX static library lib\libZmultiplierLib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=F:\VSCodeWorkspace\Z-MultiplierLib\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX static library lib\libZmultiplierLib.a"
 	$(CMAKE_COMMAND) -P CMakeFiles\ZmultiplierLib.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\ZmultiplierLib.dir\link.txt --verbose=$(VERBOSE)
 

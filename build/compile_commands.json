@@ -60,9 +60,21 @@
   "output": "CMakeFiles/ZmultiplierLib.dir/src/assets/Transformation.cpp.obj"
 },
 {
+  "directory": "F:/VSCodeWorkspace/Z-MultiplierLib/build",
+  "command": "F:\\msys64\\ucrt64\\bin\\g++.exe -DNOMINMAX @CMakeFiles/ZmultiplierLib.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wextra -pedantic -o CMakeFiles\\ZmultiplierLib.dir\\src\\game\\DefaultAIBehavior.cpp.obj -c F:\\VSCodeWorkspace\\Z-MultiplierLib\\src\\game\\DefaultAIBehavior.cpp",
+  "file": "F:/VSCodeWorkspace/Z-MultiplierLib/src/game/DefaultAIBehavior.cpp",
+  "output": "CMakeFiles/ZmultiplierLib.dir/src/game/DefaultAIBehavior.cpp.obj"
+},
+{
+  "directory": "F:/VSCodeWorkspace/Z-MultiplierLib/build",
+  "command": "F:\\msys64\\ucrt64\\bin\\g++.exe -DNOMINMAX @CMakeFiles/ZmultiplierLib.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wextra -pedantic -o CMakeFiles\\ZmultiplierLib.dir\\src\\game\\GameObject.cpp.obj -c F:\\VSCodeWorkspace\\Z-MultiplierLib\\src\\game\\GameObject.cpp",
+  "file": "F:/VSCodeWorkspace/Z-MultiplierLib/src/game/GameObject.cpp",
+  "output": "CMakeFiles/ZmultiplierLib.dir/src/game/GameObject.cpp.obj"
+},
+{
   "directory": "F:/VSCodeWorkspace/Z-MultiplierLib/build/examples",
-  "command": "F:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/test.exe.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wextra -pedantic -o CMakeFiles\\test.exe.dir\\test.cpp.obj -c F:\\VSCodeWorkspace\\Z-MultiplierLib\\examples\\test.cpp",
-  "file": "F:/VSCodeWorkspace/Z-MultiplierLib/examples/test.cpp",
-  "output": "examples/CMakeFiles/test.exe.dir/test.cpp.obj"
+  "command": "F:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/test2.exe.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wextra -pedantic -o CMakeFiles\\test2.exe.dir\\test2.cpp.obj -c F:\\VSCodeWorkspace\\Z-MultiplierLib\\examples\\test2.cpp",
+  "file": "F:/VSCodeWorkspace/Z-MultiplierLib/examples/test2.cpp",
+  "output": "examples/CMakeFiles/test2.exe.dir/test2.cpp.obj"
 }
 ]

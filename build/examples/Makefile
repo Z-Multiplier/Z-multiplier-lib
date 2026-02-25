@@ -161,42 +161,42 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-examples/CMakeFiles/test.exe.dir/rule:
-	cd /d F:\VSCodeWorkspace\Z-MultiplierLib\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 examples/CMakeFiles/test.exe.dir/rule
-.PHONY : examples/CMakeFiles/test.exe.dir/rule
+examples/CMakeFiles/test2.exe.dir/rule:
+	cd /d F:\VSCodeWorkspace\Z-MultiplierLib\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 examples/CMakeFiles/test2.exe.dir/rule
+.PHONY : examples/CMakeFiles/test2.exe.dir/rule
 
 # Convenience name for target.
-test.exe: examples/CMakeFiles/test.exe.dir/rule
-.PHONY : test.exe
+test2.exe: examples/CMakeFiles/test2.exe.dir/rule
+.PHONY : test2.exe
 
 # fast build rule for target.
-test.exe/fast:
-	cd /d F:\VSCodeWorkspace\Z-MultiplierLib\build && $(MAKE) $(MAKESILENT) -f examples\CMakeFiles\test.exe.dir\build.make examples/CMakeFiles/test.exe.dir/build
-.PHONY : test.exe/fast
+test2.exe/fast:
+	cd /d F:\VSCodeWorkspace\Z-MultiplierLib\build && $(MAKE) $(MAKESILENT) -f examples\CMakeFiles\test2.exe.dir\build.make examples/CMakeFiles/test2.exe.dir/build
+.PHONY : test2.exe/fast
 
-test.obj: test.cpp.obj
-.PHONY : test.obj
+test2.obj: test2.cpp.obj
+.PHONY : test2.obj
 
 # target to build an object file
-test.cpp.obj:
-	cd /d F:\VSCodeWorkspace\Z-MultiplierLib\build && $(MAKE) $(MAKESILENT) -f examples\CMakeFiles\test.exe.dir\build.make examples/CMakeFiles/test.exe.dir/test.cpp.obj
-.PHONY : test.cpp.obj
+test2.cpp.obj:
+	cd /d F:\VSCodeWorkspace\Z-MultiplierLib\build && $(MAKE) $(MAKESILENT) -f examples\CMakeFiles\test2.exe.dir\build.make examples/CMakeFiles/test2.exe.dir/test2.cpp.obj
+.PHONY : test2.cpp.obj
 
-test.i: test.cpp.i
-.PHONY : test.i
+test2.i: test2.cpp.i
+.PHONY : test2.i
 
 # target to preprocess a source file
-test.cpp.i:
-	cd /d F:\VSCodeWorkspace\Z-MultiplierLib\build && $(MAKE) $(MAKESILENT) -f examples\CMakeFiles\test.exe.dir\build.make examples/CMakeFiles/test.exe.dir/test.cpp.i
-.PHONY : test.cpp.i
+test2.cpp.i:
+	cd /d F:\VSCodeWorkspace\Z-MultiplierLib\build && $(MAKE) $(MAKESILENT) -f examples\CMakeFiles\test2.exe.dir\build.make examples/CMakeFiles/test2.exe.dir/test2.cpp.i
+.PHONY : test2.cpp.i
 
-test.s: test.cpp.s
-.PHONY : test.s
+test2.s: test2.cpp.s
+.PHONY : test2.s
 
 # target to generate assembly for a file
-test.cpp.s:
-	cd /d F:\VSCodeWorkspace\Z-MultiplierLib\build && $(MAKE) $(MAKESILENT) -f examples\CMakeFiles\test.exe.dir\build.make examples/CMakeFiles/test.exe.dir/test.cpp.s
-.PHONY : test.cpp.s
+test2.cpp.s:
+	cd /d F:\VSCodeWorkspace\Z-MultiplierLib\build && $(MAKE) $(MAKESILENT) -f examples\CMakeFiles\test2.exe.dir\build.make examples/CMakeFiles/test2.exe.dir/test2.cpp.s
+.PHONY : test2.cpp.s
 
 # Help Target
 help:
@@ -210,10 +210,10 @@ help:
 	@echo ... install/strip
 	@echo ... list_install_components
 	@echo ... rebuild_cache
-	@echo ... test.exe
-	@echo ... test.obj
-	@echo ... test.i
-	@echo ... test.s
+	@echo ... test2.exe
+	@echo ... test2.obj
+	@echo ... test2.i
+	@echo ... test2.s
 .PHONY : help
 
 

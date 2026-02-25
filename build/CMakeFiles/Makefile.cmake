@@ -54,5 +54,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/ZmultiplierLib.dir/DependInfo.cmake"
-  "examples/CMakeFiles/test.exe.dir/DependInfo.cmake"
+  "examples/CMakeFiles/test2.exe.dir/DependInfo.cmake"
   )
