@@ -1,134 +1,16 @@
 CMakeFiles/ZmultiplierLib.dir/src/game/DefaultAIBehavior.cpp.obj: \
  F:\VSCodeWorkspace\Z-MultiplierLib\src\game\DefaultAIBehavior.cpp \
  F:/VSCodeWorkspace/Z-MultiplierLib/include/GameObject.hpp \
- F:/msys64/ucrt64/include/c++/15.2.0/unordered_map \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/requires_hosted.h \
- F:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \
- F:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/os_defines.h \
- F:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
- F:/msys64/ucrt64/include/c++/15.2.0/pstl/pstl_config.h \
- F:/msys64/ucrt64/include/c++/15.2.0/initializer_list \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/unordered_map.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/hashtable.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/hashtable_policy.h \
- F:/msys64/ucrt64/include/c++/15.2.0/tuple \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/stl_pair.h \
- F:/msys64/ucrt64/include/c++/15.2.0/type_traits \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/version.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/move.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/utility.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/invoke.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/functional_hash.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/hash_bytes.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/stl_algobase.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/functexcept.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/exception_defines.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/cpp_type_traits.h \
- F:/msys64/ucrt64/include/c++/15.2.0/ext/type_traits.h \
- F:/msys64/ucrt64/include/c++/15.2.0/ext/numeric_traits.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator_base_types.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/concept_check.h \
- F:/msys64/ucrt64/include/c++/15.2.0/debug/assertions.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/ptr_traits.h \
- F:/msys64/ucrt64/include/c++/15.2.0/debug/debug.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/predefined_ops.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bit \
- F:/msys64/ucrt64/include/c++/15.2.0/concepts \
- F:/msys64/ucrt64/include/c++/15.2.0/ext/aligned_buffer.h \
- F:/msys64/ucrt64/include/c++/15.2.0/ext/alloc_traits.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/alloc_traits.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/stl_construct.h \
- F:/msys64/ucrt64/include/c++/15.2.0/new \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/exception.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/memoryfwd.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/allocator.h \
- F:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/new_allocator.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/enable_special_members.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/stl_function.h \
- F:/msys64/ucrt64/include/c++/15.2.0/backward/binders.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/node_handle.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/range_access.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/erase_if.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/memory_resource.h \
- F:/msys64/ucrt64/include/c++/15.2.0/cstddef \
- F:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
- F:/msys64/ucrt64/include/stddef.h F:/msys64/ucrt64/include/crtdefs.h \
- F:/msys64/ucrt64/include/corecrt.h F:/msys64/ucrt64/include/_mingw.h \
+ F:/VSCodeWorkspace/Z-MultiplierLib/include/DefaultAIBehavior.hpp \
+ F:/VSCodeWorkspace/Z-MultiplierLib/include/Utils.hpp \
+ F:/VSCodeWorkspace/Z-MultiplierLib/include/Window.hpp \
+ F:/msys64/ucrt64/include/windows.h F:/msys64/ucrt64/include/_mingw.h \
  F:/msys64/ucrt64/include/_mingw_mac.h \
  F:/msys64/ucrt64/include/_mingw_secapi.h \
  F:/msys64/ucrt64/include/vadefs.h \
  F:/msys64/ucrt64/include/sdks/_mingw_ddk.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator_args.h \
- F:/msys64/ucrt64/include/c++/15.2.0/variant \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/monostate.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/parse_numbers.h \
- F:/msys64/ucrt64/include/c++/15.2.0/string \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/stringfwd.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/char_traits.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/postypes.h \
- F:/msys64/ucrt64/include/c++/15.2.0/cwchar \
- F:/msys64/ucrt64/include/wchar.h \
- F:/msys64/ucrt64/include/corecrt_stdio_config.h \
- F:/msys64/ucrt64/include/corecrt_wstdlib.h \
- F:/msys64/ucrt64/include/corecrt_wctype.h \
- F:/msys64/ucrt64/include/_mingw_off_t.h \
- F:/msys64/ucrt64/include/_mingw_stat64.h \
- F:/msys64/ucrt64/include/swprintf.inl \
- F:/msys64/ucrt64/include/sec_api/wchar_s.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/localefwd.h \
- F:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++locale.h \
- F:/msys64/ucrt64/include/c++/15.2.0/clocale \
- F:/msys64/ucrt64/include/locale.h F:/msys64/ucrt64/include/stdio.h \
- F:/msys64/ucrt64/include/sec_api/stdio_s.h \
- F:/msys64/ucrt64/include/c++/15.2.0/iosfwd \
- F:/msys64/ucrt64/include/c++/15.2.0/cctype \
- F:/msys64/ucrt64/include/ctype.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/ostream_insert.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/cxxabi_forced.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/refwrap.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/basic_string.h \
- F:/msys64/ucrt64/include/c++/15.2.0/string_view \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/string_view.tcc \
- F:/msys64/ucrt64/include/c++/15.2.0/ext/string_conversions.h \
- F:/msys64/ucrt64/include/c++/15.2.0/cstdlib \
- F:/msys64/ucrt64/include/stdlib.h \
- F:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h \
- F:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h \
- F:/msys64/ucrt64/include/limits.h \
- F:/msys64/ucrt64/include/sec_api/stdlib_s.h \
- F:/msys64/ucrt64/include/c++/15.2.0/stdlib.h \
- F:/msys64/ucrt64/include/malloc.h \
- F:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h \
- F:/msys64/ucrt64/include/errno.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/std_abs.h \
- F:/msys64/ucrt64/include/c++/15.2.0/cstdio \
- F:/msys64/ucrt64/include/c++/15.2.0/cerrno \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/charconv.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/basic_string.tcc \
- F:/msys64/ucrt64/include/c++/15.2.0/functional \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/std_function.h \
- F:/msys64/ucrt64/include/c++/15.2.0/typeinfo \
- F:/msys64/ucrt64/include/c++/15.2.0/vector \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/stl_uninitialized.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/stl_vector.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/stl_bvector.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/vector.tcc \
- F:/msys64/ucrt64/include/c++/15.2.0/array \
- F:/msys64/ucrt64/include/c++/15.2.0/compare \
- F:/msys64/ucrt64/include/c++/15.2.0/optional \
- F:/msys64/ucrt64/include/c++/15.2.0/exception \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/exception_ptr.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/cxxabi_init_exception.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/nested_exception.h \
- F:/msys64/ucrt64/include/c++/15.2.0/limits \
- F:/VSCodeWorkspace/Z-MultiplierLib/include/Image.hpp \
- F:/VSCodeWorkspace/Z-MultiplierLib/include/Color.hpp \
- F:/msys64/ucrt64/include/windows.h F:/msys64/ucrt64/include/sdkddkver.h \
- F:/msys64/ucrt64/include/excpt.h \
+ F:/msys64/ucrt64/include/sdkddkver.h F:/msys64/ucrt64/include/excpt.h \
+ F:/msys64/ucrt64/include/crtdefs.h F:/msys64/ucrt64/include/corecrt.h \
  F:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdarg.h \
  F:/msys64/ucrt64/include/stdarg.h \
  F:/msys64/ucrt64/include/_mingw_stdarg.h \
@@ -139,6 +21,8 @@ CMakeFiles/ZmultiplierLib.dir/src/game/DefaultAIBehavior.cpp.obj: \
  F:/msys64/ucrt64/include/concurrencysal.h \
  F:/msys64/ucrt64/include/driverspecs.h F:/msys64/ucrt64/include/winnt.h \
  F:/msys64/ucrt64/include/_mingw_unicode.h \
+ F:/msys64/ucrt64/include/ctype.h \
+ F:/msys64/ucrt64/include/corecrt_wctype.h \
  F:/msys64/ucrt64/include/apiset.h \
  F:/msys64/ucrt64/include/psdk_inc/intrin-impl.h \
  F:/msys64/ucrt64/include/basetsd.h F:/msys64/ucrt64/include/guiddef.h \
@@ -147,6 +31,8 @@ CMakeFiles/ZmultiplierLib.dir/src/game/DefaultAIBehavior.cpp.obj: \
  F:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/x86intrin.h \
  F:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/x86gprintrin.h \
  F:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/ia32intrin.h \
+ F:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
+ F:/msys64/ucrt64/include/stddef.h \
  F:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/adxintrin.h \
  F:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/bmiintrin.h \
  F:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/bmi2intrin.h \
@@ -187,6 +73,22 @@ CMakeFiles/ZmultiplierLib.dir/src/game/DefaultAIBehavior.cpp.obj: \
  F:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/immintrin.h \
  F:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mmintrin.h \
  F:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/xmmintrin.h \
+ F:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/stdlib.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/cstdlib \
+ F:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/os_defines.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/pstl/pstl_config.h \
+ F:/msys64/ucrt64/include/stdlib.h \
+ F:/msys64/ucrt64/include/corecrt_wstdlib.h \
+ F:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h \
+ F:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h \
+ F:/msys64/ucrt64/include/limits.h \
+ F:/msys64/ucrt64/include/sec_api/stdlib_s.h \
+ F:/msys64/ucrt64/include/malloc.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/std_abs.h \
+ F:/msys64/ucrt64/include/errno.h \
  F:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/emmintrin.h \
  F:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/pmmintrin.h \
  F:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/tmmintrin.h \
@@ -349,6 +251,172 @@ CMakeFiles/ZmultiplierLib.dir/src/game/DefaultAIBehavior.cpp.obj: \
  F:/msys64/ucrt64/include/sec_api/stralign_s.h \
  F:/msys64/ucrt64/include/winsvc.h F:/msys64/ucrt64/include/mcx.h \
  F:/msys64/ucrt64/include/imm.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/string \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/requires_hosted.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/stringfwd.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/memoryfwd.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/char_traits.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/postypes.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/cwchar \
+ F:/msys64/ucrt64/include/wchar.h \
+ F:/msys64/ucrt64/include/corecrt_stdio_config.h \
+ F:/msys64/ucrt64/include/_mingw_off_t.h \
+ F:/msys64/ucrt64/include/_mingw_stat64.h \
+ F:/msys64/ucrt64/include/swprintf.inl \
+ F:/msys64/ucrt64/include/sec_api/wchar_s.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/type_traits \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/version.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/allocator.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/new_allocator.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/new \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/exception.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/functexcept.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/exception_defines.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/move.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/cpp_type_traits.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/localefwd.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++locale.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/clocale \
+ F:/msys64/ucrt64/include/locale.h F:/msys64/ucrt64/include/stdio.h \
+ F:/msys64/ucrt64/include/sec_api/stdio_s.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/iosfwd \
+ F:/msys64/ucrt64/include/c++/15.2.0/cctype \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/ostream_insert.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/cxxabi_forced.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/concept_check.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/debug/assertions.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator_base_types.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/ext/type_traits.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/ptr_traits.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/stl_function.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/backward/binders.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/ext/numeric_traits.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/stl_algobase.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/stl_pair.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/utility.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/debug/debug.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/predefined_ops.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bit \
+ F:/msys64/ucrt64/include/c++/15.2.0/concepts \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/refwrap.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/invoke.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/range_access.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/initializer_list \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/basic_string.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/ext/alloc_traits.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/alloc_traits.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/stl_construct.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/string_view \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/functional_hash.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/hash_bytes.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/string_view.tcc \
+ F:/msys64/ucrt64/include/c++/15.2.0/ext/string_conversions.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/cstdio \
+ F:/msys64/ucrt64/include/c++/15.2.0/cerrno \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/charconv.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/basic_string.tcc \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/memory_resource.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/cstddef \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator_args.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/tuple \
+ F:/msys64/ucrt64/include/c++/15.2.0/functional \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/std_function.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/typeinfo \
+ F:/msys64/ucrt64/include/c++/15.2.0/unordered_map \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/unordered_map.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/hashtable.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/hashtable_policy.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/ext/aligned_buffer.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/enable_special_members.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/node_handle.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/erase_if.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/vector \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/stl_uninitialized.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/stl_vector.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/stl_bvector.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/vector.tcc \
+ F:/msys64/ucrt64/include/c++/15.2.0/array \
+ F:/msys64/ucrt64/include/c++/15.2.0/compare \
+ F:/msys64/ucrt64/include/c++/15.2.0/memory \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/stl_tempbuf.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/stl_raw_storage_iter.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/align.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/unique_ptr.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/shared_ptr.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/shared_ptr_base.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/allocated_ptr.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/ext/atomicity.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
+ F:/msys64/ucrt64/include/pthread.h F:/msys64/ucrt64/include/sys/types.h \
+ F:/msys64/ucrt64/include/process.h \
+ F:/msys64/ucrt64/include/corecrt_startup.h \
+ F:/msys64/ucrt64/include/signal.h \
+ F:/msys64/ucrt64/include/pthread_signal.h \
+ F:/msys64/ucrt64/include/time.h F:/msys64/ucrt64/include/sys/timeb.h \
+ F:/msys64/ucrt64/include/sec_api/sys/timeb_s.h \
+ F:/msys64/ucrt64/include/pthread_time.h \
+ F:/msys64/ucrt64/include/pthread_compat.h \
+ F:/msys64/ucrt64/include/sched.h \
+ F:/msys64/ucrt64/include/pthread_unistd.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/ext/concurrence.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/exception \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/exception_ptr.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/cxxabi_init_exception.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/nested_exception.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/shared_ptr_atomic.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/atomic_base.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/atomic_lockfree_defines.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/backward/auto_ptr.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/pstl/glue_memory_defs.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/pstl/execution_defs.h \
+ F:/VSCodeWorkspace/Z-MultiplierLib/include/Canvas.hpp \
+ F:/VSCodeWorkspace/Z-MultiplierLib/include/Color.hpp \
+ F:/VSCodeWorkspace/Z-MultiplierLib/include/Logger.hpp \
+ F:/msys64/ucrt64/include/c++/15.2.0/iostream \
+ F:/msys64/ucrt64/include/c++/15.2.0/ostream \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/ostream.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/ios \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/ios_base.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/locale_classes.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/locale_classes.tcc \
+ F:/msys64/ucrt64/include/c++/15.2.0/system_error \
+ F:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/error_constants.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/stdexcept \
+ F:/msys64/ucrt64/include/c++/15.2.0/streambuf \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/streambuf.tcc \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/basic_ios.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/locale_facets.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/cwctype \
+ F:/msys64/ucrt64/include/wctype.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/ctype_base.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/streambuf_iterator.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/ctype_inline.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/locale_facets.tcc \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/basic_ios.tcc \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/ostream.tcc \
+ F:/msys64/ucrt64/include/c++/15.2.0/istream \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/istream.tcc \
+ F:/msys64/ucrt64/include/c++/15.2.0/mutex \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/chrono.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/ratio \
+ F:/msys64/ucrt64/include/c++/15.2.0/cstdint \
+ F:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
+ F:/msys64/ucrt64/include/stdint.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/limits \
+ F:/msys64/ucrt64/include/c++/15.2.0/ctime \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/parse_numbers.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/std_mutex.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/unique_lock.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/chrono \
+ F:/VSCodeWorkspace/Z-MultiplierLib/include/Utils.hpp \
+ F:/VSCodeWorkspace/Z-MultiplierLib/include/Painter.hpp \
+ F:/VSCodeWorkspace/Z-MultiplierLib/include/Image.hpp \
  F:/VSCodeWorkspace/Z-MultiplierLib/include/Transformation.hpp \
  F:/msys64/ucrt64/include/gdiplus.h \
  F:/msys64/ucrt64/include/gdiplus/gdiplus.h \
@@ -394,78 +462,6 @@ CMakeFiles/ZmultiplierLib.dir/src/game/DefaultAIBehavior.cpp.obj: \
  F:/msys64/ucrt64/include/gdiplus/gdiplusgraphics.h \
  F:/msys64/ucrt64/include/gdiplus/gdipluslinecaps.h \
  F:/msys64/ucrt64/include/gdiplus/gdiplusimpl.h \
- F:/VSCodeWorkspace/Z-MultiplierLib/include/DefaultAIBehavior.hpp \
- F:/VSCodeWorkspace/Z-MultiplierLib/include/GameObject.hpp \
- F:/VSCodeWorkspace/Z-MultiplierLib/include/Utils.hpp \
- F:/VSCodeWorkspace/Z-MultiplierLib/include/Window.hpp \
- F:/msys64/ucrt64/include/c++/15.2.0/memory \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/stl_tempbuf.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/stl_raw_storage_iter.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/align.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/unique_ptr.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/shared_ptr.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/shared_ptr_base.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/allocated_ptr.h \
- F:/msys64/ucrt64/include/c++/15.2.0/ext/atomicity.h \
- F:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr.h \
- F:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
- F:/msys64/ucrt64/include/pthread.h F:/msys64/ucrt64/include/sys/types.h \
- F:/msys64/ucrt64/include/process.h \
- F:/msys64/ucrt64/include/corecrt_startup.h \
- F:/msys64/ucrt64/include/signal.h \
- F:/msys64/ucrt64/include/pthread_signal.h \
- F:/msys64/ucrt64/include/time.h F:/msys64/ucrt64/include/sys/timeb.h \
- F:/msys64/ucrt64/include/sec_api/sys/timeb_s.h \
- F:/msys64/ucrt64/include/pthread_time.h \
- F:/msys64/ucrt64/include/pthread_compat.h \
- F:/msys64/ucrt64/include/sched.h \
- F:/msys64/ucrt64/include/pthread_unistd.h \
- F:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
- F:/msys64/ucrt64/include/c++/15.2.0/ext/concurrence.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/shared_ptr_atomic.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/atomic_base.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/atomic_lockfree_defines.h \
- F:/msys64/ucrt64/include/c++/15.2.0/backward/auto_ptr.h \
- F:/msys64/ucrt64/include/c++/15.2.0/pstl/glue_memory_defs.h \
- F:/msys64/ucrt64/include/c++/15.2.0/pstl/execution_defs.h \
- F:/VSCodeWorkspace/Z-MultiplierLib/include/Canvas.hpp \
- F:/VSCodeWorkspace/Z-MultiplierLib/include/Logger.hpp \
- F:/msys64/ucrt64/include/c++/15.2.0/iostream \
- F:/msys64/ucrt64/include/c++/15.2.0/ostream \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/ostream.h \
- F:/msys64/ucrt64/include/c++/15.2.0/ios \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/ios_base.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/locale_classes.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/locale_classes.tcc \
- F:/msys64/ucrt64/include/c++/15.2.0/system_error \
- F:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/error_constants.h \
- F:/msys64/ucrt64/include/c++/15.2.0/stdexcept \
- F:/msys64/ucrt64/include/c++/15.2.0/streambuf \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/streambuf.tcc \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/basic_ios.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/locale_facets.h \
- F:/msys64/ucrt64/include/c++/15.2.0/cwctype \
- F:/msys64/ucrt64/include/wctype.h \
- F:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/ctype_base.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/streambuf_iterator.h \
- F:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/ctype_inline.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/locale_facets.tcc \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/basic_ios.tcc \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/ostream.tcc \
- F:/msys64/ucrt64/include/c++/15.2.0/istream \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/istream.tcc \
- F:/msys64/ucrt64/include/c++/15.2.0/mutex \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/chrono.h \
- F:/msys64/ucrt64/include/c++/15.2.0/ratio \
- F:/msys64/ucrt64/include/c++/15.2.0/cstdint \
- F:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
- F:/msys64/ucrt64/include/stdint.h \
- F:/msys64/ucrt64/include/c++/15.2.0/ctime \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/std_mutex.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/unique_lock.h \
- F:/msys64/ucrt64/include/c++/15.2.0/chrono \
- F:/VSCodeWorkspace/Z-MultiplierLib/include/Utils.hpp \
- F:/VSCodeWorkspace/Z-MultiplierLib/include/Painter.hpp \
  F:/VSCodeWorkspace/Z-MultiplierLib/include/Font.hpp \
  F:/msys64/ucrt64/include/c++/15.2.0/random \
  F:/msys64/ucrt64/include/c++/15.2.0/bits/random.h \

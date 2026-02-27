@@ -471,12 +471,39 @@ examples/CMakeFiles/test.exe.dir/test.cpp.obj: \
  F:/VSCodeWorkspace/Z-MultiplierLib/include/Font.hpp \
  F:/VSCodeWorkspace/Z-MultiplierLib/include/EntryPoint.hpp \
  F:/VSCodeWorkspace/Z-MultiplierLib/include/Logger.hpp \
- F:/msys64/ucrt64/include/c++/15.2.0/map \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/stl_tree.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/stl_multimap.h \
+ F:/VSCodeWorkspace/Z-MultiplierLib/include/Audio.hpp \
+ F:/msys64/ucrt64/include/c++/15.2.0/thread \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/std_thread.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/this_thread_sleep.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/queue \
+ F:/msys64/ucrt64/include/c++/15.2.0/deque \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/stl_deque.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/deque.tcc \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/stl_heap.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/stl_queue.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/condition_variable \
+ F:/msys64/ucrt64/include/c++/15.2.0/atomic \
+ F:/msys64/ucrt64/include/mfapi.h F:/msys64/ucrt64/include/mfobjects.h \
+ F:/msys64/ucrt64/include/propsys.h F:/msys64/ucrt64/include/ocidl.h \
+ F:/msys64/ucrt64/include/shtypes.h \
+ F:/msys64/ucrt64/include/structuredquerycondition.h \
+ F:/msys64/ucrt64/include/propkeydef.h \
+ F:/msys64/ucrt64/include/mediaobj.h F:/msys64/ucrt64/include/mmreg.h \
+ F:/msys64/ucrt64/include/pshpack1.h F:/msys64/ucrt64/include/avrt.h \
+ F:/msys64/ucrt64/include/dxgiformat.h F:/msys64/ucrt64/include/mfidl.h \
+ F:/msys64/ucrt64/include/mftransform.h \
+ F:/msys64/ucrt64/include/mfreadwrite.h \
+ F:/msys64/ucrt64/include/mferror.h \
+ F:/msys64/ucrt64/include/mmdeviceapi.h \
+ F:/msys64/ucrt64/include/audioclient.h \
+ F:/msys64/ucrt64/include/audiosessiontypes.h \
+ F:/msys64/ucrt64/include/ks.h F:/msys64/ucrt64/include/ksmedia.h \
  F:/msys64/ucrt64/include/c++/15.2.0/algorithm \
  F:/msys64/ucrt64/include/c++/15.2.0/bits/stl_algo.h \
  F:/msys64/ucrt64/include/c++/15.2.0/bits/algorithmfwd.h \
- F:/msys64/ucrt64/include/c++/15.2.0/bits/stl_heap.h \
- F:/msys64/ucrt64/include/c++/15.2.0/pstl/glue_algorithm_defs.h
+ F:/msys64/ucrt64/include/c++/15.2.0/pstl/glue_algorithm_defs.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/cstring \
+ F:/msys64/ucrt64/include/c++/15.2.0/map \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/stl_tree.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h \
+ F:/msys64/ucrt64/include/c++/15.2.0/bits/stl_multimap.h

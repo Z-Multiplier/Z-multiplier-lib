@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ZmultiplierLib.dir/src/assets/Image.cpp.obj.d"
   "CMakeFiles/ZmultiplierLib.dir/src/assets/Transformation.cpp.obj"
   "CMakeFiles/ZmultiplierLib.dir/src/assets/Transformation.cpp.obj.d"
+  "CMakeFiles/ZmultiplierLib.dir/src/audio/Audio.cpp.obj"
+  "CMakeFiles/ZmultiplierLib.dir/src/audio/Audio.cpp.obj.d"
   "CMakeFiles/ZmultiplierLib.dir/src/core/Canvas.cpp.obj"
   "CMakeFiles/ZmultiplierLib.dir/src/core/Canvas.cpp.obj.d"
   "CMakeFiles/ZmultiplierLib.dir/src/core/Color.cpp.obj"

@@ -29,6 +29,7 @@ add_library(ZmultiplierLib STATIC
     src/assets/Transformation.cpp
     src/game/DefaultAIBehavior.cpp
     src/game/GameObject.cpp
+    src/audio/Audio.cpp
 )
 
 target_link_libraries(ZmultiplierLib PRIVATE
@@ -36,6 +37,11 @@ target_link_libraries(ZmultiplierLib PRIVATE
     gdi32
     user32
     gdiplus
+    mfplat
+    mf
+    mfreadwrite
+    mfuuid
+    winmm
 )
 
 target_include_directories(ZmultiplierLib PUBLIC

@@ -1,5 +1,6 @@
 #include "Graphics.hpp"
 #include "Logger.hpp"
+#include "Audio.hpp"
 #include <chrono>
 #include <map>
 #include <algorithm>
@@ -21,6 +22,7 @@ int level=0;//等级
 int reactDuration=0;//应激时长
 float totalRage=0.0f;//总仇恨
 float difficulty=0.0f;//别问，问就是隔一天写忘了自己定义了什么了
+
 //罗马数字转换（支持 1~5）
 std::wstring toRoman(int num){
     const std::pair<int,const wchar_t*> values[]={
@@ -632,6 +634,9 @@ long long mainWindowLClick(HWND hWnd,UINT uMsg,WPARAM wParam,LPARAM lParam,int x
     }
     //发射子弹
     shootCooldown=std::max(50-(5*level),10)-learnedSkills[L"攻速突破"];
+    static auto shootSound=std::make_shared<Audio::Noise>(L"./explode1.wav");
+    Audio::PlayRequest req(shootSound,0.8f,1.0f,true);
+    Audio::AudioManager::instance().pushRequest(req);
     return 0;
 }
 
@@ -646,6 +651,8 @@ long long mainWindowRClick(HWND hWnd,UINT uMsg,WPARAM wParam,LPARAM lParam,int x
 }
 
 int main(){
+    Audio::AudioManager::instance().start();
+    //CoInitializeEx(nullptr,COINIT_MULTITHREADED);
     srand(time(nullptr));//随机种子
     for(int i=0;i<100;i++){
         stars.push_back(std::make_pair(Point(rand()%700,rand()%700),rand()%255));//星星背景
@@ -681,7 +688,9 @@ int main(){
         globalHandleManager.updateAll();//literally
         if(waitingForQuit){
             Sleep(4000);
+            //CoUninitialize();
             exit(0);
         }
     }
+    //CoUninitialize();
 }

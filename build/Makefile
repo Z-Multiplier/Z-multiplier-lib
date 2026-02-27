@@ -174,17 +174,17 @@ ZmultiplierLib/fast:
 .PHONY : ZmultiplierLib/fast
 
 #=============================================================================
-# Target rules for targets named test2.exe
+# Target rules for targets named test.exe
 
 # Build rule for target.
-test2.exe: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test2.exe
-.PHONY : test2.exe
+test.exe: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test.exe
+.PHONY : test.exe
 
 # fast build rule for target.
-test2.exe/fast:
-	$(MAKE) $(MAKESILENT) -f examples\CMakeFiles\test2.exe.dir\build.make examples/CMakeFiles/test2.exe.dir/build
-.PHONY : test2.exe/fast
+test.exe/fast:
+	$(MAKE) $(MAKESILENT) -f examples\CMakeFiles\test.exe.dir\build.make examples/CMakeFiles/test.exe.dir/build
+.PHONY : test.exe/fast
 
 src/assets/Font.obj: src/assets/Font.cpp.obj
 .PHONY : src/assets/Font.obj
@@ -257,6 +257,30 @@ src/assets/Transformation.s: src/assets/Transformation.cpp.s
 src/assets/Transformation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZmultiplierLib.dir\build.make CMakeFiles/ZmultiplierLib.dir/src/assets/Transformation.cpp.s
 .PHONY : src/assets/Transformation.cpp.s
+
+src/audio/Audio.obj: src/audio/Audio.cpp.obj
+.PHONY : src/audio/Audio.obj
+
+# target to build an object file
+src/audio/Audio.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZmultiplierLib.dir\build.make CMakeFiles/ZmultiplierLib.dir/src/audio/Audio.cpp.obj
+.PHONY : src/audio/Audio.cpp.obj
+
+src/audio/Audio.i: src/audio/Audio.cpp.i
+.PHONY : src/audio/Audio.i
+
+# target to preprocess a source file
+src/audio/Audio.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZmultiplierLib.dir\build.make CMakeFiles/ZmultiplierLib.dir/src/audio/Audio.cpp.i
+.PHONY : src/audio/Audio.cpp.i
+
+src/audio/Audio.s: src/audio/Audio.cpp.s
+.PHONY : src/audio/Audio.s
+
+# target to generate assembly for a file
+src/audio/Audio.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ZmultiplierLib.dir\build.make CMakeFiles/ZmultiplierLib.dir/src/audio/Audio.cpp.s
+.PHONY : src/audio/Audio.cpp.s
 
 src/core/Canvas.obj: src/core/Canvas.cpp.obj
 .PHONY : src/core/Canvas.obj
@@ -487,7 +511,7 @@ help:
 	@echo ... list_install_components
 	@echo ... rebuild_cache
 	@echo ... ZmultiplierLib
-	@echo ... test2.exe
+	@echo ... test.exe
 	@echo ... src/assets/Font.obj
 	@echo ... src/assets/Font.i
 	@echo ... src/assets/Font.s
@@ -497,6 +521,9 @@ help:
 	@echo ... src/assets/Transformation.obj
 	@echo ... src/assets/Transformation.i
 	@echo ... src/assets/Transformation.s
+	@echo ... src/audio/Audio.obj
+	@echo ... src/audio/Audio.i
+	@echo ... src/audio/Audio.s
 	@echo ... src/core/Canvas.obj
 	@echo ... src/core/Canvas.i
 	@echo ... src/core/Canvas.s
